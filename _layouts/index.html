@@ -1,15 +1,10 @@
 ---
-layout: default
+layout: holding
 ---
 
-<!-- Projects -->
-<div class="row expanded collapse">
-  {% assign projects = site.projects %}
-  {% for project in projects %}
-    <div class="small-12 medium-6 large-6 columns">
-    {% include excerpt.html %}
-    </div>
-  {% endfor %}
+<div class="row expanded content">
+	<div class="small-12 medium-10 large-8 columns">
+		{{ content }}
+	</div>
 </div>
-<!-- End Projects -->
 
