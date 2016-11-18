@@ -1,0 +1,55 @@
+---
+layout: light
+---
+
+<!-- Hero -->
+<div class="hero hero--blog" style="background-image: url({{page.image}})">
+  <div class="row hero__text align-middle align-center">
+    <div class="small-12 medium-10 large-10 columns hero__text__inner">
+      <h2>{{ page.title }}</h2>
+      {% assign author = site.data.authors[page.author] %}
+      {% if author %}
+        <a href="mailto:{{ author.email }}">{{ author.name }}</a>
+      {% endif %}
+      <div class="hero__date">
+        {{ page.date | date: site.date_format }}
+      </div>
+      {% if page.next.url %}
+      <a class="next text-right" href="{{page.next.url}}"><svg class="icon icon-left-long"><use xlink:href="#icon-left-long"></use></svg></a>
+      {% endif %}
+      {% if page.previous.url %}
+      <a class="prev" href="{{page.previous.url}}"><svg class="icon icon-right-long"><use xlink:href="#icon-right-long"></use></svg></a>
+      {% endif %}
+      
+    </div>
+  </div>
+</div>
+<!-- End Hero -->
+
+<div class="post">
+
+<!-- Content -->
+<div class="row align-center">
+	<div class="small-10 medium-8 large-6 columns">
+		{{ content }}
+	</div>
+</div>
+<!-- End Content -->
+
+</div>
+
+<!-- Share -->
+<div class="row project__share align-center">
+  <div class="shrink columns">
+    <ul class="menu simple">
+      {% include sharing.html %}
+    </ul>
+  </div>
+</div>
+<!-- End Share -->
+
+<!-- Pagination -->
+
+{% include pagination.html %}
+
+<!-- End Pagination -->

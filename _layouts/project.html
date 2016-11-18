@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+{% if page.video %}
+<!-- Video -->
+<div class="row project__video project__step align-center">
+<div class="small-12 medium-10 large-8 columns">
+	<div class="flex-video widescreen vimeo">
+	  <iframe src="https://player.vimeo.com/video/{{ page.video }}?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</div>
+</div>
+</div>
+<!-- End Video -->
+{% endif %}
+
+<!-- Share -->
+<div class="row">
+	<div class="shrink columns">
+		{{ content }}
+	</div>
+</div>
+<!-- End Share -->
+
+
+<!-- Share -->
+<div class="row project__share align-center">
+	<div class="shrink columns">
+		<ul class="menu simple">
+			{% include sharing.html %}
+	  	</ul>
+	</div>
+</div>
+<!-- End Share -->
+
+<!-- Pagination -->
+
+{% include pagination.html %}
+
+<!-- End Pagination -->

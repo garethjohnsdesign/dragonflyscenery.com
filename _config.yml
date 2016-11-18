@@ -1,0 +1,54 @@
+---
+title: Dragonfly Scenery
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  work:
+    title: Work
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/blog/:title/"
+    layout: post
+    image: 
+    author: 
+url: http://dragonflyscenery.com
+permalink: pretty
+gems:
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-feed
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+exclude:
+- bower_components
+description: London-based set-design, prop and art direction studio working alongside the industry's leading photographers, directors and creatives
+company: Dragonfly Scenery and Design Ltd
+email: info@dragonflyscenery.com
+google_site_verification: 
+analytics: 
+logo: "/assets/img/layout/logo.svg"
+per_page: 12
+date_format: "%b %d, %Y"
+future: true
+social:
+  facebook: 
+  instagram:
+  twitter:
+  vimeo:
