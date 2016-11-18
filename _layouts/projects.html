@@ -1,0 +1,14 @@
+---
+layout: dark
+---
+
+<!-- Content -->
+<div class="row expanded collapse">
+	{% assign projects = site.projects | sort: 'date' | reverse %}
+	{% for project in projects %}
+	<div class="small-12 medium-6 large-6 columns">
+	{% include excerpt.html %}
+	</div>
+	{% endfor %}
+</div>
+<!-- End Content -->

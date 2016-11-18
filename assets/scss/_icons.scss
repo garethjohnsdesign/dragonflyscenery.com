@@ -1,0 +1,73 @@
+// Icons
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+/* =======================================================================================
+Example showing how to change the color/size of the icons:
+.icon-name {
+	font-size: 32px; // works because "width" & "height" were set using em units
+	color: red; // works for single-colored icons, because "fill" was set to "currentColor"
+}
+======================================================================================== */
+
+.index__connect .icon {
+    font-size: 1.5rem;
+}
+
+.footer__bottom__socials .icon {
+    font-size: 1.25rem;
+}
+
+.icon-logo {
+    width: 2.1357421875em;
+}
+
+// Styling
+.icon-logo {
+    font-size: 3rem;
+}
+
+.icon-logo--footer {
+    font-size: 2rem;
+}
+
+svg.icon.icon-envelop2 {
+	vertical-align: text-bottom;
+}
+
+.icon-arrow-up8 {
+	font-size: 2rem;
+	color: $color--gray;
+	transition: $primary-transition;
+  &:hover {
+  color: $color--black;
+  }
+}
+
+.icon-left-long {
+  font-size: 2rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  color: $color--white;
+	transition: $primary-transition;
+  &:hover {
+  color: $color--amber;
+  }
+}
+
+.icon-right-long {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: $color--white;
+	transition: $primary-transition;
+  &:hover {
+  color: $color--amber;
+  }
+}
