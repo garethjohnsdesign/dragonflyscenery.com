@@ -7,10 +7,7 @@ collections:
     output: true
   uploads:
     title: Uploads
-    output: true
-  work:
-    title: Work
-    output: true
+    output: false
 defaults:
 - scope:
     path: ''
