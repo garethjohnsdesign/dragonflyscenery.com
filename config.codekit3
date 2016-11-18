@@ -45,24 +45,6 @@
 		"oAP": "\/_includes\/analytics.html",
 		"oF": 0
 		},
-	"\/_includes\/bookrequest.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/_includes\/bookrequest.html",
-		"oF": 0
-		},
-	"\/_includes\/carousel.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/_includes\/carousel.html",
-		"oF": 0
-		},
-	"\/_includes\/excerpt-venture.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/_includes\/excerpt-venture.html",
-		"oF": 0
-		},
 	"\/_includes\/excerpt.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -91,12 +73,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/_includes\/mailinglist.html",
-		"oF": 0
-		},
-	"\/_includes\/navigation-archive.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_includes\/navigation-archive.html",
 		"oF": 0
 		},
 	"\/_includes\/navigation.html": {
@@ -147,22 +123,16 @@
 		"oAP": "\/_layouts\/contact.html",
 		"oF": 0
 		},
-	"\/_layouts\/default-new.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_layouts\/default-new.html",
-		"oF": 0
-		},
 	"\/_layouts\/default.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_layouts\/default.html",
 		"oF": 0
 		},
-	"\/_layouts\/index-new.html": {
+	"\/_layouts\/holding.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_layouts\/index-new.html",
+		"oAP": "\/_layouts\/holding.html",
 		"oF": 0
 		},
 	"\/_layouts\/index.html": {
@@ -199,120 +169,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/_layouts\/projects.html",
-		"oF": 0
-		},
-	"\/_projects\/55DSL-italy-texas.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_projects\/55DSL-italy-texas.markdown",
-		"oF": 0
-		},
-	"\/_projects\/bryan-ferry-loop-de-li.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_projects\/bryan-ferry-loop-de-li.markdown",
-		"oF": 0
-		},
-	"\/_projects\/honda-ignition.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_projects\/honda-ignition.markdown",
-		"oF": 0
-		},
-	"\/_projects\/james-vincent-mcmorrow-cavalier.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_projects\/james-vincent-mcmorrow-cavalier.markdown",
-		"oF": 0
-		},
-	"\/_projects\/james-vincent-mcmorrow-glacier.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_projects\/james-vincent-mcmorrow-glacier.markdown",
-		"oF": 0
-		},
-	"\/_projects\/james-vincent-mcmorrow-red-dust.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_projects\/james-vincent-mcmorrow-red-dust.markdown",
-		"oF": 0
-		},
-	"\/_projects\/jon-hopkins-open-eye-signal.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_projects\/jon-hopkins-open-eye-signal.markdown",
-		"oF": 0
-		},
-	"\/_projects\/little-comets-isles.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_projects\/little-comets-isles.markdown",
-		"oF": 0
-		},
-	"\/_projects\/major-moments.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_projects\/major-moments.markdown",
-		"oF": 0
-		},
-	"\/_projects\/samsung-feel-more.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_projects\/samsung-feel-more.markdown",
-		"oF": 0
-		},
-	"\/_projects\/secret-raise.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_projects\/secret-raise.markdown",
-		"oF": 0
-		},
-	"\/_projects\/simian-mobile-disco-seraphim.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_projects\/simian-mobile-disco-seraphim.markdown",
-		"oF": 0
-		},
-	"\/_projects\/street-rider.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_projects\/street-rider.markdown",
-		"oF": 0
-		},
-	"\/_projects\/the-question.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_projects\/the-question.markdown",
-		"oF": 0
-		},
-	"\/_projects\/u2-every-breaking-wave.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_projects\/u2-every-breaking-wave.markdown",
-		"oF": 0
-		},
-	"\/_projects\/under-armour-numbers.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_projects\/under-armour-numbers.markdown",
-		"oF": 0
-		},
-	"\/_projects\/under-armour-prince-with-1000-enemies.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_projects\/under-armour-prince-with-1000-enemies.markdown",
-		"oF": 0
-		},
-	"\/_projects\/wheels-on-the-car.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_projects\/wheels-on-the-car.markdown",
-		"oF": 0
-		},
-	"\/_projects\/wilkinson-half-light.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_projects\/wilkinson-half-light.markdown",
 		"oF": 0
 		},
 	"\/_site": {
@@ -472,6 +328,120 @@
 		"oAP": "\/_uploads\/wilkinson-half-light.jpg",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/_work\/55DSL-italy-texas.markdown": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/55DSL-italy-texas.markdown",
+		"oF": 0
+		},
+	"\/_work\/bryan-ferry-loop-de-li.markdown": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/bryan-ferry-loop-de-li.markdown",
+		"oF": 0
+		},
+	"\/_work\/honda-ignition.markdown": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/honda-ignition.markdown",
+		"oF": 0
+		},
+	"\/_work\/james-vincent-mcmorrow-cavalier.markdown": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/james-vincent-mcmorrow-cavalier.markdown",
+		"oF": 0
+		},
+	"\/_work\/james-vincent-mcmorrow-glacier.markdown": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/james-vincent-mcmorrow-glacier.markdown",
+		"oF": 0
+		},
+	"\/_work\/james-vincent-mcmorrow-red-dust.markdown": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/james-vincent-mcmorrow-red-dust.markdown",
+		"oF": 0
+		},
+	"\/_work\/jon-hopkins-open-eye-signal.markdown": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/jon-hopkins-open-eye-signal.markdown",
+		"oF": 0
+		},
+	"\/_work\/little-comets-isles.markdown": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/little-comets-isles.markdown",
+		"oF": 0
+		},
+	"\/_work\/major-moments.markdown": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/major-moments.markdown",
+		"oF": 0
+		},
+	"\/_work\/samsung-feel-more.markdown": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/samsung-feel-more.markdown",
+		"oF": 0
+		},
+	"\/_work\/secret-raise.markdown": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/secret-raise.markdown",
+		"oF": 0
+		},
+	"\/_work\/simian-mobile-disco-seraphim.markdown": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/simian-mobile-disco-seraphim.markdown",
+		"oF": 0
+		},
+	"\/_work\/street-rider.markdown": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/street-rider.markdown",
+		"oF": 0
+		},
+	"\/_work\/the-question.markdown": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/the-question.markdown",
+		"oF": 0
+		},
+	"\/_work\/u2-every-breaking-wave.markdown": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/u2-every-breaking-wave.markdown",
+		"oF": 0
+		},
+	"\/_work\/under-armour-numbers.markdown": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/under-armour-numbers.markdown",
+		"oF": 0
+		},
+	"\/_work\/under-armour-prince-with-1000-enemies.markdown": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/under-armour-prince-with-1000-enemies.markdown",
+		"oF": 0
+		},
+	"\/_work\/wheels-on-the-car.markdown": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/wheels-on-the-car.markdown",
+		"oF": 0
+		},
+	"\/_work\/wilkinson-half-light.markdown": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_work\/wilkinson-half-light.markdown",
+		"oF": 0
 		},
 	"\/assets\/css\/app.css": {
 		"aP": 0,
@@ -12240,7 +12210,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 499792706,
-	"displayValue": "Aoife McArdle",
+	"displayValue": "Dragonfly Scenery",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-ceiling"
 	},

@@ -62,11 +62,3 @@ slack.com
 
 FONTS
 -----
-
-Tiempos Headline
-by Kris Sowersby
-klim.co.nz
-
-Graphik
-by Commercial Type
-commercialtype.com

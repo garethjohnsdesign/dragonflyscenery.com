@@ -1,6 +1,6 @@
-# Aoife McArdle
+# Dragonfly Scenery
 
-Website for Aoife Mcardle. Please go to [www.aoifemcardle.com](http://aoifemcardle.com) in case you want to take a look at the website.
+Website for Dragonfly Scenery. Please go to [www.dragonflyscenery.com](http://dragonflyscenery.com) in case you want to take a look at the website.
 
 * * *
 
