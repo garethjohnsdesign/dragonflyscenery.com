@@ -354,5 +354,8 @@ footer {
 // Holding
 
 .content {
-padding: 4rem
+padding: 4rem;
+@include breakpoint(small only) {
+	padding: 1rem;
+  }
 }
