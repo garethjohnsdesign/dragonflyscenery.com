@@ -8370,4 +8370,7 @@ footer {
 
 .content {
   padding: 4rem; }
+  @media screen and (max-width: 39.9375em) {
+    .content {
+      padding: 1rem; } }
 /*# sourceMappingURL=app.css.map */
