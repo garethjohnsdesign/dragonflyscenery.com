@@ -27,12 +27,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/_config.yml": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/_config.yml",
-		"oF": 0
-		},
 	"\/_data\/navigation.yml": {
 		"ft": 8192,
 		"oA": 2,
@@ -443,22 +437,6 @@
 		"oAP": "\/_work\/wilkinson-half-light.markdown",
 		"oF": 0
 		},
-	"\/assets\/css\/app.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/assets\/css\/app-ck.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/assets\/css\/app.css.map": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/css\/app.css.map",
-		"oF": 0
-		},
 	"\/assets\/fonts\/MaisonNeue-Book.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -546,16 +524,6 @@
 		"oAP": "\/assets\/icons\/mstile-150x150.png",
 		"oF": 0,
 		"opt": 0
-		},
-	"\/assets\/img\/layout\/logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/img\/layout\/logo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
 		},
 	"\/assets\/img\/meta\/og-image.png": {
 		"ft": 32768,
@@ -703,19 +671,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/css\/_layout-archive.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/scss\/_layout.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/assets\/css\/_layout.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
