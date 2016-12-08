@@ -1,7 +1,7 @@
 ---
 title: Major Moments
 date: 2014-04-01 00:00:00 Z
-image: "/uploads/major-moments.jpg"
+image: "/uploads/testing-09.jpg"
 awards: 
 video: 102462120
 layout: project

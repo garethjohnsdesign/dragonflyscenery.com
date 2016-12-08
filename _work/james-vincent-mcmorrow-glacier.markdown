@@ -1,7 +1,7 @@
 ---
 title: James Vincent McMorrow - Glacier
 date: 2014-04-01 00:00:00 Z
-image: "/uploads/james-vincent-mcmorrow-glacier.jpg"
+image: "/uploads/testing-05.jpg"
 awards: 
 video: 89668228
 layout: project

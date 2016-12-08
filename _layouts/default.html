@@ -5,18 +5,14 @@
 {% include head.html %}
 <!-- End Head -->
 
-{% if page.url == "/" %}
 <body id="top">
-{% else %}
-<body id="top">
-{% endif %}
   
 {% if page.url == "/" %}
 <script>document.body.className += ' fade-out';</script>
 {% endif %}
 
 
-<!-- Navigation -->  
+<!-- Navigation --> 
 {% include navigation.html %}
 <!-- End Navigation --> 
 

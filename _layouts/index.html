@@ -1,10 +1,17 @@
 ---
-layout: holding
+layout: default
 ---
 
-<div class="row expanded content">
-	<div class="small-12 medium-10 large-8 columns">
-		{{ content }}
-	</div>
+<div class="row expanded align-center">
+<div class="small-10 columns">
+	
+<div class="grid">
+	{% assign projects = site.work %}
+	{% for project in projects %}
+	<div class="gutter-sizer"></div>
+	<div class="grid-item">{% include excerpt.html %}</div>
+	{% endfor %}
 </div>
 
+</div>
+</div>

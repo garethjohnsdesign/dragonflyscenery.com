@@ -1,7 +1,7 @@
 ---
 title: James Vincent McMorrow - Red Dust
 date: 2014-04-01 00:00:00 Z
-image: "/uploads/james-vincent-mcmorrow-red-dust.jpg"
+image: "/uploads/testing-06.jpg"
 awards: Nominated for Best Cinematography and Best Video at Camera Image 2014
 video: 82139462
 layout: project

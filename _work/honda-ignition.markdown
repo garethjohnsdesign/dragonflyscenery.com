@@ -1,7 +1,7 @@
 ---
 title: Honda - Ignition
 date: 2014-04-01 00:00:00 Z
-image: "/uploads/honda-ignition.jpg"
+image: "/uploads/testing-03.jpg"
 awards: 
 video: 137363678
 layout: project

@@ -12,16 +12,6 @@ body {
   cursor: default;
 }
 
-body {
-    opacity: 1;
-    transition: $primary-transition;
-}
-
-body.fade-out {
-    opacity: 0;
-    transition: none;
-}
-
 svg {
   max-width: 100%;
 }
@@ -33,7 +23,7 @@ img {
 }
 
 ::selection {
-  background: $color--gray;
+  background: $color--black;
   color: $color--white;
 }
 
@@ -59,73 +49,61 @@ i, cite, em, var, address, dfn {
 
 // 3. Navigation
 
-.title h1{
-  font-size: 1.3125rem;
+.navigation {
+	width: 100%;
+/*
+margin: 2rem 3rem 2rem 3rem;
+  @include breakpoint(small only) {
+	padding: 2rem;
+  }
+*/
 }
 
-.navigation {
-padding: 3rem;
+.navigation__left {
+	padding: 2rem 3rem 2rem 3rem;
   @include breakpoint(small only) {
 	padding: 2rem;
   }
 }
 
-.navigation__left {
-/*
-  position: absolute;
-  top: 3rem;
-  left: 3rem;
-  z-index: 1;
-  
-  a {
-    color: $color--white;
-    transition: $primary-transition;
-  }
-  
-  a:hover {
-    color: $color--amber;
-  }
-  
+.navigation__center {
+	padding: 2rem 3rem 2rem 3rem;
   @include breakpoint(small only) {
-    top: 2rem;
-    left: 2rem;
+	padding: 2rem;
   }
-  
-*/
 }
 
 .navigation__right {
-/*
-  position: absolute;
-  top: 3rem;
-  right: 3rem;
-	z-index: 1004;
-
-  a {
-    color: $color--white;
-  }
-
-  a:hover {
-  color: $color--light-gray;
-  }
-
+	padding: 2rem 3rem 2rem 3rem;
   @include breakpoint(small only) {
-    top: 2rem;
-    right: 2rem;
+	padding: 2rem;
   }
+  .menu.simple li:nth-child(2) {
+	  margin-right: 0rem;
+	}
+}
+
+
+.logo h1 {
+	font-family: $serif-font-family;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	margin-bottom: 0;
+}
+
+
+/*
+.title h1{
+  font-size: 1.5rem;
+//   font-family: $header-font-family-bold;
+//   text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navigation__right {
+z-index: 1004;
+}
 */
-}
-
-
-.navigation--dark {
-  a {
-  color: $color--black;
-  }
-  a:hover {
-  color: $color--light-gray;
-  }
-}
-
 
 // 404
 
@@ -151,6 +129,26 @@ padding: 3rem;
     padding: 2rem;
   	}
 }
+
+.project__content {
+	padding: 1rem 3rem 1rem 3rem;
+	@include breakpoint(small only) {
+    padding: 2rem;
+  	}
+}
+
+
+.page__content {
+	padding: 1rem 3rem 1rem 3rem;
+	@include breakpoint(small only) {
+    padding: 2rem;
+  	}
+  	h3 {
+    margin-bottom: 2rem;
+    }
+}
+
+
 
 .contact a {
   color: $color--dark-gray;
@@ -223,13 +221,21 @@ padding: 3rem;
 
 // 8. Pagination
 
+.pagination__wrapper {
+	padding: 3rem;
+	@include breakpoint(small only) {
+    padding: 2rem;
+  	}
+}
+
 .callout--pagination {
   border: 2px solid $color--amber;
   padding: 2rem 2rem 1rem 2rem;
 }
 
 .pagination {
-  background-color: $color--lighter-gray;
+  background-color: $color--black;
+//   border: blue 1px solid;
   padding: 2rem 2rem 1rem 2rem;
   width: 100%;
   @include float;
@@ -243,56 +249,50 @@ padding: 3rem;
 
 .excerpt {
 	position:relative;
+// 	margin: 3.5rem;
+	opacity:1;
 	
   	img {
       width:100%;
     }
     
+    .excerpt__image:after {
+      opacity:0;
+      transition: $primary-transition;
+    }
+    
     &:hover .excerpt__image:after {
-        background:$color--white;
-        opacity:0.9;
-        transition: $primary-transition;
+        background:$color--lightest-gray;
+        opacity:0.8;
       }
       
     &:hover .excerpt__title {
-        h3 {
+        p {
+	    opacity: 1;
         color: $color--black;
         }
-  
-        p span {
-        border-bottom: $color--black 1px solid;
-        padding-bottom: 0.5rem;
-        } 
       } 
 }
 
 .excerpt__title {
   position:absolute;
-  top: 0rem;
-  left: 0rem;
   width: 100%;
   height: 100%;
-  padding: 3rem;
   z-index: 1;
-  
-    h3 {
-    color: $color--white;
-    transition: $primary-transition;
-    }
+  margin: 0;
   
     p {
+	opacity: 0;
     color: $color--white;
     transition: $primary-transition;
-      span {
-      border-bottom: $color--yellow 1px solid;
-      padding-bottom: 0.25rem;
-      transition: $primary-transition;
-      }
+//     text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0rem;
     }
-  
-    @include breakpoint(small only) {
-    padding: 2rem;
-    }
+}
+
+div.row.excerpt__title {
+	margin: 0rem;
 }
 
 
@@ -310,40 +310,13 @@ padding: 3rem;
 
 // 10. About
 
-.about__content {
-	font-family: $header-font-family;
-	font-size: 1.5rem;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-	@include breakpoint(small only) {
-	padding-top: 2rem;
-	padding-bottom: 2rem
-  	}
-}
-
-.about__cv {
-	font-family: $header-font-family;
-	font-size: 1.5rem;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-	@include breakpoint(small only) {
-	padding-top: 2rem;
-	padding-bottom: 2rem
-  	}
-}
-
-.about_book {
-  padding-bottom: 2rem;
-  padding-top: 2rem;
-}
-
 // 11. Footer
 
 footer {
 	color: $color--black;
 	padding: 3rem;
 	a {
-    color: $color--white;
+    color: $color--black;
     display: block;
     }
   @include breakpoint(small only) {
@@ -351,11 +324,23 @@ footer {
   }
 }
 
-// Holding
+// Grid
 
-.content {
-padding: 4rem;
-@include breakpoint(small only) {
-	padding: 1rem;
-  }
+.grid {
+	width: 100%;
+}
+
+.grid-item { 
+	width: 30%;
+	@include breakpoint(small only) {
+	width: 100%;
+	margin-bottom: 1rem;
+  }	
+}
+
+.gutter-sizer { 
+	width: 3.3%;
+	@include breakpoint(small only) {
+	width: 0%; 
+}
 }

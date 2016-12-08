@@ -17,7 +17,9 @@
     "schmick": "^1.1.0",
     "history.js": "^1.8.0",
     "flickity": "^2.0.3",
-    "wow": "wowjs#^1.1.2"
+    "wow": "wowjs#^1.1.2",
+    "packery": "^2.1.1",
+    "imagesloaded": "^4.1.1"
   },
   "ignore": [
     "**/.*",

@@ -2,6 +2,15 @@
 layout: default
 ---
 
+<!-- Content -->
+<div class="row align-center">
+	<div class="small-8 medium-7 large-7 columns text-center">
+		<h5>{{ page.photographer }}</h5>
+		<h6>{{ page.magazine }}</h6>
+	</div>
+</div>
+<!-- End Content -->
+
 {% if page.video %}
 <!-- Video -->
 <div class="row project__video project__step align-center">
@@ -14,27 +23,23 @@ layout: default
 <!-- End Video -->
 {% endif %}
 
-<!-- Share -->
-<div class="row">
-	<div class="shrink columns">
+<!-- Images -->
+{% if page.images %}
+<div class="row project__images align-center">
+	<div class="small-8 medium-7 large-6 columns">
+		{% for image in page.images %}
+			<img src="{{image}}" />
+		{% endfor %}
+	</div>
+</div>
+{% endif %}
+<!-- End Images -->
+
+
+<!-- Content -->
+<div class="row align-center">
+	<div class="small-8 medium-7 large-7 columns text-center">
 		{{ content }}
 	</div>
 </div>
-<!-- End Share -->
-
-
-<!-- Share -->
-<div class="row project__share align-center">
-	<div class="shrink columns">
-		<ul class="menu simple">
-			{% include sharing.html %}
-	  	</ul>
-	</div>
-</div>
-<!-- End Share -->
-
-<!-- Pagination -->
-
-{% include pagination.html %}
-
-<!-- End Pagination -->
+<!-- End Content -->

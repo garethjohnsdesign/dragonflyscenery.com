@@ -1,7 +1,7 @@
 ---
 title: Little Comets - Isles
 date: 2014-04-01 00:00:00 Z
-image: "/uploads/little-comets-isles.jpg"
+image: "/uploads/testing-08.jpg"
 awards: Winner of Rushes Soho Shorts Best Music Video 2011, Nominated for Best Indie
   Video and Best Editing at UKMVAs 2011
 video: 15283686

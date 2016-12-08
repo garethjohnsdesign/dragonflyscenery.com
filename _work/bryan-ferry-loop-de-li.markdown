@@ -1,7 +1,7 @@
 ---
 title: Bryan Ferry - Loop De Li
 date: 2014-04-01 00:00:00 Z
-image: "/uploads/bryan-ferry-loop-de-li.jpg"
+image: "/uploads/testing-02.jpg"
 awards: 
 video: 61063278
 layout: project

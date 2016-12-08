@@ -7,7 +7,7 @@ $color-link: #FFF;
 .overlay {
   z-index: 1001;
   position: fixed;
-  background: $color--amber;
+  background: $color--black;
   top: 0;
   left: 0;
   width: 100%;
@@ -29,7 +29,7 @@ $color-link: #FFF;
   }
   nav {
     position: relative;
-    height: 70%;
+    height: 40%;
     top: 50%;
     transform: translateY(-50%);
     font-size: 2.5rem;
@@ -45,9 +45,8 @@ $color-link: #FFF;
     
     li {
       display: block;
-      height: 25%;
-      height: calc(100% / 7);
-      min-height: 3rem;
+//       height: 50%;
+      height: calc(100% / 3);
       position: relative;
       opacity: 0;
       
