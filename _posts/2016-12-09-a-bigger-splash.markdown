@@ -12,6 +12,8 @@ images:
 - "/uploads/a-bigger-splash-06.jpg"
 photographer: Sølve Sundsbø
 magazine: Vogue China
+categories:
+- editorial
 layout: project
 ---
 
