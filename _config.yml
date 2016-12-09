@@ -2,6 +2,9 @@
 title: Dragonfly Scenery
 timezone: UTC
 collections:
+  work:
+    title: Work
+    output: true
   uploads:
     title: Uploads
     output: false
@@ -18,7 +21,7 @@ defaults:
     path: ''
     type: posts
   values:
-    permalink: "/work/:title/"
+    permalink: "/blog/:title/"
     layout: project
     image: 
     author: 
