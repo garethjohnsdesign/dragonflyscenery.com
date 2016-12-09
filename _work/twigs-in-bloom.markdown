@@ -15,7 +15,7 @@ images:
 - "/uploads/twigs-in-bloom-09.jpg"
 - "/uploads/twigs-in-bloom-10.jpg"
 photographer: Sølve Sundsbø
-magazine:
+magazine: 
 layout: project
 ---
 

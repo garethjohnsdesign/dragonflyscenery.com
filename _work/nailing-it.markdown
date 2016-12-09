@@ -15,7 +15,7 @@ images:
 - "/uploads/nailing-it-09.jpg"
 - "/uploads/nailing-it-10.jpg"
 photographer: Sean and Seng
-magazine:
+magazine: 
 layout: project
 ---
 

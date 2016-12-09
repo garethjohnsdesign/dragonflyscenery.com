@@ -15,7 +15,7 @@ images:
 - "/uploads/no-crime-to-be-rich-09.jpg"
 - "/uploads/no-crime-to-be-rich-10.jpg"
 photographer: Sølve Sundsbø
-magazine:
+magazine: 
 layout: project
 ---
 
