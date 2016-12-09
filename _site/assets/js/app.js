@@ -1,14 +1,14 @@
 $(document).foundation();
 
-$('body').removeClass('fade-out');
+// $('body').removeClass('fade-out');
 
-$(document).ready(function() {
+
   $(".animsition").animsition({
     inClass: 'fade-in',
     outClass: 'fade-out',
     inDuration: 1500,
     outDuration: 800,
-    linkElement: '.animsition-link',
+    linkElement: '.page-animation-link',
     // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
     loading: true,
     loadingParentElement: 'body', //animsition wrapper element
@@ -25,7 +25,6 @@ $(document).ready(function() {
     overlayParentElement : 'body',
     transition: function(url){ window.location.href = url; }
   });
-});
 
 // Scroll
 $('a[href*="#"]:not([href="#"])').click(function() {
