@@ -89,6 +89,7 @@ margin: 2rem 3rem 2rem 3rem;
 	text-transform: uppercase;
 	font-size: 1.5rem;
 	margin-bottom: 0;
+	letter-spacing: 0.15rem;
 }
 
 
@@ -249,8 +250,15 @@ z-index: 1004;
 
 .excerpt {
 	position:relative;
-// 	margin: 3.5rem;
 	opacity:1;
+	margin: 2rem;
+	transition: $primary-transition;
+	@include breakpoint(medium only) {
+    margin: 2rem;
+  	}
+	@include breakpoint(small only) {
+    margin: 1.5rem;
+  	}
 	
   	img {
       width:100%;
@@ -324,23 +332,4 @@ footer {
   }
 }
 
-// Grid
-
-.grid {
-	width: 100%;
-}
-
-.grid-item { 
-	width: 30%;
-	@include breakpoint(small only) {
-	width: 100%;
-	margin-bottom: 1rem;
-  }	
-}
-
-.gutter-sizer { 
-	width: 3.3%;
-	@include breakpoint(small only) {
-	width: 0%; 
-}
-}
+// Testing

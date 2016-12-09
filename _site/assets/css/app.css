@@ -5431,10 +5431,10 @@ select {
 
 .close-button {
   position: absolute;
-  color: #8a8a8a;
-  right: 1rem;
-  top: 0.5rem;
-  font-size: 2em;
+  color: #ffffff;
+  left: 2.75rem;
+  top: 1.5rem;
+  font-size: 4em;
   line-height: 1;
   cursor: pointer; }
   [data-whatinput='mouse'] .close-button {
@@ -8054,7 +8054,7 @@ svg.icon.icon-envelop2 {
 .overlay {
   z-index: 1001;
   position: fixed;
-  background: #000000;
+  background: #949494;
   top: 0;
   left: 0;
   width: 100%;
@@ -8180,7 +8180,8 @@ margin: 2rem 3rem 2rem 3rem;
   font-family: "WalbaumTextPro", Helvetica, Roboto, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  letter-spacing: 0.15rem; }
 
 /*
 .title h1{
@@ -8311,7 +8312,16 @@ z-index: 1004;
 
 .excerpt {
   position: relative;
-  opacity: 1; }
+  opacity: 1;
+  margin: 2rem;
+  -webkit-transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1); }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .excerpt {
+      margin: 2rem; } }
+  @media screen and (max-width: 39.9375em) {
+    .excerpt {
+      margin: 1.5rem; } }
   .excerpt img {
     width: 100%; }
   .excerpt .excerpt__image:after {
@@ -8361,20 +8371,4 @@ footer {
   @media screen and (max-width: 39.9375em) {
     footer {
       padding: 2rem; } }
-
-.grid {
-  width: 100%; }
-
-.grid-item {
-  width: 30%; }
-  @media screen and (max-width: 39.9375em) {
-    .grid-item {
-      width: 100%;
-      margin-bottom: 1rem; } }
-
-.gutter-sizer {
-  width: 3.3%; }
-  @media screen and (max-width: 39.9375em) {
-    .gutter-sizer {
-      width: 0%; } }
 /*# sourceMappingURL=app.css.map */

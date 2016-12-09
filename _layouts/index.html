@@ -2,15 +2,18 @@
 layout: default
 ---
 
-<div class="row expanded align-center">
+<div class="row align-center">
 <div class="small-10 columns">
 	
-<div class="grid">
+<div class="row align-center collapse small-up-1 medium-up-3 large-up-3">
+
 	{% assign projects = site.work %}
 	{% for project in projects %}
-	<div class="gutter-sizer"></div>
-	<div class="grid-item">{% include excerpt.html %}</div>
+	<div class="column align-self-middle">
+	{% include excerpt.html %}
+	</div>
 	{% endfor %}
+
 </div>
 
 </div>

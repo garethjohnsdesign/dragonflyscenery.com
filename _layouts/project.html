@@ -2,15 +2,6 @@
 layout: default
 ---
 
-<!-- Content -->
-<div class="row align-center">
-	<div class="small-8 medium-7 large-7 columns text-center">
-		<h5>{{ page.photographer }}</h5>
-		<h6>{{ page.magazine }}</h6>
-	</div>
-</div>
-<!-- End Content -->
-
 {% if page.video %}
 <!-- Video -->
 <div class="row project__video project__step align-center">
@@ -34,6 +25,15 @@ layout: default
 </div>
 {% endif %}
 <!-- End Images -->
+
+<!-- Meta -->
+<div class="row align-center">
+	<div class="small-8 medium-7 large-7 columns text-center">
+		<h5>{{ page.photographer }}</h5>
+		<h6>{{ page.magazine }}</h6>
+	</div>
+</div>
+<!-- End Meta -->
 
 
 <!-- Content -->
