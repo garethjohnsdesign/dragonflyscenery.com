@@ -1,6 +1,7 @@
 ---
 title: H+M
 date: 2014-04-01 00:00:00 Z
+position: 5
 image: "/uploads/lana-del-rey-hm-winter-thumb.jpg"
 video: 
 images:

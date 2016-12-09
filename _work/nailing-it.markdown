@@ -1,6 +1,7 @@
 ---
 title: Nailing It
 date: 2014-04-01 00:00:00 Z
+position: 6
 image: "/uploads/nailing-it-thumb.jpg"
 video: 
 images:
