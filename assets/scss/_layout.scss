@@ -333,3 +333,23 @@ footer {
 }
 
 // Testing
+
+.project__carousel {
+  margin-bottom: 2rem;
+}
+
+.project__carousel img {
+  display: block;
+  height: 200px;
+  margin-right: 2rem;
+}
+
+@media screen and ( min-width: 768px ) {
+  .project__carousel img {
+    height: 400px;
+  }
+}
+
+.project__meta {
+  margin-bottom: 2rem;
+}
