@@ -2,12 +2,12 @@
 title: Dragonfly Scenery
 timezone: UTC
 collections:
-  posts:
-    title: Work
-    output: true
   uploads:
     title: Uploads
     output: false
+  posts:
+    title: Work
+    output: true
 defaults:
 - scope:
     path: ''

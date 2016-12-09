@@ -1,6 +1,8 @@
 ---
 title: Nailing It
 date: 2016-12-09 22:52:00 Z
+categories:
+- editorial
 image: "/uploads/nailing-it-thumb.jpg"
 video: 
 images:
@@ -15,9 +17,7 @@ images:
 - "/uploads/nailing-it-09.jpg"
 - "/uploads/nailing-it-10.jpg"
 photographer: Sean and Seng
-magazine:
-categories:
-- editorial
+magazine: 
 layout: project
 ---
 
