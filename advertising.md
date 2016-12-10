@@ -1,5 +1,5 @@
 ---
-title: Editorial
+title: Advertising
 layout: editorial
 ---
 
