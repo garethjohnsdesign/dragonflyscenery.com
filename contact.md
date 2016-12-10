@@ -8,9 +8,14 @@ legal-text: "Registered in England & Wales. \nCompany Reg No: 04121147  \nAll ri
 layout: contact
 ---
 
-##### +44 (0)7774 85 43 67  
+Dragonfly Scenery Ltd 
 
-##### studio@dragonflyscenery.com  
+The Old Rectory \
+Rookery Lane \
+North Fambridge \
+Chelmsford, Essex \
+CM3 6LP
 
-##### dragonflyscenery.com  
+##### [\+44 (0)7774 85 43 67](tel:\+447774854367)
 
+##### [studio@dragonflyscenery.com](mailto:studio@dragonflyscenery.com)
