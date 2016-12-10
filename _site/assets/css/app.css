@@ -9538,8 +9538,8 @@ svg.icon.icon-envelop2 {
               animation-delay: .35s; }
   .overlay nav {
     position: relative;
-    height: 40%;
-    top: 50%;
+    height: 60%;
+    top: 60%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     font-size: 2.5rem;
@@ -9553,7 +9553,7 @@ svg.icon.icon-envelop2 {
     height: 100%; }
     .overlay ul li {
       display: block;
-      height: calc(100% / 3);
+      height: calc(100% / 5);
       position: relative;
       opacity: 0; }
       .overlay ul li a {

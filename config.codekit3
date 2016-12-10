@@ -117,6 +117,12 @@
 		"oAP": "\/_layouts\/about.html",
 		"oF": 0
 		},
+	"\/_layouts\/advertising.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_layouts\/advertising.html",
+		"oF": 0
+		},
 	"\/_layouts\/contact.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -127,6 +133,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_layouts\/default.html",
+		"oF": 0
+		},
+	"\/_layouts\/editorial.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_layouts\/editorial.html",
 		"oF": 0
 		},
 	"\/_layouts\/holding.html": {
@@ -169,60 +181,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/_layouts\/projects.html",
-		"oF": 0
-		},
-	"\/_posts\/2014-04-01-a-bigger-splash.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_posts\/2014-04-01-a-bigger-splash.markdown",
-		"oF": 0
-		},
-	"\/_posts\/2016-12-09-beauty-and-the-beats.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_posts\/2016-12-09-beauty-and-the-beats.markdown",
-		"oF": 0
-		},
-	"\/_posts\/2016-12-09-beyond-white.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_posts\/2016-12-09-beyond-white.markdown",
-		"oF": 0
-		},
-	"\/_posts\/2016-12-09-jimmy-choo.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_posts\/2016-12-09-jimmy-choo.markdown",
-		"oF": 0
-		},
-	"\/_posts\/2016-12-09-lana-del-rey-hm-winter.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_posts\/2016-12-09-lana-del-rey-hm-winter.markdown",
-		"oF": 0
-		},
-	"\/_posts\/2016-12-09-nailing-it.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_posts\/2016-12-09-nailing-it.markdown",
-		"oF": 0
-		},
-	"\/_posts\/2016-12-09-no-crime-to-be-rich.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_posts\/2016-12-09-no-crime-to-be-rich.markdown",
-		"oF": 0
-		},
-	"\/_posts\/2016-12-09-the-aura.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_posts\/2016-12-09-the-aura.markdown",
-		"oF": 0
-		},
-	"\/_posts\/2016-12-09-twigs-in-bloom.markdown": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_posts\/2016-12-09-twigs-in-bloom.markdown",
 		"oF": 0
 		},
 	"\/_site": {
@@ -887,6 +845,24 @@
 		"ft": 4096,
 		"oA": 2,
 		"oAP": "\/about.md",
+		"oF": 1,
+		"oFM": 9,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/advertising.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/advertising.md",
 		"oF": 1,
 		"oFM": 9,
 		"oS": 0,
@@ -13277,6 +13253,24 @@
 		"oAP": "\/contact.html",
 		"oF": 0,
 		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/editorial.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/editorial.md",
+		"oF": 1,
+		"oFM": 9,
 		"oS": 0,
 		"pHT": 0,
 		"pME": 1,

@@ -7,7 +7,7 @@ layout: default
 	
 <div class="row align-center collapse small-up-1 medium-up-3 large-up-3">
 
-	{% assign projects = site.work | sort: 'position' %}
+	{% assign projects = site.work | sort: 'position' | where:"category","advertising" %}
 	{% for project in projects %}
 	<div class="column align-self-middle">
 	{% include excerpt.html %}
