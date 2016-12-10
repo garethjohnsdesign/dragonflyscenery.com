@@ -3,7 +3,7 @@ title: A Bigger Splash
 date: 2014-04-01 00:00:00 Z
 categories:
 - editorial
-position: 5
+position: 4
 image: "/uploads/a-bigger-splash-thumb.jpg"
 video: 
 images:
