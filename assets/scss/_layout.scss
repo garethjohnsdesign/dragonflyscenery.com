@@ -31,11 +31,6 @@ a {
   transition: $primary-transition;
 }
 
-.detail {
-  font-size: $small-font-size;
-  font-family: $body-font-family;
-}
-
 // 2. Typography
 
 .uppercase {
@@ -51,12 +46,6 @@ i, cite, em, var, address, dfn {
 
 .navigation {
 	width: 100%;
-/*
-margin: 2rem 3rem 2rem 3rem;
-  @include breakpoint(small only) {
-	padding: 2rem;
-  }
-*/
 }
 
 .navigation__left {
@@ -92,19 +81,6 @@ margin: 2rem 3rem 2rem 3rem;
 	letter-spacing: 0.15rem;
 }
 
-
-/*
-.title h1{
-  font-size: 1.5rem;
-//   font-family: $header-font-family-bold;
-//   text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.navigation__right {
-z-index: 1004;
-}
-*/
 
 // 404
 

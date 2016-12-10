@@ -9524,13 +9524,12 @@ svg.icon.icon-envelop2 {
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity .35s, visibility .35s, height .35s;
-  transition: opacity .35s, visibility .35s, height .35s;
+  -webkit-transition: opacity .35s, visibility .35s;
+  transition: opacity .35s, visibility .35s;
   overflow: hidden; }
   .overlay.open {
     opacity: 0.98;
-    visibility: visible;
-    height: 100%; }
+    visibility: visible; }
     .overlay.open li {
       -webkit-animation: fadeIn .5s ease forwards;
               animation: fadeIn .5s ease forwards;
@@ -9542,7 +9541,7 @@ svg.icon.icon-envelop2 {
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center; }
   .overlay ul {
     list-style: none;
@@ -9553,7 +9552,9 @@ svg.icon.icon-envelop2 {
     height: 100%; }
     .overlay ul li {
       display: block;
-      height: calc(100% / 5);
+      height: 20%;
+      height: calc(100% / 4);
+      min-height: 2rem;
       position: relative;
       opacity: 0; }
       .overlay ul li a {
@@ -9562,8 +9563,8 @@ svg.icon.icon-envelop2 {
         color: #FFF;
         text-decoration: none;
         overflow: hidden; }
-        .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
-          width: 100%; }
+      .overlay ul li a:hover {
+        color: #000000; }
 
 body {
   cursor: default; }
@@ -9588,10 +9589,6 @@ a {
   -webkit-transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
   transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1); }
 
-.detail {
-  font-size: 90%;
-  font-family: "BasisGrotesque", Helvetica, Roboto, Arial, sans-serif; }
-
 .uppercase {
   text-transform: uppercase; }
 
@@ -9599,13 +9596,7 @@ i, cite, em, var, address, dfn {
   font-style: normal; }
 
 .navigation {
-  width: 100%;
-  /*
-margin: 2rem 3rem 2rem 3rem;
-  @include breakpoint(small only) {
-	padding: 2rem;
-  }
-*/ }
+  width: 100%; }
 
 .navigation__left {
   padding: 2rem 3rem 2rem 3rem; }
@@ -9634,18 +9625,6 @@ margin: 2rem 3rem 2rem 3rem;
   margin-bottom: 0;
   letter-spacing: 0.15rem; }
 
-/*
-.title h1{
-  font-size: 1.5rem;
-//   font-family: $header-font-family-bold;
-//   text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.navigation__right {
-z-index: 1004;
-}
-*/
 .missing {
   margin-top: 3rem;
   margin-bottom: 3rem; }
