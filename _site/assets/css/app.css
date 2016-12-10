@@ -9521,7 +9521,7 @@ svg.icon.icon-envelop2 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 0%;
+  height: 100%;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity .35s, visibility .35s, height .35s;
@@ -9532,14 +9532,14 @@ svg.icon.icon-envelop2 {
     visibility: visible;
     height: 100%; }
     .overlay.open li {
-      -webkit-animation: fadeInUp .5s ease forwards;
-              animation: fadeInUp .5s ease forwards;
-      -webkit-animation-delay: .35s;
-              animation-delay: .35s; }
+      -webkit-animation: fadeIn .5s ease forwards;
+              animation: fadeIn .5s ease forwards;
+      -webkit-animation-delay: .5s;
+              animation-delay: .5s; }
   .overlay nav {
     position: relative;
-    height: 60%;
-    top: 60%;
+    height: 50%;
+    top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     font-size: 2.5rem;
@@ -9564,18 +9564,6 @@ svg.icon.icon-envelop2 {
         overflow: hidden; }
         .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
           width: 100%; }
-        .overlay ul li a:after {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          width: 0%;
-          -webkit-transform: translateX(-50%);
-                  transform: translateX(-50%);
-          height: 2px;
-          background: #000000;
-          -webkit-transition: .35s;
-          transition: .35s; }
 
 body {
   cursor: default; }
