@@ -1,8 +1,6 @@
 ---
 title: A Bigger Splash
 date: 2014-04-01 00:00:00 Z
-categories:
-- editorial
 position: 7
 image: "/uploads/a-bigger-splash-thumb.jpg"
 video: 
@@ -15,6 +13,7 @@ images:
 - "/uploads/a-bigger-splash-06.jpg"
 photographer: Sølve Sundsbø
 magazine: Vogue China
+field: editorial
 layout: project
 ---
 

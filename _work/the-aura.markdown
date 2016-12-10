@@ -15,6 +15,7 @@ images:
 - "/uploads/the-aura-08.jpg"
 photographer: Sølve Sundsbø
 magazine: 
+field: editorial
 layout: project
 ---
 

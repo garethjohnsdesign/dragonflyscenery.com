@@ -17,6 +17,7 @@ images:
 - "/uploads/nailing-it-10.jpg"
 photographer: Sean and Seng
 magazine: 
+field: installation
 layout: project
 ---
 

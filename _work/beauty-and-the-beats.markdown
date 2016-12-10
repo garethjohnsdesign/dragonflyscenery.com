@@ -12,6 +12,7 @@ images:
 - "/uploads/beauty-and-the-beats-05.jpg"
 photographer: Sean and Seng
 magazine: Dazed and Confused
+field: moving-image
 layout: project
 ---
 

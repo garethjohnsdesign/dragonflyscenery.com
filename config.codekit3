@@ -153,10 +153,22 @@
 		"oAP": "\/_layouts\/index.html",
 		"oF": 0
 		},
+	"\/_layouts\/installation.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_layouts\/installation.html",
+		"oF": 0
+		},
 	"\/_layouts\/missing.html": {
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/_layouts\/missing.html",
+		"oF": 0
+		},
+	"\/_layouts\/moving-image.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_layouts\/moving-image.html",
 		"oF": 0
 		},
 	"\/_layouts\/page.html": {
@@ -13241,6 +13253,12 @@
 		"oS": 0,
 		"sC": 1
 		},
+	"\/contact.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/contact.html",
+		"oF": 0
+		},
 	"\/contact.md": {
 		"cS": 0,
 		"eF": 1,
@@ -13313,6 +13331,24 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/installation.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/installation.md",
+		"oF": 1,
+		"oFM": 9,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"\/LICENSE.md": {
 		"cS": 0,
 		"eF": 1,
@@ -13323,6 +13359,24 @@
 		"ft": 4096,
 		"oA": 1,
 		"oAP": "\/LICENSE.html",
+		"oF": 1,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/moving-image.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/moving-image.md",
 		"oF": 1,
 		"oFM": 0,
 		"oS": 0,

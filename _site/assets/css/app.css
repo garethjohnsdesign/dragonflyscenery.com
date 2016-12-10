@@ -9533,8 +9533,8 @@ svg.icon.icon-envelop2 {
     .overlay.open li {
       -webkit-animation: fadeIn .5s ease forwards;
               animation: fadeIn .5s ease forwards;
-      -webkit-animation-delay: .5s;
-              animation-delay: .5s; }
+      -webkit-animation-delay: .25s;
+              animation-delay: .25s; }
   .overlay nav {
     position: relative;
     height: 50%;

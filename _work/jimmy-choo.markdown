@@ -11,6 +11,7 @@ images:
 - "/uploads/jimmy-choo-04.jpg"
 photographer: 
 magazine: 
+field: advertising
 layout: project
 ---
 

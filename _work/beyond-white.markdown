@@ -13,6 +13,7 @@ images:
 - "/uploads/beyond-white-06.jpg"
 photographer: Sølve Sundsbø
 magazine: Vogue Japan
+field: editorial
 layout: project
 ---
 
