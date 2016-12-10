@@ -1,7 +1,7 @@
 ---
 title: No Crime to Be Rich
 date: 2014-04-01 00:00:00 Z
-position: 1
+position: 2
 image: "/uploads/no-crime-to-be-rich-thumb.jpg"
 video: 
 images:
