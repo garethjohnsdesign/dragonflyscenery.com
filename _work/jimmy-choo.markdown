@@ -1,7 +1,7 @@
 ---
 title: Jimmy Choo
 date: 2014-04-01 00:00:00 Z
-position: 6
+position: 7
 image: "/uploads/jimmy-choo-thumb.jpg"
 video: 
 images:
