@@ -9803,7 +9803,7 @@ div.row.excerpt__title {
       height: 400px; } }
   @media screen and (min-width: 64em) {
     .project__carousel img {
-      height: 500px; } }
+      height: 400px; } }
 
 .project__meta {
   margin-top: 2rem;

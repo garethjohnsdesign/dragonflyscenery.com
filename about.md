@@ -11,6 +11,6 @@ clients-text: |-
 layout: about
 ---
 
-##### Dragonfly Scenery is a London-based set design, prop and art direction studio. Working alongside the industry's leading photographers, directors and creatives to create exquisite sets for stills, commercials and events.
+Dragonfly Scenery is a London-based set design, prop and art direction studio. Working alongside the industry's leading photographers, directors and creatives to create exquisite sets for stills, commercials and events.
 
-##### Known in the industry for it’s luxurious and graphic fashion builds, that stem’s from hands-on craftsmanship. Equally adept at large technical builds as well as smaller simple ones, special effects and propping for still life, attention to detail sets the company apart from contemporaries.
+Known in the industry for it’s luxurious and graphic fashion builds, that stem’s from hands-on craftsmanship. Equally adept at large technical builds as well as smaller simple ones, special effects and propping for still life, attention to detail sets the company apart from contemporaries.
