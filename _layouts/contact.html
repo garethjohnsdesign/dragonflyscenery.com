@@ -2,27 +2,38 @@
 layout: default
 ---
 
-<div class="row contact__studio page__content align-center text-center">
+<section class="contact">
+  
+<div class="row contact__studio align-center text-center">
 	<div class="small-12 medium-10 large-8 columns">
-  	<p>Studio</p>
+  	<p class="contact__detail">Studio</p>
 		{{ page.studio-text | markdownify }}
 	</div>
 </div>
 
-<div class="row align-center text-center">
-	<div class="small-12 medium-8 columns">
-		{{ page.copyright-text }}
+<div class="row contact__representation align-center text-center">
+	<div class="small-12 medium-10 large-8 columns">
+  	<p class="contact__detail">Representation</p>
+		{{ page.representation-text | markdownify }}
 	</div>
 </div>
 
-<div class="row align-center text-center">
-	<div class="small-12 medium-8 columns">
-		{{ page.address-text }}
+<div class="row contact__copyright align-center text-center">
+	<div class="small-12 medium-10 large-8 columns">
+		{{ page.copyright }}
 	</div>
 </div>
 
-<div class="row align-center text-center">
-	<div class="small-12 medium-8 columns">
-		{{ page.legal-text }}
+<div class="row contact__address align-center text-center">
+	<div class="small-12 medium-10 large-8 columns">
+		{{ page.address }}
 	</div>
 </div>
+
+<div class="row contact__registered align-center text-center">
+	<div class="small-12 medium-10 large-8 columns">
+		<small>Registered in England and Wales Company Reg No 04121147<br>All rights reserved Dragonfly Scenery and Design Ltd 2016</small>
+	</div>
+</div>
+
+</section>
