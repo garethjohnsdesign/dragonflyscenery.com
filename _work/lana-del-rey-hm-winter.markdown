@@ -16,7 +16,7 @@ images:
 - "/uploads/lana-del-rey-hm-winter-09.jpg"
 - "/uploads/lana-del-rey-hm-winter-10.jpg"
 photographer: Sølve Sundsbø
-magazine: 
+publication: 
 field: advertising
 layout: project
 ---

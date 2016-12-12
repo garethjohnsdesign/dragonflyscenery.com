@@ -10,13 +10,8 @@ images:
 - "/uploads/nailing-it-03.jpg"
 - "/uploads/nailing-it-04.jpg"
 - "/uploads/nailing-it-05.jpg"
-- "/uploads/nailing-it-06.jpg"
-- "/uploads/nailing-it-07.jpg"
-- "/uploads/nailing-it-08.jpg"
-- "/uploads/nailing-it-09.jpg"
-- "/uploads/nailing-it-10.jpg"
 photographer: Sean and Seng
-magazine: 
+publication: 
 field: installation
 layout: project
 ---

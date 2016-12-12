@@ -162,8 +162,13 @@
 <!-- End Left -->
 
 <!-- Middle -->
-<div class="small-12 medium-6 columns text-center logo align-middle navigation__center">
+<div class="small-12 medium-6 columns text-center logo align-middle navigation__center navigation__title">
 <a href="/"><h1>Dragonfly Scenery</h1></a>
+<!-- Mobile Menu -->
+<button class="hamburger hamburger--collapse show-for-small-only" data-toggler=".is-active" type="button" data-toggle="overlay-mobile">
+      <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+</button>
+<!-- End Mobile Menu -->
 </div>
 <!-- End Middle -->
 
@@ -182,9 +187,9 @@
 
 <!-- Menu -->  
 <!-- Overlay Menu -->
-<div class="overlay" id="overlay" data-toggler=".open">
+<div class="overlay show-for-medium" id="overlay" data-toggler=".open">
 
-    <button class="close-button wow fadeIn" data-toggle="overlay" type="button">
+    <button class="close-button" data-toggle="overlay" type="button">
         <span aria-hidden="true">&times;</span>
     </button>
   
@@ -212,39 +217,70 @@
     
 </div>
 <!-- End Overlay Menu -->
+
+<!-- Overlay Menu Mobile -->
+<div class="overlay-mobile show-for-small-only" id="overlay-mobile" data-toggler=".open">
+
+    <button class="close-button" data-toggle="overlay-mobile" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+  
+    <nav class="overlay-menu-mobile">
+        <ul>
+          
+            <li class="element">
+              <a href="/editorial/">Editorial</a>
+            </li>
+          
+            <li class="element">
+              <a href="/advertising/">Advertising</a>
+            </li>
+          
+            <li class="element">
+              <a href="/installation/">Installation</a>
+            </li>
+          
+            <li class="element">
+              <a href="/moving-image/">Moving Image</a>
+            </li>
+          
+            <li class="element">
+              <a href="/about/">About</a>
+            </li>
+          
+            <li class="element">
+              <a href="/contact/">Contact</a>
+            </li>
+          
+        </ul>
+    </nav>
+    
+</div>
+<!-- End Overlay Menu Mobile -->
 <!-- End Menu --> 
 
 <!-- Content -->  
-<div class="row page__content align-center text-center">
-	<div class="small-12 medium-8 columns">
-		<h6 id="studio">Studio</h6>
-
-<h5 id="tel447774854367"><a href="tel:+447774854367">+44 (0)77 7485 4367</a></h5>
-
-<h5 id="studiodragonflyscenerycommailtostudiodragonflyscenerycom"><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#115;&#116;&#117;&#100;&#105;&#111;&#064;&#100;&#114;&#097;&#103;&#111;&#110;&#102;&#108;&#121;&#115;&#099;&#101;&#110;&#101;&#114;&#121;&#046;&#099;&#111;&#109;">&#115;&#116;&#117;&#100;&#105;&#111;&#064;&#100;&#114;&#097;&#103;&#111;&#110;&#102;&#108;&#121;&#115;&#099;&#101;&#110;&#101;&#114;&#121;&#046;&#099;&#111;&#109;</a></h5>
-
-<h6 id="representation">Representation</h6>
-
-<h5 id="tel442078510200"><a href="tel:\+442078510200">+44 (0)20 7851 0200</a></h5>
-
-<h5 id="patriciapatriciamcmahoncommailtopatriciapatriciamcmahoncom"><a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#112;&#097;&#116;&#114;&#105;&#099;&#105;&#097;&#064;&#112;&#097;&#116;&#114;&#105;&#099;&#105;&#097;&#109;&#099;&#109;&#097;&#104;&#111;&#110;&#046;&#099;&#111;&#109;">&#112;&#097;&#116;&#114;&#105;&#099;&#105;&#097;&#064;&#112;&#097;&#116;&#114;&#105;&#099;&#105;&#097;&#109;&#099;&#109;&#097;&#104;&#111;&#110;&#046;&#099;&#111;&#109;</a></h5>
+<div class="row contact__studio page__content align-center text-center">
+	<div class="small-12 medium-10 large-8 columns">
+  	<p>Studio</p>
+		
 
 	</div>
 </div>
 
-<div class="row page__content align-center text-center">
+<div class="row align-center text-center">
 	<div class="small-12 medium-8 columns">
 		All artwork and photography are copyrighted and protected under international copyright laws. Artwork may not be reproduced in any form, stored, or manipulated without prior written permission from Dragonfly Scenery Ltd and the copyright holders.
 	</div>
 </div>
 
-<div class="row page__content align-center text-center">
+<div class="row align-center text-center">
 	<div class="small-12 medium-8 columns">
-		 The Old Rectory, Rookery Lane North Fambridge, Chelmsford, Essex CM3 6LP 
+		The Old Rectory, Rookery Lane North Fambridge, Chelmsford, Essex CM3 6LP 
 	</div>
 </div>
 
-<div class="row page__content align-center text-center">
+<div class="row align-center text-center">
 	<div class="small-12 medium-8 columns">
 		Registered in England and Wales Company Reg No 04121147 All rights reserved Dragonfly Scenery and Design Ltd 2016  
 	</div>
@@ -255,12 +291,12 @@
 <footer>
 
 <!-- Bottom -->
-<div class="row expanded footer__bottom">
-  <div class="small-6 medium-6 columns text-left">
+<div class="row collapse expanded footer__bottom">
+  <div class="shrink columns text-left">
   <a href="/contact">© Dragonfly Scenery and Design Ltd</a>
   </div>
 
-  <div class="small-6 medium-6 columns text-right">
+  <div class="columns text-right">
   <a href="http://garethjohnsdesign.com">Colophon</a>
   </div>
 </div>

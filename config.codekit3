@@ -33,6 +33,12 @@
 		"oAP": "\/_config.yml",
 		"oF": 0
 		},
+	"\/_data\/navigation-mobile.yml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_data\/navigation-mobile.yml",
+		"oF": 0
+		},
 	"\/_data\/navigation.yml": {
 		"ft": 8192,
 		"oA": 2,
@@ -13253,12 +13259,6 @@
 		"oS": 0,
 		"sC": 1
 		},
-	"\/contact.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/contact.html",
-		"oF": 0
-		},
 	"\/contact.md": {
 		"cS": 0,
 		"eF": 1,
@@ -13267,10 +13267,10 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/contact.html",
-		"oF": 0,
-		"oFM": 0,
+		"oA": 2,
+		"oAP": "\/contact.md",
+		"oF": 1,
+		"oFM": 9,
 		"oS": 0,
 		"pHT": 0,
 		"pME": 1,

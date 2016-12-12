@@ -163,8 +163,13 @@
 <!-- End Left -->
 
 <!-- Middle -->
-<div class="small-12 medium-6 columns text-center logo align-middle navigation__center">
+<div class="small-12 medium-6 columns text-center logo align-middle navigation__center navigation__title">
 <a href="/"><h1>Dragonfly Scenery</h1></a>
+<!-- Mobile Menu -->
+<button class="hamburger hamburger--collapse show-for-small-only" data-toggler=".is-active" type="button" data-toggle="overlay-mobile">
+      <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+</button>
+<!-- End Mobile Menu -->
 </div>
 <!-- End Middle -->
 
@@ -183,9 +188,9 @@
 
 <!-- Menu -->  
 <!-- Overlay Menu -->
-<div class="overlay" id="overlay" data-toggler=".open">
+<div class="overlay show-for-medium" id="overlay" data-toggler=".open">
 
-    <button class="close-button wow fadeIn" data-toggle="overlay" type="button">
+    <button class="close-button" data-toggle="overlay" type="button">
         <span aria-hidden="true">&times;</span>
     </button>
   
@@ -213,11 +218,51 @@
     
 </div>
 <!-- End Overlay Menu -->
+
+<!-- Overlay Menu Mobile -->
+<div class="overlay-mobile show-for-small-only" id="overlay-mobile" data-toggler=".open">
+
+    <button class="close-button" data-toggle="overlay-mobile" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+  
+    <nav class="overlay-menu-mobile">
+        <ul>
+          
+            <li class="element">
+              <a href="/editorial/">Editorial</a>
+            </li>
+          
+            <li class="element">
+              <a href="/advertising/">Advertising</a>
+            </li>
+          
+            <li class="element">
+              <a href="/installation/">Installation</a>
+            </li>
+          
+            <li class="element">
+              <a href="/moving-image/">Moving Image</a>
+            </li>
+          
+            <li class="element">
+              <a href="/about/">About</a>
+            </li>
+          
+            <li class="element">
+              <a href="/contact/">Contact</a>
+            </li>
+          
+        </ul>
+    </nav>
+    
+</div>
+<!-- End Overlay Menu Mobile -->
 <!-- End Menu --> 
 
 <!-- Content -->  
 <div class="row page__content align-center text-center">
-	<div class="small-12 medium-8 columns">
+	<div class="small-12 medium-10 large-8 columns">
 		<h5 id="dragonfly-scenery-is-a-london-based-set-design-prop-and-art-direction-studio-working-alongside-the-industrys-leading-photographers-directors-and-creatives-to-create-exquisite-sets-for-stills-commercials-and-events">Dragonfly Scenery is a London-based set design, prop and art direction studio. Working alongside the industry’s leading photographers, directors and creatives to create exquisite sets for stills, commercials and events.</h5>
 
 <h5 id="known-in-the-industry-for-its-luxurious-and-graphic-fashion-builds-that-stems-from-hands-on-craftsmanship-equally-adept-at-large-technical-builds-as-well-as-smaller-simple-ones-special-effects-and-propping-for-still-life-its-their-attention-to-detail-that-sets-the-company-apart-from-contemporaries">Known in the industry for it’s luxurious and graphic fashion builds, that stem’s from hands-on craftsmanship. Equally adept at large technical builds as well as smaller simple ones, special effects and propping for still life, it’s their attention to detail that sets the company apart from contemporaries.</h5>
@@ -243,12 +288,12 @@
 <footer>
 
 <!-- Bottom -->
-<div class="row expanded footer__bottom">
-  <div class="small-6 medium-6 columns text-left">
+<div class="row collapse expanded footer__bottom">
+  <div class="shrink columns text-left">
   <a href="/contact">© Dragonfly Scenery and Design Ltd</a>
   </div>
 
-  <div class="small-6 medium-6 columns text-right">
+  <div class="columns text-right">
   <a href="http://garethjohnsdesign.com">Colophon</a>
   </div>
 </div>

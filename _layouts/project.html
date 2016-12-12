@@ -13,11 +13,15 @@ layout: default
 <!-- End Carousel -->
 
 <!-- Meta -->
-{% if page.photographer %}
+{% if page.photographer or page.publication %}
 <div class="row align-center project__meta">
 	<div class="small-8 medium-7 large-7 columns text-center">
+  	{% if page.photographer %}
 		<p>Photographer: {{ page.photographer }}</p>
-		<p>Publication: {{ page.magazine }}</p>
+		{% endif %}
+		{% if page.publication %}
+		<p>Publication: {{ page.publication }}</p>
+		{% endif %}
 	</div>
 </div>
 {% endif %}

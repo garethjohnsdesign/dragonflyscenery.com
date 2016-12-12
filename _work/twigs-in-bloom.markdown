@@ -12,11 +12,8 @@ images:
 - "/uploads/twigs-in-bloom-05.jpg"
 - "/uploads/twigs-in-bloom-06.jpg"
 - "/uploads/twigs-in-bloom-07.jpg"
-- "/uploads/twigs-in-bloom-08.jpg"
-- "/uploads/twigs-in-bloom-09.jpg"
-- "/uploads/twigs-in-bloom-10.jpg"
 photographer: Sølve Sundsbø
-magazine: 
+publication: 
 field: editorial
 layout: project
 ---

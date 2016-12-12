@@ -1,7 +1,7 @@
 <!-- Overlay Menu -->
-<div class="overlay" id="overlay" data-toggler=".open">
+<div class="overlay show-for-medium" id="overlay" data-toggler=".open">
 
-    <button class="close-button wow fadeIn" data-toggle="overlay" type="button">
+    <button class="close-button" data-toggle="overlay" type="button">
         <span aria-hidden="true">&times;</span>
     </button>
   
@@ -17,3 +17,23 @@
     
 </div>
 <!-- End Overlay Menu -->
+
+<!-- Overlay Menu Mobile -->
+<div class="overlay-mobile show-for-small-only" id="overlay-mobile" data-toggler=".open">
+
+    <button class="close-button" data-toggle="overlay-mobile" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+  
+    <nav class="overlay-menu-mobile">
+        <ul>
+          {% for link in site.data.navigation-mobile %}
+            <li class="element">
+              <a href="{{link.href}}">{{link.title}}</a>
+            </li>
+          {% endfor %}
+        </ul>
+    </nav>
+    
+</div>
+<!-- End Overlay Menu Mobile -->

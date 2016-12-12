@@ -10,7 +10,7 @@ images:
 - "/uploads/jimmy-choo-03.jpg"
 - "/uploads/jimmy-choo-04.jpg"
 photographer: 
-magazine: 
+publication: 
 field: advertising
 layout: project
 ---

@@ -167,8 +167,13 @@
 <!-- End Left -->
 
 <!-- Middle -->
-<div class="small-12 medium-6 columns text-center logo align-middle navigation__center">
+<div class="small-12 medium-6 columns text-center logo align-middle navigation__center navigation__title">
 <a href="/"><h1>Dragonfly Scenery</h1></a>
+<!-- Mobile Menu -->
+<button class="hamburger hamburger--collapse show-for-small-only" data-toggler=".is-active" type="button" data-toggle="overlay-mobile">
+      <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+</button>
+<!-- End Mobile Menu -->
 </div>
 <!-- End Middle -->
 
@@ -187,9 +192,9 @@
 
 <!-- Menu -->  
 <!-- Overlay Menu -->
-<div class="overlay" id="overlay" data-toggler=".open">
+<div class="overlay show-for-medium" id="overlay" data-toggler=".open">
 
-    <button class="close-button wow fadeIn" data-toggle="overlay" type="button">
+    <button class="close-button" data-toggle="overlay" type="button">
         <span aria-hidden="true">&times;</span>
     </button>
   
@@ -217,6 +222,46 @@
     
 </div>
 <!-- End Overlay Menu -->
+
+<!-- Overlay Menu Mobile -->
+<div class="overlay-mobile show-for-small-only" id="overlay-mobile" data-toggler=".open">
+
+    <button class="close-button" data-toggle="overlay-mobile" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+  
+    <nav class="overlay-menu-mobile">
+        <ul>
+          
+            <li class="element">
+              <a href="/editorial/">Editorial</a>
+            </li>
+          
+            <li class="element">
+              <a href="/advertising/">Advertising</a>
+            </li>
+          
+            <li class="element">
+              <a href="/installation/">Installation</a>
+            </li>
+          
+            <li class="element">
+              <a href="/moving-image/">Moving Image</a>
+            </li>
+          
+            <li class="element">
+              <a href="/about/">About</a>
+            </li>
+          
+            <li class="element">
+              <a href="/contact/">Contact</a>
+            </li>
+          
+        </ul>
+    </nav>
+    
+</div>
+<!-- End Overlay Menu Mobile -->
 <!-- End Menu --> 
 
 <!-- Content -->  
@@ -234,16 +279,6 @@
 
 	<img src="/uploads/nailing-it-05.jpg"/>
 
-	<img src="/uploads/nailing-it-06.jpg"/>
-
-	<img src="/uploads/nailing-it-07.jpg"/>
-
-	<img src="/uploads/nailing-it-08.jpg"/>
-
-	<img src="/uploads/nailing-it-09.jpg"/>
-
-	<img src="/uploads/nailing-it-10.jpg"/>
-
 </div>
 </div>
 <!-- End Carousel -->
@@ -252,8 +287,10 @@
 
 <div class="row align-center project__meta">
 	<div class="small-8 medium-7 large-7 columns text-center">
+  	
 		<p>Photographer: Sean and Seng</p>
-		<p>Publication: </p>
+		
+		
 	</div>
 </div>
 
@@ -276,12 +313,12 @@
 <footer>
 
 <!-- Bottom -->
-<div class="row expanded footer__bottom">
-  <div class="small-6 medium-6 columns text-left">
+<div class="row collapse expanded footer__bottom">
+  <div class="shrink columns text-left">
   <a href="/contact">© Dragonfly Scenery and Design Ltd</a>
   </div>
 
-  <div class="small-6 medium-6 columns text-right">
+  <div class="columns text-right">
   <a href="http://garethjohnsdesign.com">Colophon</a>
   </div>
 </div>
