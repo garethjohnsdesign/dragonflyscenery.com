@@ -1,6 +1,8 @@
 ---
 title: Contact
-studio-text: 
+studio-text: |-
+  [\+44 (0)77 7485 4367](tel:\+447774854367)
+  [studio@dragonflyscenery.com](mailto:studio@dragonflyscenery.com)
 copyright-text: All artwork and photography are copyrighted and protected under international
   copyright laws. Artwork may not be reproduced in any form, stored, or manipulated
   without prior written permission from Dragonfly Scenery Ltd and the copyright holders.
@@ -11,12 +13,11 @@ address-text: 'The Old Rectory, Rookery Lane North Fambridge, Chelmsford, Essex 
 layout: contact
 ---
 
-[+44 (0)77 7485 4367](tel:+447774854367) 
+[\+44 (0)77 7485 4367](tel:\+447774854367)
 [studio@dragonflyscenery.com](mailto:studio@dragonflyscenery.com)
 
-  
 ###### Representation
 
-##### [+44 (0)20 7851 0200](tel:\+442078510200)
+##### [\+44 (0)20 7851 0200](tel:\+442078510200)
 
 ##### [patricia@patriciamcmahon.com](mailto:patricia@patriciamcmahon.com)
