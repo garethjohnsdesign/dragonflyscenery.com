@@ -117,12 +117,6 @@
 		"oAP": "\/_includes\/sharing.html",
 		"oF": 0
 		},
-	"\/_layouts\/about.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/_layouts\/about.html",
-		"oF": 0
-		},
 	"\/_layouts\/advertising.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -153,12 +147,6 @@
 		"oAP": "\/_layouts\/holding.html",
 		"oF": 0
 		},
-	"\/_layouts\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_layouts\/index.html",
-		"oF": 0
-		},
 	"\/_layouts\/installation.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -187,12 +175,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/_layouts\/post.html",
-		"oF": 0
-		},
-	"\/_layouts\/project.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/_layouts\/project.html",
 		"oF": 0
 		},
 	"\/_layouts\/projects.html": {
@@ -853,24 +835,6 @@
 		"oAP": "\/_work\/twigs-in-bloom.markdown",
 		"oF": 0
 		},
-	"\/about.md": {
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"eLB": 0,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 2,
-		"oAP": "\/about.md",
-		"oF": 1,
-		"oFM": 9,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
 	"\/advertising.md": {
 		"cS": 0,
 		"eF": 1,
@@ -888,16 +852,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"\/assets\/css\/app.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/assets\/css\/app-ck.css",
-		"oF": 0,
-		"oS": 0
 		},
 	"\/assets\/css\/app.css.map": {
 		"ft": 8192,
@@ -1177,19 +1131,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/css\/_icons.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/scss\/_layout.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/assets\/css\/_layout.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -13258,24 +13199,6 @@
 		"oF": 0,
 		"oS": 0,
 		"sC": 1
-		},
-	"\/contact.md": {
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"eLB": 0,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/contact.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
 		},
 	"\/editorial.md": {
 		"cS": 0,
