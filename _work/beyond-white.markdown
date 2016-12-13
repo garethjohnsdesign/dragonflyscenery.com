@@ -16,7 +16,7 @@ photographer: Sølve Sundsbø
 publication: Vogue Japan
 client: 
 field: editorial
-is-featured: 
+is-featured: true
 layout: project
 ---
 
