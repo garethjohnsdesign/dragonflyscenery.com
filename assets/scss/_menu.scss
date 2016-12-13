@@ -8,7 +8,7 @@ $color-link: #FFF;
 .overlay {
   z-index: 1001;
   position: fixed;
-  background: $color--dark-gray;
+  background: $color--darkest-gray;
   top: 0;
   left: 0;
   width: 100%;
@@ -71,7 +71,7 @@ $color-link: #FFF;
 .overlay-mobile {
   z-index: 1001;
   position: fixed;
-  background: $color--dark-gray;
+  background: $color--darkest-gray;
   top: 0;
   left: 0;
   width: 100%;

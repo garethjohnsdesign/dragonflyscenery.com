@@ -9,8 +9,18 @@
 // 1. Global
 // ---------
 
+html {
+  height: 100%;
+}
+
 body {  
   cursor: default;
+}
+
+.animsition {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 svg {
@@ -30,6 +40,10 @@ img {
 
 a { 
   transition: $primary-transition;
+}
+
+.content {
+  flex: 1;
 }
 
 // 2. Typography
@@ -80,12 +94,18 @@ i, cite, em, var, address, dfn {
 }
 
 
-.navigation__title h1 {
+.navigation__title__desktop h1 {
 	font-family: $serif-font-family;
 	text-transform: uppercase;
 	font-size: 1.5rem;
 	margin-bottom: 0;
 	letter-spacing: 0.15rem;
+	line-height: 1.2;
+	span {
+  	font-family: $body-font-family;
+  	letter-spacing: 0.25rem;
+  	font-size: 0.75rem;
+	}
 }
 
 // 5. Index

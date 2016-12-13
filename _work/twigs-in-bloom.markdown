@@ -12,8 +12,10 @@ images:
 - "/uploads/twigs-in-bloom-05.jpg"
 - "/uploads/twigs-in-bloom-06.jpg"
 - "/uploads/twigs-in-bloom-07.jpg"
+director:
 photographer: Sølve Sundsbø
 publication: 
+client:
 field: editorial
 layout: project
 ---

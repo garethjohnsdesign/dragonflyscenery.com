@@ -11,8 +11,10 @@ images:
 - "/uploads/a-bigger-splash-04.jpg"
 - "/uploads/a-bigger-splash-05.jpg"
 - "/uploads/a-bigger-splash-06.jpg"
+director:
 photographer: Sølve Sundsbø
 publication: Vogue China
+client:
 field: editorial
 layout: project
 ---

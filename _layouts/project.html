@@ -2,36 +2,56 @@
 layout: default
 ---
 
+
+<!-- Video -->
+{% if page.video %}
+<div class="row project__video align-center">
+  <div class="small-12 medium-10 large-8 columns">
+    <div class="flex-video widescreen vimeo">
+      <iframe src="https://player.vimeo.com/video/{{ page.video }}?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+{% endif %}
+<!-- End Video -->
+
 <!-- Carousel -->
+{% if page.images %}
 <div class="row columns expanded">
-<div class="project__carousel">
-{% for image in page.images %}
-	<img src="{{image}}"/>
-{% endfor %}
+  <div class="project__carousel">
+    {% for image in page.images %}
+    <img src="{{image}}"/>
+    {% endfor %}
+  </div>
 </div>
-</div>
+{% endif %}
 <!-- End Carousel -->
 
 <!-- Meta -->
-{% if page.photographer or page.publication %}
+{% if page.photographer or page.publication or page.director or page.client %}
 <div class="row align-center project__meta">
-	<div class="small-8 medium-7 large-7 columns text-center">
-  	{% if page.photographer %}
-		<p>Photographer &mdash; {{ page.photographer }}</p>
-		{% endif %}
-		{% if page.publication %}
-		<p>Publication &mdash; {{ page.publication }}</p>
-		{% endif %}
-	</div>
+  <div class="small-8 medium-7 large-7 columns text-center">
+    {% if page.director %}
+    <p>Director &mdash; {{ page.director }}</p>
+    {% endif %}
+    {% if page.photographer %}
+    <p>Photographer &mdash; {{ page.photographer }}</p>
+    {% endif %}
+    {% if page.publication %}
+    <p>Publication &mdash; {{ page.publication }}</p>
+    {% endif %}
+    {% if page.client %}
+    <p>Client &mdash; {{ page.client }}</p>
+    {% endif %}
+  </div>
 </div>
 {% endif %}
 <!-- End Meta -->
 
-
 <!-- Content -->
 <div class="row align-center">
-	<div class="small-8 medium-7 large-7 columns text-center">
-		{{ content }}
-	</div>
+  <div class="small-8 medium-7 large-7 columns text-center">
+    {{ content }}
+  </div>
 </div>
 <!-- End Content -->

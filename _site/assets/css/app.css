@@ -6902,7 +6902,7 @@ select {
   position: absolute;
   color: #ffffff;
   left: 2.75rem;
-  top: 1.5rem;
+  top: 2rem;
   font-size: 4em;
   line-height: 1;
   cursor: pointer; }
@@ -9517,7 +9517,7 @@ svg.icon.icon-envelop2 {
 .overlay {
   z-index: 1001;
   position: fixed;
-  background: #949494;
+  background: #333333;
   top: 0;
   left: 0;
   width: 100%;
@@ -9569,7 +9569,7 @@ svg.icon.icon-envelop2 {
 .overlay-mobile {
   z-index: 1001;
   position: fixed;
-  background: #949494;
+  background: #333333;
   top: 0;
   left: 0;
   width: 100%;
@@ -9618,8 +9618,21 @@ svg.icon.icon-envelop2 {
       .overlay-mobile ul li a:hover {
         color: #000000; }
 
+html {
+  height: 100%; }
+
 body {
   cursor: default; }
+
+.animsition {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 svg {
   max-width: 100%; }
@@ -9640,6 +9653,11 @@ img {
 a {
   -webkit-transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
   transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1); }
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
 
 .uppercase {
   text-transform: uppercase; }
@@ -9672,12 +9690,17 @@ i, cite, em, var, address, dfn {
   .navigation__right .menu.simple li:nth-child(2) {
     margin-right: 0rem; }
 
-.navigation__title h1 {
+.navigation__title__desktop h1 {
   font-family: "WalbaumTextPro", Helvetica, Roboto, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
   margin-bottom: 0;
-  letter-spacing: 0.15rem; }
+  letter-spacing: 0.15rem;
+  line-height: 1.2; }
+  .navigation__title__desktop h1 span {
+    font-family: "BasisGrotesque", Helvetica, Roboto, Arial, sans-serif;
+    letter-spacing: 0.25rem;
+    font-size: 0.75rem; }
 
 .excerpt {
   position: relative;

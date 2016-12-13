@@ -13,8 +13,10 @@ images:
 - "/uploads/the-aura-06.jpg"
 - "/uploads/the-aura-07.jpg"
 - "/uploads/the-aura-08.jpg"
+director:
 photographer: Sølve Sundsbø
 publication: 
+client:
 field: editorial
 layout: project
 ---

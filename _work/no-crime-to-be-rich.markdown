@@ -15,8 +15,10 @@ images:
 - "/uploads/no-crime-to-be-rich-08.jpg"
 - "/uploads/no-crime-to-be-rich-09.jpg"
 - "/uploads/no-crime-to-be-rich-10.jpg"
+director:
 photographer: Sølve Sundsbø
 publication: 
+client:
 field: editorial
 layout: project
 ---
