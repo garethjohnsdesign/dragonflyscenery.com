@@ -4,11 +4,11 @@ date: 2014-04-01 00:00:00 Z
 position: 7
 image: "/uploads/accessorize-aw14-thumb.jpg"
 video: 195474853
-images:
-director:
-photographer:
-publication:
-client:
+images: 
+director: 
+photographer: 
+publication: 
+client: 
 field: moving-image
 layout: project
 ---

@@ -4,10 +4,10 @@ date: 2014-04-01 00:00:00 Z
 position: 7
 image: "/uploads/kids-united-thumb.jpg"
 video: 195475195
-images:
+images: 
 director: Jamie Morgan
-photographer:
-publication:
+photographer: 
+publication: 
 client: Dr. Martens
 field: moving-image
 layout: project

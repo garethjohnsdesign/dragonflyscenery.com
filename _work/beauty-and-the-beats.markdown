@@ -10,10 +10,10 @@ images:
 - "/uploads/beauty-and-the-beats-03.jpg"
 - "/uploads/beauty-and-the-beats-04.jpg"
 - "/uploads/beauty-and-the-beats-05.jpg"
-director:
+director: 
 photographer: Sean and Seng
 publication: Dazed and Confused
-client:
+client: 
 field: moving-image
 layout: project
 ---

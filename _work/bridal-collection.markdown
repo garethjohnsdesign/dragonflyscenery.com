@@ -4,10 +4,10 @@ date: 2014-04-01 00:00:00 Z
 position: 7
 image: "/uploads/bridal-collection-thumb.jpg"
 video: 195475313
-images:
-director:
-photographer:
-publication:
+images: 
+director: 
+photographer: 
+publication: 
 client: Jimmy Choo
 field: moving-image
 layout: project

@@ -4,10 +4,10 @@ date: 2014-04-01 00:00:00 Z
 position: 7
 image: "/uploads/angel-thumb.jpg"
 video: 195474996
-images:
+images: 
 director: Sølve Sundsbø
-photographer:
-publication:
+photographer: 
+publication: 
 client: Thierry Mugler
 field: moving-image
 layout: project

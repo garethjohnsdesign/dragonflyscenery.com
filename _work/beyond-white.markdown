@@ -11,10 +11,10 @@ images:
 - "/uploads/beyond-white-04.jpg"
 - "/uploads/beyond-white-05.jpg"
 - "/uploads/beyond-white-06.jpg"
-director:
+director: 
 photographer: Sølve Sundsbø
 publication: Vogue Japan
-client:
+client: 
 field: editorial
 layout: project
 ---

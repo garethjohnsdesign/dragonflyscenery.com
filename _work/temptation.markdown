@@ -4,11 +4,11 @@ date: 2014-04-01 00:00:00 Z
 position: 1
 image: "/uploads/temptation-thumb.jpg"
 video: 195475546
-images:
+images: 
 director: Sean and Seng
-photographer:
+photographer: 
 publication: Dazed and Confused
-client:
+client: 
 field: moving-image
 layout: project
 ---

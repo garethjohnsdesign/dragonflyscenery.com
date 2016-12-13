@@ -10,10 +10,10 @@ images:
 - "/uploads/nailing-it-03.jpg"
 - "/uploads/nailing-it-04.jpg"
 - "/uploads/nailing-it-05.jpg"
-director:
+director: 
 photographer: Sean and Seng
 publication: 
-client:
+client: 
 field: installation
 layout: project
 ---
