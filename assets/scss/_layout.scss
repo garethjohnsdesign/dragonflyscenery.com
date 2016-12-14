@@ -47,6 +47,7 @@ a {
 }
 
 // 2. Typography
+// -------------
 
 .uppercase {
   text-transform: uppercase;
@@ -57,6 +58,7 @@ i, cite, em, var, address, dfn {
 }
 
 // 3. 404
+// ------
 
 .missing {
 	margin-top: 3rem;
@@ -70,6 +72,7 @@ i, cite, em, var, address, dfn {
 }
 
 // 4. Navigation
+// -------------
 
 
 .navigation__left {
@@ -106,8 +109,10 @@ i, cite, em, var, address, dfn {
 }
 
 // 5. Index
+// --------
 
 // 6. Excerpt
+// ----------
 
 .excerpt {
 	position:relative;
@@ -177,6 +182,7 @@ div.row.excerpt__title {
 
 
 // 6. Page
+// -------
 
 .contact {
 	padding: 3rem;
@@ -205,15 +211,8 @@ div.row.excerpt__title {
 
 
 // Contact
+// -------
 
-/*
-.contact a {
-  color: $color--dark-gray;
-  &:hover {
-    color: $color--black;
-  }
-}
-*/
 
 .contact__detail {
     margin-bottom: 0rem;
@@ -255,6 +254,7 @@ div.row.excerpt__title {
 
 
 // 7. Project
+// ----------
 
 .project__carousel {
   margin-bottom: 2rem;
@@ -335,6 +335,7 @@ div.row.excerpt__title {
 }
 
 // 8. Pagination
+// -------------
 
 .pagination__wrapper {
 	padding: 3rem;
@@ -361,8 +362,10 @@ div.row.excerpt__title {
 
 
 // 10. About
+// ---------
 
 // 11. Footer
+// ----------
 
 footer {
 	color: $color--black;
