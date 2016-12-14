@@ -14,6 +14,7 @@ photographer:
 publication: 
 client: 
 field: advertising
+is-featured:
 layout: project
 ---
 

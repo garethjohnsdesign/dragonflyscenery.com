@@ -10,6 +10,7 @@ photographer:
 publication: 
 client: 
 field: moving-image
+is-featured:
 layout: project
 ---
 

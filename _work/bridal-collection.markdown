@@ -10,6 +10,7 @@ photographer:
 publication: 
 client: Jimmy Choo
 field: moving-image
+is-featured:
 layout: project
 ---
 

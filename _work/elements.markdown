@@ -10,6 +10,7 @@ photographer:
 publication: 
 client: Reiss
 field: moving-image
+is-featured:
 layout: project
 ---
 

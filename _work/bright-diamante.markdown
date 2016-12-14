@@ -10,6 +10,7 @@ photographer:
 publication: 
 client: Gucci
 field: moving-image
+is-featured:
 layout: project
 ---
 

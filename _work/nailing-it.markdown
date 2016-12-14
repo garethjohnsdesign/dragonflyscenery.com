@@ -15,6 +15,7 @@ photographer: Sean and Seng
 publication: 
 client: 
 field: installation
+is-featured: true
 layout: project
 ---
 

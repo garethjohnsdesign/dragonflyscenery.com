@@ -10,6 +10,7 @@ photographer:
 publication: Dazed and Confused
 client: 
 field: moving-image
+is-featured: true
 layout: project
 ---
 

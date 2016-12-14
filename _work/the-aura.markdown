@@ -18,6 +18,7 @@ photographer: Sølve Sundsbø
 publication: 
 client: 
 field: editorial
+is-featured: true
 layout: project
 ---
 
