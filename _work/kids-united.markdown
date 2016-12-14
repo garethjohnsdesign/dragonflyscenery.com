@@ -1,7 +1,7 @@
 ---
 title: Kids United
 date: 2014-04-01 00:00:00 Z
-position: 7
+position: 12
 image: "/uploads/kids-united-thumb.jpg"
 video: 195475195
 images: 

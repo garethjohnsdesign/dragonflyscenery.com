@@ -1,7 +1,7 @@
 ---
 title: The Ever Changing Face of Beauty
 date: 2014-04-01 00:00:00 Z
-position: 7
+position: 16
 image: "/uploads/the-ever-changing-face-of-beauty-thumb.jpg"
 video: 195475649
 images: 
