@@ -15,7 +15,7 @@ photographer: Sean and Seng
 publication: Dazed and Confused
 client: 
 field: moving-image
-is-featured:
+is-featured: 
 layout: project
 ---
 

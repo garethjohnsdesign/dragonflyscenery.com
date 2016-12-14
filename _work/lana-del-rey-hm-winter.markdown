@@ -20,7 +20,7 @@ photographer: Sølve Sundsbø
 publication: 
 client: 
 field: advertising
-is-featured:
+is-featured: 
 layout: project
 ---
 

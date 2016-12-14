@@ -10,7 +10,7 @@ photographer:
 publication: 
 client: Thierry Mugler
 field: moving-image
-is-featured:
+is-featured: 
 layout: project
 ---
 

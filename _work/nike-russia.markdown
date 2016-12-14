@@ -10,7 +10,7 @@ photographer:
 publication: 
 client: Nike
 field: installation
-is-featured:
+is-featured: 
 layout: project
 ---
 

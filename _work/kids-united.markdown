@@ -10,7 +10,7 @@ photographer:
 publication: 
 client: Dr. Martens
 field: moving-image
-is-featured:
+is-featured: 
 layout: project
 ---
 
