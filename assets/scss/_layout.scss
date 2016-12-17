@@ -3,8 +3,11 @@
 //   1. Global
 //   2. Typography
 //   3. 404
-//   3. Navigation
-
+//   4. Navigation
+//   5. Index
+//   6. Excerpt
+//   7. Page
+//   8. Contact
 
 // 1. Global
 // ---------
@@ -13,7 +16,7 @@ html {
   height: 100%;
 }
 
-body {  
+body {
   cursor: default;
 }
 
@@ -61,51 +64,49 @@ i, cite, em, var, address, dfn {
 // ------
 
 .missing {
-	margin-top: 3rem;
-	margin-bottom: 3rem;
-	a {
-    color: $color--dark-gray;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+    a {
+      color: $color--dark-gray;
     }
     a:hover {
-    color: $color--black;
+      color: $color--black;
     }
 }
 
 // 4. Navigation
 // -------------
 
-
 .navigation__left {
-	padding: 2rem 3rem 2rem 3rem;
+  padding: 2rem 3rem 2rem 3rem;
 }
 
 .navigation__center {
-	padding: 2rem 3rem 2rem 3rem;
-  @include breakpoint(small only) {
-	padding: 2rem 2rem 0rem 2rem;
-  }
+  padding: 2rem 3rem 2rem 3rem;
+    @include breakpoint(small only) {
+      padding: 2rem 2rem 0rem 2rem;
+    }
 }
 
 .navigation__right {
-	padding: 2rem 3rem 2rem 3rem;
+  padding: 2rem 3rem 2rem 3rem;
   .menu.simple li:nth-child(2) {
-	  margin-right: 0rem;
-	}
+    margin-right: 0rem;
+  }
 }
 
-
 .navigation__title__desktop h1 {
-	font-family: $serif-font-family;
-	text-transform: uppercase;
-	font-size: 1.5rem;
-	margin-bottom: 0;
-	letter-spacing: 0.15rem;
-	line-height: 1.2;
-	span {
-  	font-family: $body-font-family;
-  	letter-spacing: 0.25rem;
-  	font-size: 0.75rem;
-	}
+  font-family: $serif-font-family;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  letter-spacing: 0.15rem;
+  line-height: 1.2;
+    span {
+      font-family: $body-font-family;
+      letter-spacing: 0.25rem;
+      font-size: 0.75rem;
+    }
 }
 
 // 5. Index
@@ -115,38 +116,28 @@ i, cite, em, var, address, dfn {
 // ----------
 
 .excerpt {
-	position:relative;
-	opacity:1;
-	margin: 2rem;
-	transition: $primary-transition;
-	@include breakpoint(medium only) {
-    margin: 1.75rem;
-  	}
-	@include breakpoint(small only) {
-    margin: 1.5rem;
-  	}
-	
-  	img {
+  position:relative;
+  opacity:1;
+  margin: 2rem;
+  transition: $primary-transition;
+    @include breakpoint(medium only) {
+      margin: 1.75rem;
+    }
+    @include breakpoint(small only) {
+      margin: 1.5rem;
+    }
+    img {
       width:100%;
     }
-    
-    .excerpt__image:after {
-      opacity:0;
-      transition: $primary-transition;
-    }
-    
     &:hover .excerpt__image:after {
-        background:$color--lightest-gray;
-        transition: $primary-transition;
-        opacity:0.8;
-      }
-      
-    &:hover .excerpt__title {
-        p {
-	    opacity: 1;
-        color: $color--black;
-        }
-      } 
+      background:$color--lightest-gray;
+      transition: $primary-transition;
+      opacity:0.8;
+    }
+    &:hover .excerpt__title p {
+      opacity: 1;
+      color: $color--black;
+    } 
 }
 
 .excerpt__title {
@@ -155,20 +146,18 @@ i, cite, em, var, address, dfn {
   height: 100%;
   z-index: 1;
   margin: 0rem;
-  
     p {
-	opacity: 0;
-    color: $color--white;
-    transition: $primary-transition;
-    letter-spacing: 0.05rem;
-    margin: 0rem;
+      opacity: 0;
+      color: $color--white;
+      transition: $primary-transition;
+      letter-spacing: 0.05rem;
+      margin: 0rem;
     }
 }
 
 div.row.excerpt__title {
-	margin: 0rem;
+  margin: 0rem;
 }
-
 
 .excerpt__image:after {
   content:'\A';
@@ -177,45 +166,35 @@ div.row.excerpt__title {
   height:100%;
   top:0; 
   left:0;
-  opacity:0.25;
+  opacity:0;
+  transition: $primary-transition;
 }
 
-
-// 6. Page
+// 7. Page
 // -------
 
-.contact {
-	padding: 3rem;
-	@include breakpoint(small only) {
-    padding: 2rem;
-  	}
-}
-
-.project__content {
-	padding: 1rem 3rem 1rem 3rem;
-	@include breakpoint(small only) {
-    padding: 2rem;
-  	}
-}
-
-
 .page__content {
-	padding: 1rem 3rem 1rem 3rem;
-	@include breakpoint(small only) {
-    padding: 2rem;
-  	}
-  	h3 {
-    margin-bottom: 2rem;
+  padding: 1rem 3rem 1rem 3rem;
+    @include breakpoint(small only) {
+      padding: 2rem;
+    }
+    h3 {
+      margin-bottom: 2rem;
     }
 }
 
-
-// Contact
+// 8. Contact
 // -------
 
+.contact {
+  padding: 3rem;
+    @include breakpoint(small only) {
+      padding: 2rem;
+    }
+}
 
 .contact__detail {
-    margin-bottom: 0rem;
+  margin-bottom: 0rem;
 }
 
 .contact {
@@ -223,7 +202,7 @@ div.row.excerpt__title {
     display: inline-block;
     position: relative;
   }
-  
+
   a::after {
     content: '';
     position: absolute;
@@ -235,7 +214,7 @@ div.row.excerpt__title {
     margin-top: 5px;
     transition: $primary-transition;
   }
-  
+
   a:hover::after {
     border-bottom: 1px solid $color--lightest-gray;
     margin-top: 5px;
@@ -243,140 +222,71 @@ div.row.excerpt__title {
 }
 
 .contact__copyright {
-    padding-top: 3rem;
-    padding-bottom: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
 }
 
 .contact__address {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
-
 
 // 7. Project
 // ----------
 
+.project__video {
+  margin-bottom: 0rem;
+}
+
 .project__carousel {
   margin-bottom: 2rem;
+  img {
+    display: block;
+    height: 200px;
+    margin-right: 2rem;
+      @include breakpoint(medium) {
+        height: 400px;
+      }
+      @include breakpoint(large) {
+        height: 400px;
+      }
+    }
 }
-
-.project__carousel img {
-  display: block;
-  height: 200px;
-  margin-right: 2rem;
-  @include breakpoint(medium) {
-    height: 400px;
-  }
-  @include breakpoint(large) {
-    height: 400px;
-  }
-}
-
 
 .project__meta {
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.project__meta p {
-	margin-bottom: 0rem;
-}
-
-.project__meta .detail {
-	color: $color--dark-gray;
-}
-
-
-.project__image__second {
-	@include breakpoint(small only) {
-    padding-top: 1rem;
+    p {
+      margin-bottom: 0rem;
     }
 }
 
-
-.project__content {
-	padding: 3rem;
-	@include breakpoint(small only) {
-    padding: 2rem;
-  	}
-}
-
-.project__images img {
-  padding-bottom: 2rem;
-}
-
-.project__content a {
-  color: $color--dark-gray;
-  &:hover {
-    color: $color--black;
-  }
-}
-
-.project__step {
-  padding-bottom: 2rem;
-}
-
-.project__share {
-	padding: 3rem;
-	@include breakpoint(small only) {
-    padding: 2rem;
-  	}
-}
-
-.project__share__bottom {
-	padding-top: 2rem;
-}
-
-.project__pagination {
-	padding: 3rem;
-	@include breakpoint(small only) {
-    padding: 2rem;
-  	}
-}
-
-// 8. Pagination
-// -------------
-
-.pagination__wrapper {
-	padding: 3rem;
-	@include breakpoint(small only) {
-    padding: 2rem;
-  	}
-}
-
-.callout--pagination {
-  border: 2px solid $color--amber;
-  padding: 2rem 2rem 1rem 2rem;
-}
-
-.pagination {
-  background-color: $color--black;
-  padding: 2rem 2rem 1rem 2rem;
-  width: 100%;
-  @include float;
-  &:hover {
-    background-color: $color--black;
-  }
-}
-
-
-
 // 10. About
 // ---------
+
+.about__clients {
+  padding: 1rem 3rem 1rem 3rem;
+    @include breakpoint(small only) {
+      padding: 2rem;
+    }
+    h3 {
+      margin-bottom: 2rem;
+    }
+}
 
 // 11. Footer
 // ----------
 
 footer {
-	color: $color--black;
-	padding: 2rem 3rem 2rem 3rem;
-	a {
+  color: $color--black;
+  padding: 2rem 3rem 2rem 3rem;
+  a {
     color: $color--black;
     display: block;
     }
   @include breakpoint(small only) {
-	padding: 2rem;
+    padding: 2rem;
   }
 }
 
-// Testing
+// 00. Testing

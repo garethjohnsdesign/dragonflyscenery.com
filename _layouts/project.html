@@ -1,10 +1,11 @@
 ---
 layout: default
 ---
+<section class="project">
 
 <!-- Video -->
 {% if page.video %}
-<div class="row project__video align-center">
+<div class="row align-center project__video">
   <div class="small-12 medium-10 large-8 columns">
     <div class="flex-video widescreen vimeo">
       <iframe src="https://player.vimeo.com/video/{{ page.video }}?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -19,7 +20,7 @@ layout: default
 <div class="row columns expanded">
   <div class="project__carousel">
     {% for image in page.images %}
-    <img src="{{image}}"/>
+    <img src="{{image}}">
     {% endfor %}
   </div>
 </div>
@@ -54,3 +55,5 @@ layout: default
   </div>
 </div>
 <!-- End Content -->
+
+</section>

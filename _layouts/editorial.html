@@ -3,18 +3,16 @@ layout: default
 ---
 
 <div class="row align-center">
-<div class="small-10 columns">
-	
-<div class="row align-center collapse small-up-1 medium-up-3 large-up-3">
+  <div class="small-10 columns">
 
-	{% assign projects = site.work | sort: 'position' | where:"field","editorial" %}
-	{% for project in projects %}
-	<div class="column align-self-middle">
-	{% include excerpt.html %}
-	</div>
-	{% endfor %}
+    <div class="row align-center collapse small-up-1 medium-up-3 large-up-3">
+      {% assign projects = site.work | sort: 'position' | where:"field","editorial" %}
+      {% for project in projects %}
+      <div class="column align-self-middle">
+      {% include excerpt.html %}
+      </div>
+      {% endfor %}
+    </div>
 
-</div>
-
-</div>
+  </div>
 </div>

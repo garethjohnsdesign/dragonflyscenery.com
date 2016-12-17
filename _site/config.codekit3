@@ -7,7 +7,7 @@
 		"uuidString": "550FEDE5-7AFF-4FD3-8DBE-A45DE2D02921"
 		}
 	],
-"creatorBuild": "25444",
+"creatorBuild": "25479",
 "files": {
 	"\/404.md": {
 		"cS": 0,
@@ -93,12 +93,6 @@
 		"oAP": "\/_includes\/pagination.html",
 		"oF": 0
 		},
-	"\/_includes\/post.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/_includes\/post.html",
-		"oF": 0
-		},
 	"\/_includes\/scripts.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -141,12 +135,6 @@
 		"oAP": "\/_layouts\/editorial.html",
 		"oF": 0
 		},
-	"\/_layouts\/holding.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_layouts\/holding.html",
-		"oF": 0
-		},
 	"\/_layouts\/index.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -187,12 +175,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_layouts\/project.html",
-		"oF": 0
-		},
-	"\/_layouts\/projects.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/_layouts\/projects.html",
 		"oF": 0
 		},
 	"\/_site": {
@@ -1089,6 +1071,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/assets\/icons\/android-chrome-256x256.png": {
+		"ft": 32768,
+		"iS": 1084,
+		"oA": 0,
+		"oAP": "\/assets\/icons\/android-chrome-256x256.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/assets\/icons\/apple-touch-icon.png": {
 		"ft": 32768,
 		"iS": 521,
@@ -1140,6 +1130,16 @@
 		"oAP": "\/assets\/icons\/mstile-150x150.png",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/assets\/icons\/safari-pinned-tab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/icons\/safari-pinned-tab.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/assets\/img\/layout\/logo.svg": {
 		"ft": 2097152,
@@ -14028,6 +14028,10 @@
 			"active": 0,
 			"optionString": "{'properties': 'always'}"
 			},
+		"capitalized-comments": {
+			"active": 0,
+			"optionString": "'always', {'ignoreInlineComments': false, 'ignoreConsecutiveComments': false}"
+			},
 		"class-methods-use-this": {
 			"active": 0,
 			"optionString": "{'exceptMethods': []}"
@@ -14191,6 +14195,10 @@
 		"max-statements": {
 			"active": 0,
 			"optionString": "{'max': 10}, {'ignoreTopLevelFunctions': true}"
+			},
+		"max-statements-per-line": {
+			"active": 0,
+			"optionString": "{'max': 1}"
 			},
 		"multiline-ternary": {
 			"active": 0,
@@ -14556,6 +14564,10 @@
 			"active": 0,
 			"optionString": "'except-parens'"
 			},
+		"no-return-await": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-script-url": {
 			"active": 0,
 			"optionString": ""
@@ -14787,6 +14799,10 @@
 		"radix": {
 			"active": 0,
 			"optionString": "'always'"
+			},
+		"require-await": {
+			"active": 0,
+			"optionString": ""
 			},
 		"require-jsdoc": {
 			"active": 0,
@@ -15620,6 +15636,10 @@
 			},
 		"space-colon": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"support-ie8": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"toplevel": {
