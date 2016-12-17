@@ -2,15 +2,15 @@
 title: Dragonfly Scenery
 timezone: UTC
 collections:
-  work:
-    title: Work
-    output: true
   posts:
     title: Posts
     output: true
   uploads:
     title: Uploads
     output: false
+  work:
+    title: Work
+    output: true
 defaults:
 - scope:
     path: ''
@@ -29,15 +29,7 @@ url: http://dragonflyscenery.com
 description: London-based set-design, prop and art direction studio working alongside
   the industry's leading photographers, directors and creatives
 permalink: pretty
-exclude:
-- Gemfile
-- Gemfile.lock
-- bower_components
-- package.json
-- LICENSE*
-- README*
-- node_modules
-- ".gitignore"
+exclude: 
 gems:
 - jekyll-seo-tag
 - jekyll-sitemap
@@ -47,7 +39,6 @@ kramdown:
   input: GFM
   hard_wrap: false
 highlighter: rouge
-exclude:
 company: Dragonfly Scenery and Design Ltd
 email: info@dragonflyscenery.com
 google_site_verification: 0u9XTYzI8wOtLEO26wdbqmiWdUn5s5f0UYUisdLW7BY
