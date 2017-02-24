@@ -6,6 +6,10 @@ var banner        = ['/**',
   ' */',
   ''].join('\n');
 var browserSync   = require('browser-sync').create();
+<<<<<<< HEAD
+=======
+var casperJs      = require('gulp-casperjs');
+>>>>>>> origin/master
 var concat        = require('gulp-concat');
 var del           = require('del');
 var gulp          = require('gulp');
@@ -16,7 +20,10 @@ var plumber       = require('gulp-plumber');
 var rename        = require('gulp-rename');
 var runSequence   = require('run-sequence');
 var uglify        = require('gulp-uglify');
+<<<<<<< HEAD
 var webpack       = require('webpack-stream');
+=======
+>>>>>>> origin/master
 
 
 /*
@@ -36,6 +43,7 @@ gulp.task('clean', function () {
   --------------------
 */
 
+<<<<<<< HEAD
 gulp.task('scripts:main', function() {
   return gulp.src(['./src/what-input.js'])
     .pipe(webpack({
@@ -60,16 +68,57 @@ gulp.task('scripts:main', function() {
 
 gulp.task('scripts:ie8', function() {
   return gulp.src(['./src/polyfills/ie8/*.js'])
+=======
+gulp.task('scripts:uglify', function() {
+  return gulp.src(['./what-input.js'])
+    .pipe(plumber({
+      errorHandler: notify.onError("Error: <%= error.message %>")
+    }))
+    .pipe(uglify())
+    .pipe(rename('what-input.min.js'))
+    .pipe(header(banner, { pkg : pkg } ))
+    .pipe(gulp.dest('./'))
+    .pipe(notify('Scripts uglify task complete'));
+});
+
+gulp.task('scripts:ie8', function() {
+  return gulp.src(['./polyfills/ie8/*.js'])
+>>>>>>> origin/master
     .pipe(plumber({
       errorHandler: notify.onError("Error: <%= error.message %>")
     }))
     .pipe(concat('lte-IE8.js'))
     .pipe(uglify())
+<<<<<<< HEAD
     .pipe(gulp.dest('./dist/'))
     .pipe(notify('IE8 scripts task complete'));
 });
 
 gulp.task('scripts', ['scripts:main', 'scripts:ie8']);
+=======
+    .pipe(gulp.dest('./'))
+    .pipe(notify('IE8 scripts task complete'));
+});
+
+gulp.task('scripts', function() {
+  runSequence(
+    'scripts:uglify',
+    'scripts:ie8'
+  );
+});
+
+
+/*
+  --------------------
+  Test runner
+  --------------------
+*/
+
+gulp.task('test', function () {
+  gulp.src('./tests/*.js')
+    .pipe(casperJs());
+});
+>>>>>>> origin/master
 
 
 /*
@@ -92,7 +141,11 @@ gulp.task('default', function() {
       });
 
       gulp.watch([
+<<<<<<< HEAD
         './src/what-input.js',
+=======
+        './what-input.js',
+>>>>>>> origin/master
         './polyfills/*.js'
       ], ['scripts']).on('change', browserSync.reload);
 

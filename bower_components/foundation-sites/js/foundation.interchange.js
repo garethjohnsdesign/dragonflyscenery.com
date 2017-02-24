@@ -46,9 +46,13 @@ class Interchange {
    * @private
    */
   _events() {
+<<<<<<< HEAD
     $(window).on('resize.zf.interchange', Foundation.util.throttle(() => {
       this._reflow();
     }, 50));
+=======
+    $(window).on('resize.zf.interchange', Foundation.util.throttle(this._reflow.bind(this), 50));
+>>>>>>> origin/master
   }
 
   /**
@@ -63,6 +67,10 @@ class Interchange {
     for (var i in this.rules) {
       if(this.rules.hasOwnProperty(i)) {
         var rule = this.rules[i];
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
         if (window.matchMedia(rule.query).matches) {
           match = rule;
         }

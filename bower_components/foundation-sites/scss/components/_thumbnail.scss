@@ -32,6 +32,7 @@ $thumbnail-radius: $global-radius !default;
 
 /// Adds thumbnail styles to an element.
 @mixin thumbnail {
+<<<<<<< HEAD
   display: inline-block;
   max-width: 100%;
   margin-bottom: $thumbnail-margin-bottom;
@@ -45,23 +46,39 @@ $thumbnail-radius: $global-radius !default;
 
 @mixin thumbnail-link {
   transition: $thumbnail-transition;
+=======
+  border: $thumbnail-border;
+  box-shadow: $thumbnail-shadow;
+  display: inline-block;
+  line-height: 0;
+  max-width: 100%;
+  transition: $thumbnail-transition;
+  border-radius: $thumbnail-radius;
+  margin-bottom: $thumbnail-margin-bottom;
+>>>>>>> origin/master
 
   &:hover,
   &:focus {
     box-shadow: $thumbnail-shadow-hover;
   }
+<<<<<<< HEAD
 
   image {
     box-shadow: none;
   }
+=======
+>>>>>>> origin/master
 }
 
 @mixin foundation-thumbnail {
   .thumbnail {
     @include thumbnail;
   }
+<<<<<<< HEAD
 
   a.thumbnail {
     @include thumbnail-link;
   }
+=======
+>>>>>>> origin/master
 }

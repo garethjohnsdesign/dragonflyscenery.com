@@ -10,7 +10,10 @@
     "badge",
     "breadcrumbs",
     "button_group",
+<<<<<<< HEAD
     "card",
+=======
+>>>>>>> origin/master
     "callout",
     "close_button",
     "menu",
@@ -19,7 +22,11 @@
     "dropdown",
     "dropdown_menu",
     "equalizer",
+<<<<<<< HEAD
     "responsive_embed",
+=======
+    "flex_video",
+>>>>>>> origin/master
     "interchange",
     "label",
     "magellan",
@@ -30,7 +37,10 @@
     "progress_bar",
     "responsive_menu",
     "responsive_toggle",
+<<<<<<< HEAD
     "responsive_accordion_tabs",
+=======
+>>>>>>> origin/master
     "reveal",
     "slider",
     "sticky",

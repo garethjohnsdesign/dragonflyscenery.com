@@ -11,6 +11,11 @@ const Nest = {
         subItemClass = `${subMenuClass}-item`,
         hasSubClass = `is-${type}-submenu-parent`;
 
+<<<<<<< HEAD
+=======
+    menu.find('a:first').attr('tabindex', 0);
+
+>>>>>>> origin/master
     items.each(function() {
       var $item = $(this),
           $sub = $item.children('ul');
@@ -20,6 +25,7 @@ const Nest = {
           .addClass(hasSubClass)
           .attr({
             'aria-haspopup': true,
+<<<<<<< HEAD
             'aria-label': $item.children('a:first').text()
           });
           // Note:  Drilldowns behave differently in how they hide, and so need
@@ -28,16 +34,27 @@ const Nest = {
           if(type === 'drilldown') {
             $item.attr({'aria-expanded': false});
           }
+=======
+            'aria-expanded': false,
+            'aria-label': $item.children('a:first').text()
+          });
+>>>>>>> origin/master
 
         $sub
           .addClass(`submenu ${subMenuClass}`)
           .attr({
             'data-submenu': '',
+<<<<<<< HEAD
             'role': 'menu'
           });
         if(type === 'drilldown') {
           $sub.attr({'aria-hidden': true});
         }
+=======
+            'aria-hidden': true,
+            'role': 'menu'
+          });
+>>>>>>> origin/master
       }
 
       if ($item.parent('[data-submenu]').length) {
@@ -49,7 +66,11 @@ const Nest = {
   },
 
   Burn(menu, type) {
+<<<<<<< HEAD
     var //items = menu.find('li'),
+=======
+    var items = menu.find('li').removeAttr('tabindex'),
+>>>>>>> origin/master
         subMenuClass = `is-${type}-submenu`,
         subItemClass = `${subMenuClass}-item`,
         hasSubClass = `is-${type}-submenu-parent`;

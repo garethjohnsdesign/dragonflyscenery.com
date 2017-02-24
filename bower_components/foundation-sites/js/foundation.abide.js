@@ -62,6 +62,7 @@ class Abide {
           this.validateInput($(e.target));
         });
     }
+<<<<<<< HEAD
 
     if (this.options.validateOnBlur) {
       this.$inputs
@@ -70,6 +71,8 @@ class Abide {
           this.validateInput($(e.target));
         });
     }
+=======
+>>>>>>> origin/master
   }
 
   /**
@@ -286,6 +289,7 @@ class Abide {
     var goodToGo = [clearRequire, validated, customValidator, equalTo].indexOf(false) === -1;
     var message = (goodToGo ? 'valid' : 'invalid') + '.zf.abide';
 
+<<<<<<< HEAD
     if (goodToGo) {
       // Re-validate inputs that depend on this one with equalto
       const dependentElements = this.$element.find(`[data-equalto="${$el.attr('id')}"]`);
@@ -299,6 +303,8 @@ class Abide {
       }
     }
 
+=======
+>>>>>>> origin/master
     this[goodToGo ? 'removeErrorClasses' : 'addErrorClasses']($el);
 
     /**
@@ -511,6 +517,7 @@ Abide.defaults = {
    */
   liveValidate: false,
 
+<<<<<<< HEAD
   /**
    * Set to true to validate inputs on blur.
    * @option
@@ -518,6 +525,8 @@ Abide.defaults = {
    */
   validateOnBlur: false,
 
+=======
+>>>>>>> origin/master
   patterns: {
     alpha : /^[a-zA-Z]+$/,
     alpha_numeric : /^[a-zA-Z0-9]+$/,

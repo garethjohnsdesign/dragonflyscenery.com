@@ -12,6 +12,10 @@
   "globals": {
     "Foundation": true
     },
+<<<<<<< HEAD
+=======
+  "parser": "babel-eslint",
+>>>>>>> origin/master
   "parserOptions": {
     "ecmaFeatures": {
       "impliedStrict": true,
@@ -61,4 +65,8 @@
     "valid-typeof": 2,
     "wrap-iife": [2, "inside"]
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master

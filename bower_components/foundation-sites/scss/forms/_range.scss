@@ -39,6 +39,7 @@ $slider-opacity-disabled: 0.25 !default;
 $slider-radius: $global-radius !default;
 
 @mixin foundation-range-input {
+<<<<<<< HEAD
   input[type="range"] {  // sass-lint:disable-line no-qualifying-elements
     $margin: ($slider-handle-height - $slider-height) / 2;
 
@@ -52,6 +53,22 @@ $slider-radius: $global-radius !default;
     border: 0;
     line-height: 1;
     cursor: pointer;
+=======
+  // scss-lint:disable QualifyingElement
+  input[type="range"] {
+    $margin: ($slider-handle-height - $slider-height) / 2;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    margin-top: $margin;
+    margin-bottom: $margin;
+    border: 0;
+    line-height: 1;
+>>>>>>> origin/master
 
     @if has-value($slider-radius) {
       border-radius: $slider-radius;
@@ -65,8 +82,11 @@ $slider-radius: $global-radius !default;
       opacity: $slider-opacity-disabled;
     }
 
+<<<<<<< HEAD
     // sass-lint:disable no-vendor-prefix
 
+=======
+>>>>>>> origin/master
     // Chrome/Safari
     &::-webkit-slider-runnable-track {
       height: $slider-height;
@@ -74,13 +94,21 @@ $slider-radius: $global-radius !default;
     }
 
     &::-webkit-slider-handle {
+<<<<<<< HEAD
+=======
+      -webkit-appearance: none;
+      background: $slider-handle-background;
+>>>>>>> origin/master
       width: $slider-handle-width;
       height: $slider-handle-height;
       margin-top: -$margin;
 
+<<<<<<< HEAD
       -webkit-appearance: none;
       background: $slider-handle-background;
 
+=======
+>>>>>>> origin/master
       @if has-value($slider-radius) {
         border-radius: $slider-radius;
       }
@@ -88,19 +116,32 @@ $slider-radius: $global-radius !default;
 
     // Firefox
     &::-moz-range-track {
+<<<<<<< HEAD
       height: $slider-height;
       -moz-appearance: none;
+=======
+      -moz-appearance: none;
+      height: $slider-height;
+>>>>>>> origin/master
       background: $slider-background;
     }
 
     &::-moz-range-thumb {
+<<<<<<< HEAD
+=======
+      -moz-appearance: none;
+      background: $slider-handle-background;
+>>>>>>> origin/master
       width: $slider-handle-width;
       height: $slider-handle-height;
       margin-top: -$margin;
 
+<<<<<<< HEAD
       -moz-appearance: none;
       background: $slider-handle-background;
 
+=======
+>>>>>>> origin/master
       @if has-value($slider-radius) {
         border-radius: $slider-radius;
       }
@@ -109,6 +150,7 @@ $slider-radius: $global-radius !default;
     // Internet Explorer
     &::-ms-track {
       height: $slider-height;
+<<<<<<< HEAD
 
       border: 0;
       border-top: $margin solid $body-background;
@@ -124,6 +166,21 @@ $slider-radius: $global-radius !default;
       height: $slider-handle-height;
       border: 0;
       background: $slider-handle-background;
+=======
+      background: $slider-background;
+      color: transparent;
+      border: 0;
+      overflow: visible;
+      border-top: $margin solid $body-background;
+      border-bottom: $margin solid $body-background;
+    }
+
+    &::-ms-thumb {
+      background: $slider-handle-background;
+      width: $slider-handle-width;
+      height: $slider-handle-height;
+      border: 0;
+>>>>>>> origin/master
 
       @if has-value($slider-radius) {
         border-radius: $slider-radius;
@@ -140,9 +197,15 @@ $slider-radius: $global-radius !default;
 
     @at-root {
       output {
+<<<<<<< HEAD
         vertical-align: middle;
         margin-left: 0.5em;
         line-height: $slider-handle-height;
+=======
+        line-height: $slider-handle-height;
+        vertical-align: middle;
+        margin-left: 0.5em;
+>>>>>>> origin/master
       }
     }
   }

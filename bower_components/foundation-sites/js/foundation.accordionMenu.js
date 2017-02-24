@@ -172,6 +172,7 @@ class AccordionMenu {
    * @function
    */
   hideAll() {
+<<<<<<< HEAD
     this.up(this.$element.find('[data-submenu]'));
   }
 
@@ -181,6 +182,9 @@ class AccordionMenu {
    */
   showAll() {
     this.down(this.$element.find('[data-submenu]'));
+=======
+    this.$element.find('[data-submenu]').slideUp(this.options.slideSpeed);
+>>>>>>> origin/master
   }
 
   /**

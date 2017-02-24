@@ -38,7 +38,11 @@ class Accordion {
    */
   _init() {
     this.$element.attr('role', 'tablist');
+<<<<<<< HEAD
     this.$tabs = this.$element.children('[data-accordion-item]');
+=======
+    this.$tabs = this.$element.children('li, [data-accordion-item]');
+>>>>>>> origin/master
 
     this.$tabs.each(function(idx, el) {
       var $el = $(el),

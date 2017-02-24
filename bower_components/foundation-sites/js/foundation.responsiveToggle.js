@@ -39,6 +39,7 @@ class ResponsiveToggle {
 
     this.$targetMenu = $(`#${targetID}`);
     this.$toggler = this.$element.find('[data-toggle]');
+<<<<<<< HEAD
     this.options = $.extend({}, this.options, this.$targetMenu.data());
 
     // If they were set, parse the animation classes
@@ -48,6 +49,8 @@ class ResponsiveToggle {
       this.animationIn = input[0];
       this.animationOut = input[1] || null;
     }
+=======
+>>>>>>> origin/master
 
     this._update();
   }
@@ -61,7 +64,11 @@ class ResponsiveToggle {
     var _this = this;
 
     this._updateMqHandler = this._update.bind(this);
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> origin/master
     $(window).on('changed.zf.mediaquery', this._updateMqHandler);
 
     this.$toggler.on('click.zf.responsiveToggle', this.toggleMenu.bind(this));
@@ -91,6 +98,7 @@ class ResponsiveToggle {
    * @function
    * @fires ResponsiveToggle#toggled
    */
+<<<<<<< HEAD
   toggleMenu() {
     if (!Foundation.MediaQuery.atLeast(this.options.hideFor)) {
       if(this.options.animate) {
@@ -124,15 +132,32 @@ class ResponsiveToggle {
          */
         this.$element.trigger('toggled.zf.responsiveToggle');
       }
+=======
+  toggleMenu() {   
+    if (!Foundation.MediaQuery.atLeast(this.options.hideFor)) {
+      this.$targetMenu.toggle(0);
+
+      /**
+       * Fires when the element attached to the tab bar toggles.
+       * @event ResponsiveToggle#toggled
+       */
+      this.$element.trigger('toggled.zf.responsiveToggle');
+>>>>>>> origin/master
     }
   };
 
   destroy() {
     this.$element.off('.zf.responsiveToggle');
     this.$toggler.off('.zf.responsiveToggle');
+<<<<<<< HEAD
 
     $(window).off('changed.zf.mediaquery', this._updateMqHandler);
 
+=======
+    
+    $(window).off('changed.zf.mediaquery', this._updateMqHandler);
+    
+>>>>>>> origin/master
     Foundation.unregisterPlugin(this);
   }
 }
@@ -143,6 +168,7 @@ ResponsiveToggle.defaults = {
    * @option
    * @example 'medium'
    */
+<<<<<<< HEAD
   hideFor: 'medium',
 
   /**
@@ -151,6 +177,9 @@ ResponsiveToggle.defaults = {
    * @example false
    */
   animate: false
+=======
+  hideFor: 'medium'
+>>>>>>> origin/master
 };
 
 // Window exports

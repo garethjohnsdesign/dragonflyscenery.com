@@ -175,13 +175,21 @@ function GetOffsets(element, anchor, position, vOffset, hOffset, isOverflow) {
     case 'left bottom':
       return {
         left: $anchorDims.offset.left,
+<<<<<<< HEAD
         top: $anchorDims.offset.top + $anchorDims.height + vOffset
+=======
+        top: $anchorDims.offset.top + $anchorDims.height
+>>>>>>> origin/master
       };
       break;
     case 'right bottom':
       return {
         left: $anchorDims.offset.left + $anchorDims.width + hOffset - $eleDims.width,
+<<<<<<< HEAD
         top: $anchorDims.offset.top + $anchorDims.height + vOffset
+=======
+        top: $anchorDims.offset.top + $anchorDims.height
+>>>>>>> origin/master
       };
       break;
     default:

@@ -6,9 +6,14 @@
 /// @type Boolean
 /// @group global
 $print-transparent-backgrounds: true !default;
+<<<<<<< HEAD
 $print-hrefs: true !default;
 
 // sass-lint:disable-all
+=======
+
+// scss-lint:disable all
+>>>>>>> origin/master
 
 @mixin foundation-print-styles {
   .show-for-print { display: none !important; }
@@ -19,9 +24,14 @@ $print-hrefs: true !default;
         background: transparent !important;
       }
 
+<<<<<<< HEAD
       box-shadow: none !important;
 
       color: black !important; // Black prints faster: h5bp.com/s
+=======
+      color: black !important; // Black prints faster: h5bp.com/s
+      box-shadow: none !important;
+>>>>>>> origin/master
       text-shadow: none !important;
     }
 
@@ -38,9 +48,13 @@ $print-hrefs: true !default;
     // Display the URL of a link after the text
     a,
     a:visited { text-decoration: underline;}
+<<<<<<< HEAD
     @if $print-hrefs {
       a[href]:after { content: ' (' attr(href) ')'; }
     }
+=======
+    a[href]:after { content: ' (' attr(href) ')'; }
+>>>>>>> origin/master
 
     // Don't display the URL for images or JavaScript/internal links
     .ir a:after,

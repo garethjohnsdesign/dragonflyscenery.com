@@ -60,6 +60,7 @@ $switch-paddle-transition: all 0.25s ease-out !default;
 
 /// Adds styles for a switch container. Apply this to a container class.
 @mixin switch-container {
+<<<<<<< HEAD
   position: relative;
   margin-bottom: $switch-margin;
   outline: 0;
@@ -70,17 +71,35 @@ $switch-paddle-transition: all 0.25s ease-out !default;
   color: $white;
 
   user-select: none;
+=======
+  margin-bottom: $switch-margin;
+  outline: 0;
+  position: relative;
+  user-select: none;
+
+  // These properties cascade down to the switch text
+  color: $white;
+  font-weight: bold;
+  font-size: rem-calc(14);
+>>>>>>> origin/master
 }
 
 /// Adds styles for a switch input. Apply this to an `<input>` within a switch.
 @mixin switch-input {
+<<<<<<< HEAD
   position: absolute;
   margin-bottom: 0;
   opacity: 0;
+=======
+  opacity: 0;
+  position: absolute;
+  margin-bottom: 0;
+>>>>>>> origin/master
 }
 
 /// Adds styles for the background and paddle of a switch. Apply this to a `<label>` within a switch.
 @mixin switch-paddle {
+<<<<<<< HEAD
   $switch-width: $switch-height * 2;
   $paddle-height: $switch-height - ($switch-paddle-offset * 2);
   $paddle-width: $switch-height - ($switch-paddle-offset * 2);
@@ -100,6 +119,20 @@ $switch-paddle-transition: all 0.25s ease-out !default;
   color: inherit;
 
   cursor: pointer;
+=======
+  background: $switch-background;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  width: 4rem;
+  height: $switch-height;
+  transition: $switch-paddle-transition;
+  border-radius: $switch-radius;
+
+  // Resetting these <label> presets so type styles cascade down
+  color: inherit;
+  font-weight: inherit;
+>>>>>>> origin/master
 
   // Needed to override specificity
   input + & {
@@ -108,6 +141,7 @@ $switch-paddle-transition: all 0.25s ease-out !default;
 
   // The paddle itself
   &::after {
+<<<<<<< HEAD
     position: absolute;
     top: $switch-paddle-offset;
     #{$global-left}: $switch-paddle-offset;
@@ -121,6 +155,19 @@ $switch-paddle-transition: all 0.25s ease-out !default;
     background: $switch-paddle-background;
     transition: $switch-paddle-transition;
     content: '';
+=======
+    background: $switch-paddle-background;
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1.5rem;
+    #{$global-left}: 0.25rem;
+    top: 0.25rem;
+    width: 1.5rem;
+    transition: $switch-paddle-transition;
+    transform: translate3d(0, 0, 0);
+    border-radius: $switch-paddle-radius;
+>>>>>>> origin/master
   }
 
   // Change the visual style when the switch is active
@@ -128,7 +175,11 @@ $switch-paddle-transition: all 0.25s ease-out !default;
     background: $switch-background-active;
 
     &::after {
+<<<<<<< HEAD
       #{$global-left}: $paddle-active-offest;
+=======
+      #{$global-left}: 2.25rem;
+>>>>>>> origin/master
     }
   }
 
@@ -165,6 +216,7 @@ $switch-paddle-transition: all 0.25s ease-out !default;
 
 /// Changes the size of a switch by modifying the size of the body and paddle. Apply this to a switch container.
 /// @param {Number} $font-size [1rem] - Font size of label text within the switch.
+<<<<<<< HEAD
 /// @param {Number} $switch-height [2rem] - Height of the switch body.
 /// @param {Number} $paddle-offset [0.25rem] - Spacing between the switch paddle and the edge of the switch body.
 @mixin switch-size(
@@ -183,18 +235,46 @@ $switch-paddle-transition: all 0.25s ease-out !default;
   .switch-paddle {
     width: $switch-width;
     height: $switch-height;
+=======
+/// @param {Number} $width [4rem] - Width of the switch body.
+/// @param {Number} $height [2rem] - Height of the switch body.
+/// @param {Number} $paddle-width [1.5rem] - Width of the switch paddle.
+/// @param {Number} $paddle-offset [0.25rem] - Spacing between the switch paddle and the edge of the switch body.
+@mixin switch-size(
+  $font-size: 1rem,
+  $width: 4rem,
+  $height: 2rem,
+  $paddle-width: 1.5rem,
+  $paddle-offset: 0.25rem
+) {
+  $paddle-height: $height - ($paddle-offset * 2);
+  $paddle-left-active: $width - $paddle-width - $paddle-offset;
+
+  height: $height;
+  
+  .switch-paddle {
+    width: $width;
+    height: $height;
+>>>>>>> origin/master
     font-size: $font-size;
   }
 
   .switch-paddle::after {
+<<<<<<< HEAD
     top: $paddle-offset;
     #{$global-left}: $paddle-offset;
+=======
+>>>>>>> origin/master
     width: $paddle-width;
     height: $paddle-height;
   }
 
   input:checked ~ .switch-paddle::after {
+<<<<<<< HEAD
     #{$global-left}: $paddle-active-offest;
+=======
+    #{$global-left}: $paddle-left-active;
+>>>>>>> origin/master
   }
 }
 
@@ -234,6 +314,7 @@ $switch-paddle-transition: all 0.25s ease-out !default;
 
   // Switch sizes
   .switch.tiny {
+<<<<<<< HEAD
     @include switch-size(rem-calc(10), $switch-height-tiny, $switch-paddle-offset);
   }
 
@@ -243,5 +324,16 @@ $switch-paddle-transition: all 0.25s ease-out !default;
 
   .switch.large {
     @include switch-size(rem-calc(16), $switch-height-large, $switch-paddle-offset);
+=======
+    @include switch-size(rem-calc(10), 3rem, $switch-height-tiny, 1rem, $switch-paddle-offset);
+  }
+
+  .switch.small {
+    @include switch-size(rem-calc(12), 3.5rem, $switch-height-small, 1.25rem, $switch-paddle-offset);
+  }
+
+  .switch.large {
+    @include switch-size(rem-calc(16), 5rem, $switch-height-large, 2rem, $switch-paddle-offset);
+>>>>>>> origin/master
   }
 }

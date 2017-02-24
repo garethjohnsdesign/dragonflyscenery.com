@@ -22,10 +22,13 @@ $input-font-family: inherit !default;
 /// @type Number
 $input-font-size: rem-calc(16) !default;
 
+<<<<<<< HEAD
 /// Font weight of text inputs.
 /// @type Keyword
 $input-font-weight: $global-weight-normal !default;
 
+=======
+>>>>>>> origin/master
 /// Background color of text inputs.
 /// @type Color
 $input-background: $white !default;
@@ -70,9 +73,15 @@ $input-number-spinners: true !default;
 /// @type Border
 $input-radius: $global-radius !default;
 
+<<<<<<< HEAD
 /// Border radius for form buttons, defaulted to global-radius.
 /// @type Number
 $form-button-radius: $global-radius !default;
+=======
+/// Border radius for buttons, defaulted to global-radius.
+/// @type Number
+$button-radius: $global-radius !default;
+>>>>>>> origin/master
 
 @mixin form-element {
   $height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(1));
@@ -81,6 +90,7 @@ $form-button-radius: $global-radius !default;
   box-sizing: border-box;
   width: 100%;
   height: $height;
+<<<<<<< HEAD
   margin: 0 0 $form-spacing;
   padding: $form-spacing / 2;
 
@@ -93,6 +103,18 @@ $form-button-radius: $global-radius !default;
   font-size: $input-font-size;
   font-weight: $input-font-weight;
   color: $input-color;
+=======
+  padding: $form-spacing / 2;
+  border: $input-border;
+  margin: 0 0 $form-spacing;
+
+  font-family: $input-font-family;
+  font-size: $input-font-size;
+  color: $input-color;
+  background-color: $input-background;
+  box-shadow: $input-shadow;
+  border-radius: $input-radius;
+>>>>>>> origin/master
 
   @if has-value($input-transition) {
     transition: $input-transition;
@@ -100,9 +122,15 @@ $form-button-radius: $global-radius !default;
 
   // Focus state
   &:focus {
+<<<<<<< HEAD
     outline: none;
     border: $input-border-focus;
     background-color: $input-background-focus;
+=======
+    border: $input-border-focus;
+    background-color: $input-background-focus;
+    outline: none;
+>>>>>>> origin/master
     box-shadow: $input-shadow-focus;
 
     @if has-value($input-transition) {
@@ -116,7 +144,12 @@ $form-button-radius: $global-radius !default;
   #{text-inputs()},
   textarea {
     @include form-element;
+<<<<<<< HEAD
     appearance: none;
+=======
+    -webkit-appearance: none;
+    -moz-appearance: none;
+>>>>>>> origin/master
   }
 
   // Text areas
@@ -146,23 +179,42 @@ $form-button-radius: $global-radius !default;
   // Reset styles on button-like inputs
   [type='submit'],
   [type='button'] {
+<<<<<<< HEAD
     appearance: none;
     border-radius: $form-button-radius;
   }
 
   // Reset Normalize setting content-box to search elements
   input[type='search'] { // sass-lint:disable-line no-qualifying-elements
+=======
+    border-radius: $button-radius;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  // Reset Normalize setting content-box to search elements
+  // scss-lint:disable QualifyingElement
+  input[type='search'] {
+>>>>>>> origin/master
     box-sizing: border-box;
   }
 
   // Number input styles
   [type='number'] {
     @if not $input-number-spinners {
+<<<<<<< HEAD
       -moz-appearance: textfield; // sass-lint:disable-line no-vendor-prefix
 
       &::-webkit-inner-spin-button,
       &::-webkit-outer-spin-button {
         -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefix
+=======
+      -moz-appearance: textfield;
+
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+>>>>>>> origin/master
         margin: 0;
       }
     }

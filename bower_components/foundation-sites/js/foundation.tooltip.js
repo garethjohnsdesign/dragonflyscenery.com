@@ -40,6 +40,7 @@ class Tooltip {
     this.options.tipText = this.options.tipText || this.$element.attr('title');
     this.template = this.options.template ? $(this.options.template) : this._buildTemplate(elemId);
 
+<<<<<<< HEAD
     if (this.options.allowHtml) {
       this.template.appendTo(document.body)
         .html(this.options.tipText)
@@ -49,6 +50,11 @@ class Tooltip {
         .text(this.options.tipText)
         .hide();
     }
+=======
+    this.template.appendTo(document.body)
+        .text(this.options.tipText)
+        .hide();
+>>>>>>> origin/master
 
     this.$element.attr({
       'title': '',
@@ -171,7 +177,11 @@ class Tooltip {
    * @function
    */
   show() {
+<<<<<<< HEAD
     if (this.options.showOn !== 'all' && !Foundation.MediaQuery.is(this.options.showOn)) {
+=======
+    if (this.options.showOn !== 'all' && !Foundation.MediaQuery.atLeast(this.options.showOn)) {
+>>>>>>> origin/master
       // console.error('The screen is too small to display this tooltip');
       return false;
     }
@@ -339,9 +349,18 @@ class Tooltip {
    */
   destroy() {
     this.$element.attr('title', this.template.text())
+<<<<<<< HEAD
                  .off('.zf.trigger .zf.tooltip')
                  .removeClass('has-tip top right left')
                  .removeAttr('aria-describedby aria-haspopup data-disable-hover data-resize data-toggle data-tooltip data-yeti-box');
+=======
+                 .off('.zf.trigger .zf.tootip')
+                //  .removeClass('has-tip')
+                 .removeAttr('aria-describedby')
+                 .removeAttr('data-yeti-box')
+                 .removeAttr('data-toggle')
+                 .removeAttr('data-resize');
+>>>>>>> origin/master
 
     this.template.remove();
 
@@ -435,6 +454,7 @@ Tooltip.defaults = {
    * @option
    * @example 12
    */
+<<<<<<< HEAD
   hOffset: 12,
     /**
    * Allow HTML in tooltip. Warning: If you are loading user-generated content into tooltips,
@@ -443,6 +463,9 @@ Tooltip.defaults = {
    * @example false
    */
   allowHtml: false
+=======
+  hOffset: 12
+>>>>>>> origin/master
 };
 
 /**
@@ -452,4 +475,8 @@ Tooltip.defaults = {
 // Window exports
 Foundation.plugin(Tooltip, 'Tooltip');
 
+<<<<<<< HEAD
 }(jQuery);
+=======
+}(jQuery);
+>>>>>>> origin/master

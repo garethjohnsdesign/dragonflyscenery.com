@@ -16,6 +16,7 @@ $abide-labels: true !default;
 
 /// Background color to use for invalid text inputs.
 /// @type Color
+<<<<<<< HEAD
 $input-background-invalid: get-color(alert) !default;
 
 /// Color to use for labels of invalid inputs.
@@ -25,6 +26,17 @@ $form-label-color-invalid: get-color(alert) !default;
 /// Default font color for form error text.
 /// @type Color
 $input-error-color: get-color(alert) !default;
+=======
+$input-background-invalid: map-get($foundation-palette, alert) !default;
+
+/// Color to use for labels of invalid inputs.
+/// @type Color
+$form-label-color-invalid: map-get($foundation-palette, alert) !default;
+
+/// Default font color for form error text.
+/// @type Color
+$input-error-color: map-get($foundation-palette, alert) !default;
+>>>>>>> origin/master
 
 /// Default font size for form error text.
 /// @type Number
@@ -37,6 +49,7 @@ $input-error-font-weight: $global-weight-bold !default;
 /// Styles the background and border of an input field to have an error state.
 ///
 /// @param {Color} $background [$alert-color] - Color to use for the background and border.
+<<<<<<< HEAD
 /// @param {Number} $background-lighten [10%] - Lightness level of the background color.
 @mixin form-input-error(
   $background: $input-background-invalid,
@@ -48,6 +61,16 @@ $input-error-font-weight: $global-weight-bold !default;
     &::placeholder {
       color: $background;
     }
+=======
+/// @param {Number} $background-alpha [0.1] - Transparency level of the background color.
+@mixin form-input-error(
+  $background: $input-background-invalid,
+  $background-alpha: 0.1
+) {
+  &:not(:focus) {
+    background-color: rgba($background, $background-alpha);
+    border-color: $background;
+>>>>>>> origin/master
   }
 }
 
@@ -56,7 +79,10 @@ $input-error-font-weight: $global-weight-bold !default;
   display: none;
   margin-top: $form-spacing * -0.5;
   margin-bottom: $form-spacing;
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
   font-size: $input-error-font-size;
   font-weight: $input-error-font-weight;
   color: $input-error-color;

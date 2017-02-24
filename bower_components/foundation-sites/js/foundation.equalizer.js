@@ -36,7 +36,10 @@ class Equalizer {
 
     this.$watched = $watched.length ? $watched : this.$element.find('[data-equalizer-watch]');
     this.$element.attr('data-resize', (eqId || Foundation.GetYoDigits(6, 'eq')));
+<<<<<<< HEAD
 	this.$element.attr('data-mutate', (eqId || Foundation.GetYoDigits(6, 'eq')));
+=======
+>>>>>>> origin/master
 
     this.hasNested = this.$element.find('[data-equalizer]').length > 0;
     this.isNested = this.$element.parentsUntil(document.body, '[data-equalizer]').length > 0;
@@ -71,8 +74,12 @@ class Equalizer {
     this.isOn = false;
     this.$element.off({
       '.zf.equalizer': this._bindHandler.onPostEqualizedBound,
+<<<<<<< HEAD
       'resizeme.zf.trigger': this._bindHandler.onResizeMeBound,
 	  'mutateme.zf.trigger': this._bindHandler.onResizeMeBound
+=======
+      'resizeme.zf.trigger': this._bindHandler.onResizeMeBound
+>>>>>>> origin/master
     });
   }
 
@@ -103,7 +110,10 @@ class Equalizer {
       this.$element.on('postequalized.zf.equalizer', this._bindHandler.onPostEqualizedBound);
     }else{
       this.$element.on('resizeme.zf.trigger', this._bindHandler.onResizeMeBound);
+<<<<<<< HEAD
 	  this.$element.on('mutateme.zf.trigger', this._bindHandler.onResizeMeBound);
+=======
+>>>>>>> origin/master
     }
     this.isOn = true;
   }
@@ -113,7 +123,11 @@ class Equalizer {
    * @private
    */
   _checkMQ() {
+<<<<<<< HEAD
     var tooSmall = !Foundation.MediaQuery.is(this.options.equalizeOn);
+=======
+    var tooSmall = !Foundation.MediaQuery.atLeast(this.options.equalizeOn);
+>>>>>>> origin/master
     if(tooSmall){
       if(this.isOn){
         this._pauseEvents();
@@ -158,9 +172,12 @@ class Equalizer {
    * @private
    */
   _isStacked() {
+<<<<<<< HEAD
     if (!this.$watched[0] || !this.$watched[1]) {
       return true;
     }
+=======
+>>>>>>> origin/master
     return this.$watched[0].getBoundingClientRect().top !== this.$watched[1].getBoundingClientRect().top;
   }
 
@@ -236,8 +253,13 @@ class Equalizer {
    * Changes the CSS height property of each child in an Equalizer parent to match the tallest by row
    * @param {array} groups - An array of heights of children within Equalizer container grouped by row with element,height and max as last child
    * @fires Equalizer#preequalized
+<<<<<<< HEAD
    * @fires Equalizer#preequalizedrow
    * @fires Equalizer#postequalizedrow
+=======
+   * @fires Equalizer#preequalizedRow
+   * @fires Equalizer#postequalizedRow
+>>>>>>> origin/master
    * @fires Equalizer#postequalized
    */
   applyHeightByRow(groups) {
@@ -254,7 +276,11 @@ class Equalizer {
       }
       /**
         * Fires before the heights per row are applied
+<<<<<<< HEAD
         * @event Equalizer#preequalizedrow
+=======
+        * @event Equalizer#preequalizedRow
+>>>>>>> origin/master
         */
       this.$element.trigger('preequalizedrow.zf.equalizer');
       for (var j = 0, lenJ = (groupsILength-1); j < lenJ ; j++) {
@@ -262,7 +288,11 @@ class Equalizer {
       }
       /**
         * Fires when the heights per row have been applied
+<<<<<<< HEAD
         * @event Equalizer#postequalizedrow
+=======
+        * @event Equalizer#postequalizedRow
+>>>>>>> origin/master
         */
       this.$element.trigger('postequalizedrow.zf.equalizer');
     }

@@ -29,6 +29,11 @@ class Reveal {
       'ENTER': 'open',
       'SPACE': 'open',
       'ESCAPE': 'close',
+<<<<<<< HEAD
+=======
+      'TAB': 'tab_forward',
+      'SHIFT_TAB': 'tab_backward'
+>>>>>>> origin/master
     });
   }
 
@@ -67,7 +72,11 @@ class Reveal {
     if(this.$overlay) {
       this.$element.detach().appendTo(this.$overlay);
     } else {
+<<<<<<< HEAD
       this.$element.detach().appendTo($(this.options.appendTo));
+=======
+      this.$element.detach().appendTo($('body'));
+>>>>>>> origin/master
       this.$element.addClass('without-overlay');
     }
     this._events();
@@ -80,10 +89,18 @@ class Reveal {
    * Creates an overlay div to display behind the modal.
    * @private
    */
+<<<<<<< HEAD
   _makeOverlay() {
     return $('<div></div>')
       .addClass('reveal-overlay')
       .appendTo(this.options.appendTo);
+=======
+  _makeOverlay(id) {
+    var $overlay = $('<div></div>')
+                    .addClass('reveal-overlay')
+                    .appendTo('body');
+    return $overlay;
+>>>>>>> origin/master
   }
 
   /**
@@ -154,10 +171,17 @@ class Reveal {
 
     if (this.options.closeOnClick && this.options.overlay) {
       this.$overlay.off('.zf.reveal').on('click.zf.reveal', function(e) {
+<<<<<<< HEAD
         if (e.target === _this.$element[0] ||
           $.contains(_this.$element[0], e.target) ||
             !$.contains(document, e.target)) {
               return;
+=======
+        if (e.target === _this.$element[0] || 
+          $.contains(_this.$element[0], e.target) || 
+            !$.contains(document, e.target)) { 
+              return; 
+>>>>>>> origin/master
         }
         _this.close();
       });
@@ -229,6 +253,7 @@ class Reveal {
        */
       this.$element.trigger('closeme.zf.reveal', this.id);
     }
+<<<<<<< HEAD
 
     var _this = this;
 
@@ -246,23 +271,37 @@ class Reveal {
     // Motion UI method of reveal
     if (this.options.animationIn) {
       function afterAnimation(){
+=======
+    // Motion UI method of reveal
+    if (this.options.animationIn) {
+      var _this = this;
+      function afterAnimationFocus(){
+>>>>>>> origin/master
         _this.$element
           .attr({
             'aria-hidden': false,
             'tabindex': -1
           })
           .focus();
+<<<<<<< HEAD
         addRevealOpenClasses();
         Foundation.Keyboard.trapFocus(_this.$element);
+=======
+>>>>>>> origin/master
       }
       if (this.options.overlay) {
         Foundation.Motion.animateIn(this.$overlay, 'fade-in');
       }
       Foundation.Motion.animateIn(this.$element, this.options.animationIn, () => {
+<<<<<<< HEAD
         if(this.$element) { // protect against object having been removed
           this.focusableElements = Foundation.Keyboard.findFocusable(this.$element);
           afterAnimation();
         }
+=======
+        this.focusableElements = Foundation.Keyboard.findFocusable(this.$element);
+        afterAnimationFocus();
+>>>>>>> origin/master
       });
     }
     // jQuery method of reveal
@@ -280,7 +319,10 @@ class Reveal {
         'tabindex': -1
       })
       .focus();
+<<<<<<< HEAD
     Foundation.Keyboard.trapFocus(this.$element);
+=======
+>>>>>>> origin/master
 
     /**
      * Fires when the modal has successfully opened.
@@ -288,7 +330,17 @@ class Reveal {
      */
     this.$element.trigger('open.zf.reveal');
 
+<<<<<<< HEAD
     addRevealOpenClasses();
+=======
+    if (this.isMobile) {
+      this.originalScrollPos = window.pageYOffset;
+      $('html, body').addClass('is-reveal-open');
+    }
+    else {
+      $('body').addClass('is-reveal-open');
+    }
+>>>>>>> origin/master
 
     setTimeout(() => {
       this._extraHandlers();
@@ -301,13 +353,21 @@ class Reveal {
    */
   _extraHandlers() {
     var _this = this;
+<<<<<<< HEAD
     if(!this.$element) { return; } // If we're in the middle of cleanup, don't freak out
+=======
+>>>>>>> origin/master
     this.focusableElements = Foundation.Keyboard.findFocusable(this.$element);
 
     if (!this.options.overlay && this.options.closeOnClick && !this.options.fullScreen) {
       $('body').on('click.zf.reveal', function(e) {
+<<<<<<< HEAD
         if (e.target === _this.$element[0] ||
           $.contains(_this.$element[0], e.target) ||
+=======
+        if (e.target === _this.$element[0] || 
+          $.contains(_this.$element[0], e.target) || 
+>>>>>>> origin/master
             !$.contains(document, e.target)) { return; }
         _this.close();
       });
@@ -331,6 +391,29 @@ class Reveal {
       var $target = $(this);
       // handle keyboard event with keyboard util
       Foundation.Keyboard.handleKey(e, 'Reveal', {
+<<<<<<< HEAD
+=======
+        tab_forward: function() {
+          _this.focusableElements = Foundation.Keyboard.findFocusable(_this.$element);
+          if (_this.$element.find(':focus').is(_this.focusableElements.eq(-1))) { // left modal downwards, setting focus to first element
+            _this.focusableElements.eq(0).focus();
+            return true;
+          }
+          if (_this.focusableElements.length === 0) { // no focusable elements inside the modal at all, prevent tabbing in general
+            return true;
+          }
+        },
+        tab_backward: function() {
+          _this.focusableElements = Foundation.Keyboard.findFocusable(_this.$element);
+          if (_this.$element.find(':focus').is(_this.focusableElements.eq(0)) || _this.$element.is(':focus')) { // left modal upwards, setting focus to last element
+            _this.focusableElements.eq(-1).focus();
+            return true;
+          }
+          if (_this.focusableElements.length === 0) { // no focusable elements inside the modal at all, prevent tabbing in general
+            return true;
+          }
+        },
+>>>>>>> origin/master
         open: function() {
           if (_this.$element.find(':focus').is(_this.$element.find('[data-close]'))) {
             setTimeout(function() { // set focus back to anchor if close button has been activated
@@ -412,9 +495,12 @@ class Reveal {
         $('body').removeClass('is-reveal-open');
       }
 
+<<<<<<< HEAD
 
       Foundation.Keyboard.releaseFocus(_this.$element);
 
+=======
+>>>>>>> origin/master
       _this.$element.attr('aria-hidden', true);
 
       /**
@@ -435,7 +521,11 @@ class Reveal {
     this.isActive = false;
      if (_this.options.deepLink) {
        if (window.history.replaceState) {
+<<<<<<< HEAD
          window.history.replaceState('', document.title, window.location.href.replace(`#${this.id}`, ''));
+=======
+         window.history.replaceState("", document.title, window.location.pathname);
+>>>>>>> origin/master
        } else {
          window.location.hash = '';
        }
@@ -460,7 +550,11 @@ class Reveal {
    */
   destroy() {
     if (this.options.overlay) {
+<<<<<<< HEAD
       this.$element.appendTo($(this.options.appendTo)); // move $element outside of $overlay to prevent error unregisterPlugin()
+=======
+      this.$element.appendTo($('body')); // move $element outside of $overlay to prevent error unregisterPlugin()
+>>>>>>> origin/master
       this.$overlay.hide().off().remove();
     }
     this.$element.hide().off();
@@ -555,6 +649,7 @@ Reveal.defaults = {
    * @option
    * @example false
    */
+<<<<<<< HEAD
   deepLink: false,
     /**
    * Allows the modal to append to custom div.
@@ -563,6 +658,9 @@ Reveal.defaults = {
    */
   appendTo: "body"
 
+=======
+  deepLink: false
+>>>>>>> origin/master
 };
 
 // Window exports

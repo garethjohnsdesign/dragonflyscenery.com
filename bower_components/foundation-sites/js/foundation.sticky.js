@@ -58,12 +58,16 @@ class Sticky {
       }
 
       _this._setSizes(function(){
+<<<<<<< HEAD
         var scroll = window.pageYOffset;
         _this._calc(false, scroll);
         //Unstick the element will ensure that proper classes are set.
         if (!_this.isStuck) {
           _this._removeSticky((scroll >= _this.topPoint) ? false : true);
         }
+=======
+        _this._calc(false);
+>>>>>>> origin/master
       });
       _this._events(id.split('-').reverse().join('-'));
     });
@@ -209,6 +213,10 @@ class Sticky {
     css[mrgn] = `${this.options[mrgn]}em`;
     css[stickTo] = 0;
     css[notStuckTo] = 'auto';
+<<<<<<< HEAD
+=======
+    css['left'] = this.$container.offset().left + parseInt(window.getComputedStyle(this.$container[0])["padding-left"], 10);
+>>>>>>> origin/master
     this.isStuck = true;
     this.$element.removeClass(`is-anchored is-at-${notStuckTo}`)
                  .addClass(`is-stuck is-at-${stickTo}`)
@@ -250,6 +258,10 @@ class Sticky {
       css['top'] = anchorPt;
     }
 
+<<<<<<< HEAD
+=======
+    css['left'] = '';
+>>>>>>> origin/master
     this.isStuck = false;
     this.$element.removeClass(`is-stuck is-at-${stickTo}`)
                  .addClass(`is-anchored is-at-${topOrBottom}`)
@@ -269,15 +281,23 @@ class Sticky {
    * @private
    */
   _setSizes(cb) {
+<<<<<<< HEAD
     this.canStick = Foundation.MediaQuery.is(this.options.stickyOn);
+=======
+    this.canStick = Foundation.MediaQuery.atLeast(this.options.stickyOn);
+>>>>>>> origin/master
     if (!this.canStick) {
       if (cb && typeof cb === 'function') { cb(); }
     }
     var _this = this,
         newElemWidth = this.$container[0].getBoundingClientRect().width,
         comp = window.getComputedStyle(this.$container[0]),
+<<<<<<< HEAD
         pdngl = parseInt(comp['padding-left'], 10),
         pdngr = parseInt(comp['padding-right'], 10);
+=======
+        pdng = parseInt(comp['padding-right'], 10);
+>>>>>>> origin/master
 
     if (this.$anchor && this.$anchor.length) {
       this.anchorHeight = this.$anchor[0].getBoundingClientRect().height;
@@ -286,7 +306,11 @@ class Sticky {
     }
 
     this.$element.css({
+<<<<<<< HEAD
       'max-width': `${newElemWidth - pdngl - pdngr}px`
+=======
+      'max-width': `${newElemWidth - pdng}px`
+>>>>>>> origin/master
     });
 
     var newContainerHeight = this.$element[0].getBoundingClientRect().height || this.containerHeight;
@@ -299,7 +323,13 @@ class Sticky {
     });
     this.elemHeight = newContainerHeight;
 
+<<<<<<< HEAD
     if (!this.isStuck) {
+=======
+    if (this.isStuck) {
+      this.$element.css({"left":this.$container.offset().left + parseInt(comp['padding-left'], 10)});
+    } else {
+>>>>>>> origin/master
       if (this.$element.hasClass('is-at-bottom')) {
         var anchorPt = (this.points ? this.points[1] - this.$container.offset().top : this.anchorHeight) - this.elemHeight;
         this.$element.css('top', anchorPt);

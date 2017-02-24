@@ -105,6 +105,7 @@
   }
   @return $map;
 }
+<<<<<<< HEAD
 
 /// Casts a map into a list.
 /// @link http://hugogiraudel.com/2014/04/28/casting-map-into-list/
@@ -138,3 +139,5 @@
   @return if(type-of($map) != 'list', ($value,), $map);
 
 }
+=======
+>>>>>>> origin/master

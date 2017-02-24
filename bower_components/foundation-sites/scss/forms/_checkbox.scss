@@ -17,11 +17,18 @@
   [type='checkbox'] + label,
   [type='radio'] + label {
     display: inline-block;
+<<<<<<< HEAD
     vertical-align: baseline;
 
     margin-#{$global-left}: $form-spacing * 0.5;
     margin-#{$global-right}: $form-spacing;
     margin-bottom: 0;
+=======
+    margin-#{$global-left}: $form-spacing * 0.5;
+    margin-#{$global-right}: $form-spacing;
+    margin-bottom: 0;
+    vertical-align: baseline;
+>>>>>>> origin/master
 
     &[for] {
       cursor: pointer;

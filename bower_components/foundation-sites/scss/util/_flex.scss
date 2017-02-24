@@ -13,6 +13,7 @@ $-zf-flex-align: (
   'stretch': stretch,
 );
 
+<<<<<<< HEAD
 $-zf-flex-direction: (
   'row': row,
   'row-reverse': row-reverse,
@@ -20,6 +21,8 @@ $-zf-flex-direction: (
   'column-reverse': column-reverse,
 );
 
+=======
+>>>>>>> origin/master
 /// Enables flexbox by adding `display: flex` to the element.
 @mixin flex {
   display: flex;
@@ -35,7 +38,11 @@ $-zf-flex-direction: (
       $x: map-get($-zf-flex-justify, $x);
     }
     @else {
+<<<<<<< HEAD
       @warn 'flex-grid-row-align(): #{$x} is not a valid value for horizontal alignment. Use left, right, center, justify, or spaced.';
+=======
+      @warn 'flex-grid-row-align(): #{$x} is not a valid value for horizontal alignment. Use left, right, center, justify, or spaced.'
+>>>>>>> origin/master
     }
   }
 
@@ -44,7 +51,11 @@ $-zf-flex-direction: (
       $y: map-get($-zf-flex-align, $y);
     }
     @else {
+<<<<<<< HEAD
       @warn 'flex-grid-row-align(): #{$y} is not a valid value for vertical alignment. Use top, bottom, middle, or stretch.';
+=======
+      @warn 'flex-grid-row-align(): #{$y} is not a valid value for vertical alignment. Use top, bottom, middle, or stretch.'
+>>>>>>> origin/master
     }
   }
 
@@ -61,7 +72,11 @@ $-zf-flex-direction: (
       $y: map-get($-zf-flex-align, $y);
     }
     @else {
+<<<<<<< HEAD
       @warn 'flex-grid-column-align(): #{$y} is not a valid value for alignment. Use top, bottom, middle, or stretch.';
+=======
+      @warn 'flex-grid-column-align(): #{$y} is not a valid value for alignment. Use top, bottom, middle, or stretch.'
+>>>>>>> origin/master
     }
   }
 
@@ -73,6 +88,7 @@ $-zf-flex-direction: (
 @mixin flex-order($order: 0) {
   order: $order;
 }
+<<<<<<< HEAD
 
 /// Change flex-direction
 /// @param {Keyword} $direction [row] - Flex direction to use. Can be
@@ -83,3 +99,5 @@ $-zf-flex-direction: (
 @mixin flex-direction($direction: row) {
   flex-direction: $direction;
 }
+=======
+>>>>>>> origin/master

@@ -22,10 +22,13 @@ $buttongroup-child-selector: '.button' !default;
 /// @type Number
 $buttongroup-expand-max: 6 !default;
 
+<<<<<<< HEAD
 /// Determines if $button-radius is applied to each button or the button group as a whole. Use $global-radius in _settings.scss to change radius.
 /// @type Boolean
 $buttongroup-radius-on-each: true !default;
 
+=======
+>>>>>>> origin/master
 /// Add styles for a button group container.
 /// @param {String} $child-selector [$buttongroup-child-selector] - Selector for the buttons inside a button group.
 @mixin button-group(
@@ -56,6 +59,7 @@ $buttongroup-radius-on-each: true !default;
     &:last-child {
       margin-#{$global-right}: 0;
     }
+<<<<<<< HEAD
 
     @if not $buttongroup-radius-on-each {
       border-radius: 0;
@@ -71,6 +75,8 @@ $buttongroup-radius-on-each: true !default;
       }
     }
 
+=======
+>>>>>>> origin/master
   }
 }
 
@@ -89,9 +95,16 @@ $buttongroup-radius-on-each: true !default;
     }
   }
 
+<<<<<<< HEAD
   #{$selector} {
     @if $global-flexbox {
       flex: 1 1 0px; // sass-lint:disable-line zero-unit
+=======
+  // scss-lint:disable ZeroUnit
+  #{$selector} {
+    @if $global-flexbox {
+      flex: 1 1 0px;
+>>>>>>> origin/master
     }
     @else {
       @for $i from 2 through $buttongroup-expand-max {
@@ -131,6 +144,7 @@ $buttongroup-radius-on-each: true !default;
     &:last-child {
       margin-bottom: 0;
     }
+<<<<<<< HEAD
 
 
     @if not $buttongroup-radius-on-each {
@@ -148,6 +162,8 @@ $buttongroup-radius-on-each: true !default;
       }
     }
 
+=======
+>>>>>>> origin/master
   }
 }
 
@@ -156,14 +172,22 @@ $buttongroup-radius-on-each: true !default;
 @mixin button-group-unstack(
   $selector: $buttongroup-child-selector
 ) {
+<<<<<<< HEAD
   #{$selector} {
     @if $global-flexbox {
       flex: 1 1 0px; // sass-lint:disable-line zero-unit
+=======
+  // scss-lint:disable ZeroUnit
+  #{$selector} {
+    @if $global-flexbox {
+      flex: 1 1 0px;
+>>>>>>> origin/master
     }
     @else {
       width: auto;
     }
     margin-bottom: 0;
+<<<<<<< HEAD
 
     @if not $buttongroup-radius-on-each {
       &:first-child {
@@ -179,6 +203,8 @@ $buttongroup-radius-on-each: true !default;
       }
     }
 
+=======
+>>>>>>> origin/master
   }
 }
 
@@ -229,7 +255,12 @@ $buttongroup-radius-on-each: true !default;
       }
     }
 
+<<<<<<< HEAD
     &.stacked-for-small.expanded { // sass-lint:disable-line force-element-nesting
+=======
+    // scss-lint:disable MergeableSelector
+    &.stacked-for-small.expanded {
+>>>>>>> origin/master
       @include breakpoint(small only) {
         display: block;
 

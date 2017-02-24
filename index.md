@@ -1,6 +1,6 @@
 ---
 title: Dragonfly Scenery
-image: "/assets/img/meta/og-image.png"
+image: "/assets/img/og-image.png"
 layout: index
 ---
 

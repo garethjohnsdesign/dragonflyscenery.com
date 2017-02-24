@@ -32,18 +32,27 @@ $meter-fill-bad: $alert-color !default;
 
 @mixin foundation-meter-element {
   meter {
+<<<<<<< HEAD
+=======
+    -webkit-appearance: none;
+    -moz-appearance: none;
+>>>>>>> origin/master
     display: block;
     width: 100%;
     height: $meter-height;
     margin-bottom: 1rem;
 
+<<<<<<< HEAD
     appearance: none;
 
+=======
+>>>>>>> origin/master
     @if has-value($meter-radius) {
       border-radius: $meter-radius;
     }
 
     // For Firefox
+<<<<<<< HEAD
     border: 0;
     background: $meter-background;
 
@@ -55,6 +64,20 @@ $meter-fill-bad: $alert-color !default;
       }
 
       background: $meter-background;
+=======
+    background: $meter-background;
+    border: 0;
+
+    // Chrome/Safari/Edge
+    &::-webkit-meter-bar {
+      background: $meter-background;
+
+      @if has-value($meter-radius) {
+        border-radius: $meter-radius;
+      }
+      
+      border: 0;
+>>>>>>> origin/master
     }
 
     &::-webkit-meter-inner-element {
@@ -95,6 +118,7 @@ $meter-fill-bad: $alert-color !default;
       }
     }
 
+<<<<<<< HEAD
     &:-moz-meter-optimum::-moz-meter-bar { // sass-lint:disable-line force-pseudo-nesting
       background: $meter-fill-good;
     }
@@ -104,6 +128,17 @@ $meter-fill-bad: $alert-color !default;
     }
 
     &:-moz-meter-sub-sub-optimum::-moz-meter-bar { // sass-lint:disable-line force-pseudo-nesting
+=======
+    &:-moz-meter-optimum::-moz-meter-bar {
+      background: $meter-fill-good;
+    }
+
+    &:-moz-meter-sub-optimum::-moz-meter-bar {
+      background: $meter-fill-medium;
+    }
+
+    &:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+>>>>>>> origin/master
       background: $meter-fill-bad;
     }
   }
