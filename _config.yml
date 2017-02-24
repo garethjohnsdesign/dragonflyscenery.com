@@ -4,7 +4,7 @@ timezone: UTC
 collections:
   posts:
     title: Posts
-    output: true
+    output: false
   uploads:
     title: Uploads
     output: false
@@ -16,20 +16,22 @@ defaults:
     path: ''
     type: pages
   values:
-    layout: page
-- scope:
-    path: ''
-    type: posts
-  values:
-    permalink: "/blog/:title/"
-    layout: post
-    image: 
-    description: 
+    layout: page 
 url: http://dragonflyscenery.com
-description: London-based set-design, prop and art direction studio working alongside
-  the industry's leading photographers, directors and creatives
+description: London-based set-design, prop and art direction studio working alongside the industry's leading photographers, directors and creatives
 permalink: pretty
-exclude: 
+exclude:
+- Gruntfile.js
+- Gemfile
+- Gemfile.lock
+- package.json
+- README*
+- node_modules
+- ".gitignore"
+- bower_components
+- config.codekit3
+- CHANGELOG.md
+- LICENSE.md 
 gems:
 - jekyll-seo-tag
 - jekyll-sitemap

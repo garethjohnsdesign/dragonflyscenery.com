@@ -20,12 +20,6 @@ body {
   cursor: default;
 }
 
-.animsition {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 svg {
   max-width: 100%;
 }
@@ -237,6 +231,13 @@ div.row.excerpt__title {
 .project__video {
   margin-bottom: 0rem;
 }
+
+/*
+.project__carousel img {
+  display: block;
+  height: 400px;
+}
+*/
 
 .project__carousel {
   margin-bottom: 2rem;
