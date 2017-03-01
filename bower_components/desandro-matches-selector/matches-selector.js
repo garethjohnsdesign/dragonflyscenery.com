@@ -1,9 +1,5 @@
 /**
-<<<<<<< HEAD
  * matchesSelector v2.0.2
-=======
- * matchesSelector v2.0.1
->>>>>>> origin/master
  * matchesSelector( element, '.selector' )
  * MIT license
  */
@@ -29,11 +25,7 @@
   'use strict';
 
   var matchesMethod = ( function() {
-<<<<<<< HEAD
     var ElemProto = window.Element.prototype;
-=======
-    var ElemProto = Element.prototype;
->>>>>>> origin/master
     // check for the standard method name first
     if ( ElemProto.matches ) {
       return 'matches';

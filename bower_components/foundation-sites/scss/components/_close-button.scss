@@ -10,7 +10,6 @@
 /// @type List
 $closebutton-position: right top !default;
 
-<<<<<<< HEAD
 /// Right (or left) offset(s) for a close button.
 /// @type Number|Map
 $closebutton-offset-horizontal: (
@@ -31,19 +30,6 @@ $closebutton-size: (
   small: 1.5em,
   medium: 2em,
 ) !default;
-=======
-/// Right (or left) offset for a close button.
-/// @type Number
-$closebutton-offset-horizontal: 1rem !default;
-
-/// Top (or bottom) offset for a close button.
-/// @type Number
-$closebutton-offset-vertical: 0.5rem !default;
-
-/// Default font size of the close button.
-/// @type Number
-$closebutton-size: 2em !default;
->>>>>>> origin/master
 
 /// The line-height of the close button. It affects the spacing of the element.
 /// @type Number
@@ -57,7 +43,6 @@ $closebutton-color: $dark-gray !default;
 /// @type Color
 $closebutton-color-hover: $black !default;
 
-<<<<<<< HEAD
 
 /// Get the size and position for a close button. If the input value is a number, the number is returned. If the input value is a config map and the map has the key `$size`, the value is returned.
 ///
@@ -91,8 +76,6 @@ $closebutton-color-hover: $black !default;
   line-height: -zf-get-size-val($closebutton-lineheight, $size);
 }
 
-=======
->>>>>>> origin/master
 /// Adds styles for a close button, using the styles in the settings variables.
 @mixin close-button {
   $x: nth($closebutton-position, 1);
@@ -101,13 +84,6 @@ $closebutton-color-hover: $black !default;
   @include disable-mouse-outline;
   position: absolute;
   color: $closebutton-color;
-<<<<<<< HEAD
-=======
-  #{$x}: $closebutton-offset-horizontal;
-  #{$y}: $closebutton-offset-vertical;
-  font-size: $closebutton-size;
-  line-height: $closebutton-lineheight;
->>>>>>> origin/master
   cursor: pointer;
 
   &:hover,
@@ -119,11 +95,8 @@ $closebutton-color-hover: $black !default;
 @mixin foundation-close-button {
   .close-button {
     @include close-button;
-<<<<<<< HEAD
 
     &.small { @include close-button-size(small) }
     &, &.medium { @include close-button-size(medium) }
-=======
->>>>>>> origin/master
   }
 }

@@ -48,10 +48,6 @@
     "commit": "7201c3572b0c8dc1478b9d5a94e1178994ee382a"
   },
   "_source": "https://github.com/metafizzy/flickity.git",
-<<<<<<< HEAD
   "_target": "^2.0.5",
-=======
-  "_target": "^2.0.3",
->>>>>>> origin/master
   "_originalSource": "flickity"
 }

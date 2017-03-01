@@ -36,7 +36,6 @@ $titlebar-icon-spacing: 0.25rem !default;
 
 @mixin foundation-title-bar {
   .title-bar {
-<<<<<<< HEAD
     padding: $titlebar-padding;
     background: $titlebar-background;
     color: $titlebar-color;
@@ -45,16 +44,6 @@ $titlebar-icon-spacing: 0.25rem !default;
       display: flex;
       justify-content: space-between;
       align-items: center;
-=======
-    background: $titlebar-background;
-    color: $titlebar-color;
-    padding: $titlebar-padding;
-
-    @if $global-flexbox {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
->>>>>>> origin/master
     }
     @else {
       @include clearfix;
@@ -67,16 +56,9 @@ $titlebar-icon-spacing: 0.25rem !default;
   }
 
   @if $global-flexbox {
-<<<<<<< HEAD
     .title-bar-left,
     .title-bar-right {
       flex: 1 1 0px; // sass-lint:disable-line zero-unit
-=======
-    // scss-lint:disable ZeroUnit
-    .title-bar-left,
-    .title-bar-right {
-      flex: 1 1 0px;
->>>>>>> origin/master
     }
 
     .title-bar-right {
@@ -95,14 +77,8 @@ $titlebar-icon-spacing: 0.25rem !default;
   }
 
   .title-bar-title {
-<<<<<<< HEAD
     display: inline-block;
     vertical-align: middle;
     font-weight: $titlebar-text-font-weight;
-=======
-    font-weight: $titlebar-text-font-weight;
-    vertical-align: middle;
-    display: inline-block;
->>>>>>> origin/master
   }
 }

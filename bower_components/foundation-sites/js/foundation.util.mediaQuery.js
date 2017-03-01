@@ -63,7 +63,6 @@ var MediaQuery = {
   },
 
   /**
-<<<<<<< HEAD
    * Checks if the screen matches to a breakpoint.
    * @function
    * @param {String} size - Name of the breakpoint to check, either 'small only' or 'small'. Omitting 'only' falls back to using atLeast() method.
@@ -80,8 +79,6 @@ var MediaQuery = {
   },
 
   /**
-=======
->>>>>>> origin/master
    * Gets the media query of a breakpoint.
    * @function
    * @param {String} size - Name of the breakpoint to get.

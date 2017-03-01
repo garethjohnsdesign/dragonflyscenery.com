@@ -12,7 +12,7 @@
 //   - Paragraphs <p>
 //   - Bold/italics <b> <strong> <i> <em>
 //   - Small text <small>
-//   - Headings <h1>—<h6>
+//   - Headings <h1>-<h6>
 //   - Anchors <a>
 //   - Dividers <hr>
 //   - Lists <ul> <ol> <dl>
@@ -38,30 +38,6 @@ $header-font-style: normal !default;
 /// @type String | List
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace !default;
 
-<<<<<<< HEAD
-=======
-/// Sizes of headings at various screen sizes. Each key is a breakpoint, and each value is a map of heading sizes.
-/// @type Map
-$header-sizes: (
-  small: (
-    'h1': 24,
-    'h2': 20,
-    'h3': 19,
-    'h4': 18,
-    'h5': 17,
-    'h6': 16,
-  ),
-  medium: (
-    'h1': 48,
-    'h2': 40,
-    'h3': 31,
-    'h4': 25,
-    'h5': 20,
-    'h6': 16,
-  ),
-) !default;
-
->>>>>>> origin/master
 /// Color of headers.
 /// @type Color
 $header-color: inherit !default;
@@ -74,7 +50,6 @@ $header-lineheight: 1.4 !default;
 /// @type Number
 $header-margin-bottom: 0.5rem !default;
 
-<<<<<<< HEAD
 /// Styles for headings at various screen sizes. Each key is a breakpoint, and each value is a map of heading styles.
 /// @type Map
 $header-styles: (
@@ -116,8 +91,6 @@ $header-styles: (
   $header-styles: build_from_header-sizes($header-sizes);
 }
 
-=======
->>>>>>> origin/master
 /// Text rendering method of headers.
 /// @type String
 $header-text-rendering: optimizeLegibility !default;
@@ -250,13 +223,10 @@ $cite-font-size: rem-calc(13) !default;
 /// @type Color
 $cite-color: $dark-gray !default;
 
-<<<<<<< HEAD
 /// Pseudo content for `<cite>` elements.
 /// @type String
 $cite-pseudo-content: '\2014 \0020' !default;
 
-=======
->>>>>>> origin/master
 /// Font family for `<kbd>` elements.
 /// @type String | List
 $keystroke-font: $font-family-monospace !default;
@@ -308,16 +278,10 @@ $abbr-underline: 1px dotted $black !default;
 
   // Paragraphs
   p {
-<<<<<<< HEAD
     margin-bottom: $paragraph-margin-bottom;
 
     font-size: inherit;
     line-height: $paragraph-lineheight;
-=======
-    font-size: inherit;
-    line-height: $paragraph-lineheight;
-    margin-bottom: $paragraph-margin-bottom;
->>>>>>> origin/master
     text-rendering: $paragraph-text-rendering;
   }
 
@@ -349,7 +313,6 @@ $abbr-underline: 1px dotted $black !default;
   h5,
   h6 {
     font-family: $header-font-family;
-<<<<<<< HEAD
     font-style: $header-font-style;
     font-weight: $header-font-weight;
     color: $header-color;
@@ -399,28 +362,6 @@ $abbr-underline: 1px dotted $black !default;
           } @else if $size == $-zf-zero-breakpoint {
             margin-bottom: rem-calc($header-margin-bottom);
           }
-=======
-    font-weight: $header-font-weight;
-    font-style: $header-font-style;
-    color: $header-color;
-    text-rendering: $header-text-rendering;
-    margin-top: 0;
-    margin-bottom: $header-margin-bottom;
-    line-height: $header-lineheight;
-
-    small {
-      color: $header-small-font-color;
-      line-height: 0;
-    }
-  }
-
-  // Heading sizes
-  @each $size, $headers in $header-sizes {
-    @include breakpoint($size) {
-      @each $header, $font-size in $headers {
-        #{$header} {
-          font-size: rem-calc($font-size);
->>>>>>> origin/master
         }
       }
     }
@@ -428,16 +369,10 @@ $abbr-underline: 1px dotted $black !default;
 
   // Links
   a {
-<<<<<<< HEAD
     line-height: inherit;
     color: $anchor-color;
     text-decoration: $anchor-text-decoration;
 
-=======
-    color: $anchor-color;
-    text-decoration: $anchor-text-decoration;
-    line-height: inherit;
->>>>>>> origin/master
     cursor: pointer;
 
     &:hover,
@@ -455,7 +390,6 @@ $abbr-underline: 1px dotted $black !default;
 
   // Horizontal rule
   hr {
-<<<<<<< HEAD
     clear: both;
 
     max-width: $hr-width;
@@ -466,31 +400,15 @@ $abbr-underline: 1px dotted $black !default;
     border-right: 0;
     border-bottom: $hr-border;
     border-left: 0;
-=======
-    max-width: $hr-width;
-    height: 0;
-    border-right: 0;
-    border-top: 0;
-    border-bottom: $hr-border;
-    border-left: 0;
-    margin: $hr-margin;
-    clear: both;
->>>>>>> origin/master
   }
 
   // Lists
   ul,
   ol,
   dl {
-<<<<<<< HEAD
     margin-bottom: $list-margin-bottom;
     list-style-position: $list-style-position;
     line-height: $list-lineheight;
-=======
-    line-height: $list-lineheight;
-    margin-bottom: $list-margin-bottom;
-    list-style-position: $list-style-position;
->>>>>>> origin/master
   }
 
   // List items
@@ -500,13 +418,8 @@ $abbr-underline: 1px dotted $black !default;
 
   // Unordered lists
   ul {
-<<<<<<< HEAD
     margin-#{$global-left}: $list-side-margin;
     list-style-type: $list-style-type;
-=======
-    list-style-type: $list-style-type;
-    margin-#{$global-left}: $list-side-margin;
->>>>>>> origin/master
   }
 
   // Ordered lists
@@ -551,17 +464,12 @@ $abbr-underline: 1px dotted $black !default;
     color: $cite-color;
 
     &:before {
-<<<<<<< HEAD
       content: $cite-pseudo-content;
-=======
-      content: '\2014 \0020';
->>>>>>> origin/master
     }
   }
 
   // Abbreviations
   abbr {
-<<<<<<< HEAD
     border-bottom: $abbr-underline;
     color: $body-font-color;
     cursor: help;
@@ -582,26 +490,10 @@ $abbr-underline: 1px dotted $black !default;
     font-family: $code-font-family;
     font-weight: $code-font-weight;
     color: $code-color;
-=======
-    color: $body-font-color;
-    cursor: help;
-    border-bottom: $abbr-underline;
-  }
-
-  // Code
-  code {
-    font-family: $code-font-family;
-    font-weight: $code-font-weight;
-    color: $code-color;
-    background-color: $code-background;
-    border: $code-border;
-    padding: $code-padding;
->>>>>>> origin/master
   }
 
   // Keystrokes
   kbd {
-<<<<<<< HEAD
     margin: 0;
     padding: $keystroke-padding;
 
@@ -609,13 +501,6 @@ $abbr-underline: 1px dotted $black !default;
 
     font-family: $keystroke-font;
     color: $keystroke-color;
-=======
-    padding: $keystroke-padding;
-    margin: 0;
-    background-color: $keystroke-background;
-    color: $keystroke-color;
-    font-family: $keystroke-font;
->>>>>>> origin/master
 
     @if has-value($keystroke-radius) {
       border-radius: $keystroke-radius;

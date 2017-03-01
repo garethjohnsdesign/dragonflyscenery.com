@@ -8,11 +8,7 @@
   }
 
   .sticky {
-<<<<<<< HEAD
     position: relative;
-=======
-    position: absolute;
->>>>>>> origin/master
     z-index: 0;
     transform: translate3d(0, 0, 0);
   }
@@ -31,15 +27,9 @@
   }
 
   .sticky.is-anchored {
-<<<<<<< HEAD
     position: relative;
     right: auto;
     left: auto;
-=======
-    position: absolute;
-    left: auto;
-    right: auto;
->>>>>>> origin/master
 
     &.is-at-bottom {
       bottom: 0;

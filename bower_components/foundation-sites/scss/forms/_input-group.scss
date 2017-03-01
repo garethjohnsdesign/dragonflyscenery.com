@@ -34,20 +34,12 @@ $input-prefix-padding: 1rem !default;
     }
 
     > :first-child {
-<<<<<<< HEAD
       border-radius: if($global-text-direction == rtl, 0 $input-radius $input-radius 0, $input-radius 0 0 $input-radius);
-=======
-      border-radius: if($global-text-direction == rtl, 0 $global-radius $global-radius 0, $global-radius 0 0 $global-radius);
->>>>>>> origin/master
     }
 
     > :last-child {
       > * {
-<<<<<<< HEAD
         border-radius: if($global-text-direction == rtl, $input-radius 0 0 $input-radius, 0 $input-radius $input-radius 0);
-=======
-        border-radius: if($global-text-direction == rtl, $global-radius 0 0 $global-radius, 0 $global-radius $global-radius 0);
->>>>>>> origin/master
       }
     }
   }
@@ -64,7 +56,6 @@ $input-prefix-padding: 1rem !default;
 
   .input-group-label {
     @extend %input-group-child;
-<<<<<<< HEAD
     padding: 0 $input-prefix-padding;
     border: $input-prefix-border;
     background: $input-prefix-background;
@@ -76,18 +67,6 @@ $input-prefix-padding: 1rem !default;
     @if $global-flexbox {
       display: flex;
       flex: 0 0 auto;
-=======
-    text-align: center;
-    padding: 0 $input-prefix-padding;
-    background: $input-prefix-background;
-    color: $input-prefix-color;
-    border: $input-prefix-border;
-    white-space: nowrap;
-
-    @if $global-flexbox {
-      flex: 0 0 auto;
-      display: flex;
->>>>>>> origin/master
       align-items: center;
     }
     @else {
@@ -110,17 +89,10 @@ $input-prefix-padding: 1rem !default;
     @extend %input-group-child;
     border-radius: 0;
 
-<<<<<<< HEAD
     @if $global-flexbox {
       flex: 1 1 0px; // sass-lint:disable-line zero-unit
       height: auto;
       min-width: 0;
-=======
-    // scss-lint:disable ZeroUnit
-    @if $global-flexbox {
-      flex: 1 1 0px;
-      height: auto;
->>>>>>> origin/master
     }
     @else {
       height: $height;
@@ -137,18 +109,12 @@ $input-prefix-padding: 1rem !default;
       flex: 0 0 auto;
     }
     @else {
-<<<<<<< HEAD
       width: 1%;
       height: 100%;
-=======
-      height: 100%;
-      width: 1%;
->>>>>>> origin/master
     }
 
     a,
     input,
-<<<<<<< HEAD
     button,
     label {
       @extend %input-group-child;
@@ -157,18 +123,10 @@ $input-prefix-padding: 1rem !default;
       padding-bottom: 0;
 
       font-size: $input-font-size;
-=======
-    button {
-      margin: 0;
->>>>>>> origin/master
     }
   }
 
   // Specificity bump needed to prevent override by buttons
-<<<<<<< HEAD
-=======
-  // scss-lint:disable QualifyingSelector
->>>>>>> origin/master
   @if not $global-flexbox {
       .input-group .input-group-button {
           display: table-cell;

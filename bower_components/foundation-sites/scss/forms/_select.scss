@@ -22,7 +22,6 @@ $select-radius: $global-radius !default;
   $height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(1));
 
   height: $height;
-<<<<<<< HEAD
   margin: 0 0 $form-spacing;
   padding: ($form-spacing / 2);
 
@@ -62,29 +61,6 @@ $select-radius: $global-radius !default;
     }
   }
 
-=======
-  padding: ($form-spacing / 2);
-  border: $input-border;
-  margin: 0 0 $form-spacing;
-  font-size: $input-font-size;
-  font-family: $input-font-family;
-  line-height: normal;
-  color: $input-color;
-  background-color: $select-background;
-  border-radius: $select-radius;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-
-  @if $select-triangle-color != transparent {
-    @include background-triangle($select-triangle-color);
-    background-size: 9px 6px;
-    background-position: $global-right (-$form-spacing) center;
-    background-origin: content-box;
-    background-repeat: no-repeat;
-    padding-#{$global-right}: ($form-spacing * 1.5);
-  }
-
->>>>>>> origin/master
   // Disabled state
   &:disabled {
     background-color: $input-background-disabled;

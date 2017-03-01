@@ -4,4 +4,4 @@ Website for Dragonfly Scenery. Please go to [www.dragonflyscenery.com](http://dr
 
 * * *
 
-Copyright (c) 2016 Gareth Johns Art Direction + Design – info@garethjohnsdesign.com
+Copyright (c) 2017 Gareth Johns Art Direction + Design – info@garethjohnsdesign.com

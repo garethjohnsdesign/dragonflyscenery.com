@@ -20,11 +20,7 @@ $topbar-submenu-background: $topbar-background !default;
 
 /// Spacing for the top bar title.
 /// @type Number
-<<<<<<< HEAD
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0 !default;
-=======
-$topbar-title-spacing: 1rem !default;
->>>>>>> origin/master
 
 /// Maximum width of `<input>` elements inside the top bar.
 /// @type Number
@@ -38,15 +34,9 @@ $topbar-unstack-breakpoint: medium !default;
 @mixin top-bar-container {
   @if $global-flexbox {
     display: flex;
-<<<<<<< HEAD
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-=======
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
->>>>>>> origin/master
   }
   @else {
     @include clearfix;
@@ -78,12 +68,7 @@ $topbar-unstack-breakpoint: medium !default;
     margin-#{$global-right}: 0;
   }
 
-<<<<<<< HEAD
   input.button { // sass-lint:disable-line no-qualifying-elements
-=======
-  // scss-lint:disable QualifyingElement
-  input.button {
->>>>>>> origin/master
     width: auto;
   }
 }
@@ -114,17 +99,10 @@ $topbar-unstack-breakpoint: medium !default;
   @if $global-flexbox {
     flex-wrap: nowrap;
 
-<<<<<<< HEAD
     .top-bar-left {
       flex: 1 1 auto;
     }
 
-=======
-    // scss-lint:disable ZeroUnit
-    .top-bar-left {
-      flex: 1 1 auto;
-    }
->>>>>>> origin/master
     .top-bar-right {
       flex: 0 1 auto;
     }
@@ -165,11 +143,7 @@ $topbar-unstack-breakpoint: medium !default;
   @if $global-flexbox {
     .top-bar-title {
       flex: 0 0 auto;
-<<<<<<< HEAD
       margin: $topbar-title-spacing;
-=======
-      margin-right: $topbar-title-spacing;
->>>>>>> origin/master
     }
 
     .top-bar-left,
@@ -179,7 +153,6 @@ $topbar-unstack-breakpoint: medium !default;
   }
   @else {
     .top-bar-title {
-<<<<<<< HEAD
       display: inline-block;
       float: left;
       padding: $topbar-title-spacing;
@@ -187,11 +160,6 @@ $topbar-unstack-breakpoint: medium !default;
       .menu-icon {
         bottom: 2px;
       }
-=======
-      float: left;
-      margin-right: $topbar-title-spacing;
-
->>>>>>> origin/master
     }
 
     .top-bar-left {

@@ -20,13 +20,8 @@
   $gutter: null
 ) {
   & > #{$selector} {
-<<<<<<< HEAD
     float: $global-left;
     width: percentage(1/$n);
-=======
-    width: percentage(1/$n);
-    float: $global-left;
->>>>>>> origin/master
 
     // If a $gutter value is passed
     @if($gutter) {
@@ -36,25 +31,15 @@
           $padding: rem-calc($value) / 2;
 
           @include breakpoint($breakpoint) {
-<<<<<<< HEAD
             padding-right: $padding;
             padding-left: $padding;
-=======
-            padding-left: $padding;
-            padding-right: $padding;
->>>>>>> origin/master
           }
         }
       }
       @else if type-of($gutter) == 'number' and strip-unit($gutter) > 0 {
         $padding: rem-calc($gutter) / 2;
-<<<<<<< HEAD
         padding-right: $padding;
         padding-left: $padding;
-=======
-        padding-left: $padding;
-        padding-right: $padding;
->>>>>>> origin/master
       }
     }
 

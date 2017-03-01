@@ -18,13 +18,10 @@ $drilldown-arrows: true !default;
 /// @type Color
 $drilldown-arrow-color: $primary-color !default;
 
-<<<<<<< HEAD
 /// Sets drilldown arrow size if arrow is used.
 /// @type Length
 $drilldown-arrow-size: 6px !default;
 
-=======
->>>>>>> origin/master
 /// Background color for drilldown submenus.
 /// @type Color
 $drilldown-background: $white !default;
@@ -36,15 +33,11 @@ $drilldown-background: $white !default;
     overflow: hidden;
 
     li {
-<<<<<<< HEAD
       display: block;
     }
 
     &.animate-height {
       transition: height 0.5s;
-=======
-      display: block !important;
->>>>>>> origin/master
     }
   }
 
@@ -54,11 +47,7 @@ $drilldown-background: $white !default;
     top: 0;
     #{$global-left}: 100%;
     z-index: -1;
-<<<<<<< HEAD
 
-=======
-    // height: 100%;
->>>>>>> origin/master
     width: 100%;
     background: $drilldown-background;
     transition: $drilldown-transition;
@@ -74,48 +63,31 @@ $drilldown-background: $white !default;
     }
   }
 
-<<<<<<< HEAD
   .drilldown-submenu-cover-previous {
     min-height: 100%;
   }
 
-=======
->>>>>>> origin/master
   @if $drilldown-arrows {
     .is-drilldown-submenu-parent > a {
       position: relative;
 
       &::after {
-<<<<<<< HEAD
         @include css-triangle($drilldown-arrow-size, $drilldown-arrow-color, $global-right);
         position: absolute;
         top: 50%;
         margin-top: -1 * $drilldown-arrow-size;
-=======
-        @include css-triangle(6px, $drilldown-arrow-color, $global-right);
-        position: absolute;
-        top: 50%;
-        margin-top: -6px;
->>>>>>> origin/master
         #{$global-right}: 1rem;
       }
     }
 
     .js-drilldown-back > a::before {
-<<<<<<< HEAD
       @include css-triangle($drilldown-arrow-size, $drilldown-arrow-color, $global-left);
-=======
-      @include css-triangle(6px, $drilldown-arrow-color, $global-left);
->>>>>>> origin/master
       border-#{$global-left}-width: 0;
       display: inline-block;
       vertical-align: middle;
       margin-#{$global-right}: 0.75rem; // Creates space between the arrow and the text
-<<<<<<< HEAD
 
       border-#{$global-left}-width: 0;
-=======
->>>>>>> origin/master
     }
   }
 }

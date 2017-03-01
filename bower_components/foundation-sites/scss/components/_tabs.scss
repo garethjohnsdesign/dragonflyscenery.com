@@ -14,7 +14,6 @@ $tab-margin: 0 !default;
 /// @type Color
 $tab-background: $white !default;
 
-<<<<<<< HEAD
 /// Font color of tab item.
 /// @type Color
 $tab-color: $primary-color !default;
@@ -27,12 +26,6 @@ $tab-background-active: $light-gray !default;
 /// @type Color
 $tab-active-color: $primary-color !default;
 
-=======
-/// active background color of a tab bar.
-/// @type Color
-$tab-background-active: $light-gray !default;
-
->>>>>>> origin/master
 /// Font size of tab items.
 /// @type Number
 $tab-item-font-size: rem-calc(12) !default;
@@ -58,18 +51,13 @@ $tab-content-border: $light-gray !default;
 
 /// Default text color of tab content.
 /// @type Color
-<<<<<<< HEAD
 $tab-content-color: $body-font-color !default;
-=======
-$tab-content-color: foreground($tab-background, $primary-color) !default;
->>>>>>> origin/master
 
 /// Default padding for tab content.
 /// @type Number | List
 $tab-content-padding: 1rem !default;
 
 /// Adds styles for a tab container. Apply this to a `<ul>`.
-<<<<<<< HEAD
 @mixin tabs-container (
   $margin: $tab-margin,
   $background: $tab-background,
@@ -80,33 +68,18 @@ $tab-content-padding: 1rem !default;
   border: 1px solid $border-color;
   background: $background;
   list-style-type: none;
-=======
-@mixin tabs-container {
-  @include clearfix;
-  margin: $tab-margin;
-  list-style-type: none;
-  background: $tab-background;
-  border: 1px solid $tab-content-border;
->>>>>>> origin/master
 }
 
 /// Augments a tab container to have vertical tabs. Use this in conjunction with `tabs-container()`.
 @mixin tabs-container-vertical {
   > li {
-<<<<<<< HEAD
     display: block;
     float: none;
     width: auto;
-=======
-    width: auto;
-    float: none;
-    display: block;
->>>>>>> origin/master
   }
 }
 
 /// Adds styles for the links within a tab container. Apply this to the `<li>` elements inside a tab container.
-<<<<<<< HEAD
 @mixin tabs-title (
   $padding: $tab-item-padding,
   $font-size: $tab-item-font-size,
@@ -115,14 +88,10 @@ $tab-content-padding: 1rem !default;
   $background-hover: $tab-item-background-hover,
   $background-active: $tab-background-active
 ) {
-=======
-@mixin tabs-title {
->>>>>>> origin/master
   float: #{$global-left};
 
   > a {
     display: block;
-<<<<<<< HEAD
     padding: $padding;
     font-size: $font-size;
     line-height: 1;
@@ -131,30 +100,17 @@ $tab-content-padding: 1rem !default;
     &:hover {
       background: $background-hover;
       color: scale-color($color, $lightness: -14%);
-=======
-    padding: $tab-item-padding;
-    line-height: 1;
-    font-size: $tab-item-font-size;
-
-    &:hover {
-      background: $tab-item-background-hover;
->>>>>>> origin/master
     }
 
     &:focus,
     &[aria-selected='true'] {
-<<<<<<< HEAD
       background: $background-active;
       color: $color-active;
-=======
-      background: $tab-background-active;
->>>>>>> origin/master
     }
   }
 }
 
 /// Adds styles for the wrapper that surrounds a tab group's content panes.
-<<<<<<< HEAD
 @mixin tabs-content (
   $background: $tab-content-background,
   $color: $tab-content-color,
@@ -172,23 +128,10 @@ $tab-content-padding: 1rem !default;
   $border-color: $tab-content-border
 ) {
   border: 1px solid $border-color;
-=======
-@mixin tabs-content {
-  background: $tab-content-background;
-  transition: all 0.5s ease;
-  border: 1px solid $tab-content-border;
-  border-top: 0;
-}
-
-/// Augments a tab content container to have a vertical style, by shifting the border around. Use this in conjunction with `tabs-content()`.
-@mixin tabs-content-vertical {
-  border: 1px solid $tab-content-border;
->>>>>>> origin/master
   border-#{$global-left}: 0;
 }
 
 /// Adds styles for an individual tab content panel within the tab content container.
-<<<<<<< HEAD
 @mixin tabs-panel (
   $padding: $tab-content-padding
 ) {
@@ -196,13 +139,6 @@ $tab-content-padding: 1rem !default;
   padding: $padding;
 
   &[aria-hidden="false"] {
-=======
-@mixin tabs-panel {
-  display: none;
-  padding: $tab-content-padding;
-
-  &.is-active {
->>>>>>> origin/master
     display: block;
   }
 }
@@ -233,11 +169,7 @@ $tab-content-padding: 1rem !default;
     background: $primary-color;
 
     > li > a {
-<<<<<<< HEAD
       color: color-pick-contrast($primary-color);
-=======
-      color: foreground($primary-color);
->>>>>>> origin/master
 
       &:hover,
       &:focus {

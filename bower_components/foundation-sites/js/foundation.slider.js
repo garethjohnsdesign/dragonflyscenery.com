@@ -13,15 +13,9 @@
 
 class Slider {
   /**
-<<<<<<< HEAD
    * Creates a new instance of a slider control.
    * @class
    * @param {jQuery} element - jQuery object to make into a slider control.
-=======
-   * Creates a new instance of a drilldown menu.
-   * @class
-   * @param {jQuery} element - jQuery object to make into an accordion menu.
->>>>>>> origin/master
    * @param {Object} options - Overrides to the default plugin settings.
    */
   constructor(element, options) {
@@ -74,13 +68,8 @@ class Slider {
       this.inputs = $().add(this.$input);
       this.options.binding = true;
     }
-<<<<<<< HEAD
 
     this._setInitAttr(0);
-=======
-    this._setInitAttr(0);
-    this._events(this.$handle);
->>>>>>> origin/master
 
     if (this.handles[1]) {
       this.options.doubleSided = true;
@@ -92,7 +81,6 @@ class Slider {
       }
       isDbl = true;
 
-<<<<<<< HEAD
       // this.$handle.triggerHandler('click.zf.slider');
       this._setInitAttr(1);
     }
@@ -171,20 +159,6 @@ class Slider {
   */
   _powTransform(value) {
     return (Math.pow(this.options.nonLinearBase, value) - 1) / (this.options.nonLinearBase - 1)
-=======
-      this._setHandlePos(this.$handle, this.options.initialStart, true, function() {
-
-        _this._setHandlePos(_this.$handle2, _this.options.initialEnd, true);
-      });
-      // this.$handle.triggerHandler('click.zf.slider');
-      this._setInitAttr(1);
-      this._events(this.$handle2);
-    }
-
-    if (!isDbl) {
-      this._setHandlePos(this.$handle, this.options.initialStart, true);
-    }
->>>>>>> origin/master
   }
 
   /**
@@ -234,11 +208,7 @@ class Slider {
         handleDim = $hndl[0].getBoundingClientRect()[hOrW],
         elemDim = this.$element[0].getBoundingClientRect()[hOrW],
         //percentage of bar min/max value based on click or drag point
-<<<<<<< HEAD
         pctOfBar = this._pctOfBar(location),
-=======
-        pctOfBar = percent(location - this.options.start, this.options.end - this.options.start).toFixed(2),
->>>>>>> origin/master
         //number of actual pixels to shift the handle, based on the percentage obtained above
         pxToMove = (elemDim - handleDim) * pctOfBar,
         //percentage of bar to shift the handle
@@ -271,11 +241,7 @@ class Slider {
         var handlePos = parseFloat(this.$handle[0].style[lOrT]);
         //calculate the new min-height/width for the fill bar. Use isNaN to prevent false positives for numbers <= 0
         //based on the percentage of movement of the handle being manipulated, less the opposing handle's left/top position, plus the percentage w/h of the handle itself
-<<<<<<< HEAD
         dim = movement - (isNaN(handlePos) ? (this.options.initialStart - this.options.start)/((this.options.end-this.options.start)/100) : handlePos) + handlePct;
-=======
-        dim = movement - (isNaN(handlePos) ? this.options.initialStart/((this.options.end-this.options.start)/100) : handlePos) + handlePct;
->>>>>>> origin/master
       }
       // assign the min-height/width to our css object
       css[`min-${hOrW}`] = `${dim}%`;
@@ -293,7 +259,6 @@ class Slider {
     var moveTime = this.$element.data('dragging') ? 1000/60 : this.options.moveTime;
 
     Foundation.Move(moveTime, $hndl, function() {
-<<<<<<< HEAD
       // adjusting the left/top property of the handle, based on the percentage calculated above
       // if movement isNaN, that is because the slider is hidden and we cannot determine handle width,
       // fall back to next best guess.
@@ -303,10 +268,6 @@ class Slider {
       else {
         $hndl.css(lOrT, `${movement}%`);
       }
-=======
-      //adjusting the left/top property of the handle, based on the percentage calculated above
-      $hndl.css(lOrT, `${movement}%`);
->>>>>>> origin/master
 
       if (!_this.options.doubleSided) {
         //if single-handled, a simple method to expand the fill bar
@@ -317,10 +278,7 @@ class Slider {
       }
     });
 
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
     /**
      * Fires when the value has not been change for a given time.
      * @event Slider#changed
@@ -338,10 +296,7 @@ class Slider {
    * @param {Number} idx - index of the current handle/input to use.
    */
   _setInitAttr(idx) {
-<<<<<<< HEAD
     var initVal = (idx === 0 ? this.options.initialStart : this.options.initialEnd)
-=======
->>>>>>> origin/master
     var id = this.inputs.eq(idx).attr('id') || Foundation.GetYoDigits(6, 'slider');
     this.inputs.eq(idx).attr({
       'id': id,
@@ -349,20 +304,13 @@ class Slider {
       'min': this.options.start,
       'step': this.options.step
     });
-<<<<<<< HEAD
     this.inputs.eq(idx).val(initVal);
-=======
->>>>>>> origin/master
     this.handles.eq(idx).attr({
       'role': 'slider',
       'aria-controls': id,
       'aria-valuemax': this.options.end,
       'aria-valuemin': this.options.start,
-<<<<<<< HEAD
       'aria-valuenow': initVal,
-=======
-      'aria-valuenow': idx === 0 ? this.options.initialStart : this.options.initialEnd,
->>>>>>> origin/master
       'aria-orientation': this.options.vertical ? 'vertical' : 'horizontal',
       'tabindex': 0
     });
@@ -422,11 +370,7 @@ class Slider {
       }
       var offsetPct = percent(barXY, barDim);
 
-<<<<<<< HEAD
       value = this._value(offsetPct);
-=======
-      value = (this.options.end - this.options.start) * offsetPct + this.options.start;
->>>>>>> origin/master
 
       // turn everything around for RTL, yay math!
       if (Foundation.rtl() && !this.options.vertical) {value = this.options.end - value;}
@@ -481,7 +425,6 @@ class Slider {
    * Adds event listeners to the slider elements.
    * @function
    * @private
-<<<<<<< HEAD
    */
   _events() {
     this._eventsForHandle(this.$handle);
@@ -498,11 +441,6 @@ class Slider {
    * @param {jQuery} $handle - the current handle to apply listeners to.
    */
   _eventsForHandle($handle) {
-=======
-   * @param {jQuery} $handle - the current handle to apply listeners to.
-   */
-  _events($handle) {
->>>>>>> origin/master
     var _this = this,
         curHandle,
         timer;
@@ -599,11 +537,8 @@ class Slider {
     this.inputs.off('.zf.slider');
     this.$element.off('.zf.slider');
 
-<<<<<<< HEAD
     clearTimeout(this.timeout);
 
-=======
->>>>>>> origin/master
     Foundation.unregisterPlugin(this);
   }
 }
@@ -612,67 +547,78 @@ Slider.defaults = {
   /**
    * Minimum value for the slider scale.
    * @option
-   * @example 0
+   * @type {number}
+   * @default 0
    */
   start: 0,
   /**
    * Maximum value for the slider scale.
    * @option
-   * @example 100
+   * @type {number}
+   * @default 100
    */
   end: 100,
   /**
    * Minimum value change per change event.
    * @option
-   * @example 1
+   * @type {number}
+   * @default 1
    */
   step: 1,
   /**
    * Value at which the handle/input *(left handle/first input)* should be set to on initialization.
    * @option
-   * @example 0
+   * @type {number}
+   * @default 0
    */
   initialStart: 0,
   /**
    * Value at which the right handle/second input should be set to on initialization.
    * @option
-   * @example 100
+   * @type {number}
+   * @default 100
    */
   initialEnd: 100,
   /**
    * Allows the input to be located outside the container and visible. Set to by the JS
    * @option
-   * @example false
+   * @type {boolean}
+   * @default false
    */
   binding: false,
   /**
    * Allows the user to click/tap on the slider bar to select a value.
    * @option
-   * @example true
+   * @type {boolean}
+   * @default true
    */
   clickSelect: true,
   /**
    * Set to true and use the `vertical` class to change alignment to vertical.
    * @option
-   * @example false
+   * @type {boolean}
+   * @default false
    */
   vertical: false,
   /**
    * Allows the user to drag the slider handle(s) to select a value.
    * @option
-   * @example true
+   * @type {boolean}
+   * @default true
    */
   draggable: true,
   /**
    * Disables the slider and prevents event listeners from being applied. Double checked by JS with `disabledClass`.
    * @option
-   * @example false
+   * @type {boolean}
+   * @default false
    */
   disabled: false,
   /**
    * Allows the use of two handles. Double checked by the JS. Changes some logic handling.
    * @option
-   * @example false
+   * @type {boolean}
+   * @default false
    */
   doubleSided: false,
   /**
@@ -682,7 +628,8 @@ Slider.defaults = {
   /**
    * Number of decimal places the plugin should go to for floating point precision.
    * @option
-   * @example 2
+   * @type {number}
+   * @default 2
    */
   decimal: 2,
   /**
@@ -692,43 +639,45 @@ Slider.defaults = {
   /**
    * Time, in ms, to animate the movement of a slider handle if user clicks/taps on the bar. Needs to be manually set if updating the transition time in the Sass settings.
    * @option
-   * @example 200
+   * @type {number}
+   * @default 200
    */
   moveTime: 200,//update this if changing the transition time in the sass
   /**
    * Class applied to disabled sliders.
    * @option
-   * @example 'disabled'
+   * @type {string}
+   * @default 'disabled'
    */
   disabledClass: 'disabled',
   /**
    * Will invert the default layout for a vertical<span data-tooltip title="who would do this???"> </span>slider.
    * @option
-   * @example false
+   * @type {boolean}
+   * @default false
    */
   invertVertical: false,
   /**
    * Milliseconds before the `changed.zf-slider` event is triggered after value change.
    * @option
-   * @example 500
+   * @type {number}
+   * @default 500
    */
-<<<<<<< HEAD
   changedDelay: 500,
   /**
   * Basevalue for non-linear sliders
   * @option
-  * @example 5
+  * @type {number}
+  * @default 5
   */
   nonLinearBase: 5,
   /**
-  * Basevalue for non-linear sliders, possible values are: 'linear', 'pow' & 'log'. Pow and Log use the nonLinearBase setting.
+  * Basevalue for non-linear sliders, possible values are: `'linear'`, `'pow'` & `'log'`. Pow and Log use the nonLinearBase setting.
   * @option
-  * @example 'linear'
+  * @type {string}
+  * @default 'linear'
   */
   positionValueFunction: 'linear',
-=======
-  changedDelay: 500
->>>>>>> origin/master
 };
 
 function percent(frac, num) {
@@ -737,42 +686,12 @@ function percent(frac, num) {
 function absPosition($handle, dir, clickPos, param) {
   return Math.abs(($handle.position()[dir] + ($handle[param]() / 2)) - clickPos);
 }
-<<<<<<< HEAD
 function baseLog(base, value) {
   return Math.log(value)/Math.log(base)
 }
-=======
->>>>>>> origin/master
 
 // Window exports
 Foundation.plugin(Slider, 'Slider');
 
 }(jQuery);
 
-<<<<<<< HEAD
-=======
-//*********this is in case we go to static, absolute positions instead of dynamic positioning********
-// this.setSteps(function() {
-//   _this._events();
-//   var initStart = _this.options.positions[_this.options.initialStart - 1] || null;
-//   var initEnd = _this.options.initialEnd ? _this.options.position[_this.options.initialEnd - 1] : null;
-//   if (initStart || initEnd) {
-//     _this._handleEvent(initStart, initEnd);
-//   }
-// });
-
-//***********the other part of absolute positions*************
-// Slider.prototype.setSteps = function(cb) {
-//   var posChange = this.$element.outerWidth() / this.options.steps;
-//   var counter = 0
-//   while(counter < this.options.steps) {
-//     if (counter) {
-//       this.options.positions.push(this.options.positions[counter - 1] + posChange);
-//     } else {
-//       this.options.positions.push(posChange);
-//     }
-//     counter++;
-//   }
-//   cb();
-// };
->>>>>>> origin/master

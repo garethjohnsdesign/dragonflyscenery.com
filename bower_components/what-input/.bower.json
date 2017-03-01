@@ -1,7 +1,6 @@
 {
   "name": "what-input",
-<<<<<<< HEAD
-  "version": "4.0.6",
+  "version": "4.1.1",
   "homepage": "https://github.com/ten1seven/what-input",
   "repository": {
     "url": "https://github.com/ten1seven/what-input.git",
@@ -10,15 +9,6 @@
   "author": "Jeremy Fields <jeremy.fields@viget.com>",
   "description": "A global utility for tracking the current input method (mouse, keyboard or touch).",
   "main": "dist/what-input.js",
-=======
-  "version": "2.1.1",
-  "homepage": "https://github.com/ten1seven/what-input",
-  "authors": [
-    "Jeremy Fields <jeremy.fields@viget.com>"
-  ],
-  "description": "A global utility for tracking the current input method (mouse, keyboard or touch).",
-  "main": "what-input.js",
->>>>>>> origin/master
   "keywords": [
     "accessibility",
     "a11y",
@@ -33,28 +23,13 @@
     "test",
     "tests"
   ],
-<<<<<<< HEAD
-  "_release": "4.0.6",
+  "_release": "4.1.1",
   "_resolution": {
     "type": "version",
-    "tag": "v4.0.6",
-    "commit": "c8e4018d6c6e6b998ad8bdbd0bee21a9f4fd154f"
+    "tag": "v4.1.1",
+    "commit": "8178c59b5c9ff086cf9c4cdbf1d9b758517a35bb"
   },
   "_source": "https://github.com/ten1seven/what-input.git",
-  "_target": "~4.0.3",
-=======
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/ten1seven/what-input.git"
-  },
-  "_release": "2.1.1",
-  "_resolution": {
-    "type": "version",
-    "tag": "v2.1.1",
-    "commit": "acff770dc3a470d71a46e2bfd2060f14d3cb9048"
-  },
-  "_source": "https://github.com/ten1seven/what-input.git",
-  "_target": "^2.1.0",
->>>>>>> origin/master
+  "_target": "^4.1.1",
   "_originalSource": "what-input"
 }

@@ -38,8 +38,10 @@ class ResponsiveToggle {
     }
 
     this.$targetMenu = $(`#${targetID}`);
-    this.$toggler = this.$element.find('[data-toggle]');
-<<<<<<< HEAD
+    this.$toggler = this.$element.find('[data-toggle]').filter(function() {
+      var target = $(this).data('toggle');
+      return (target === targetID || target === "");
+    });
     this.options = $.extend({}, this.options, this.$targetMenu.data());
 
     // If they were set, parse the animation classes
@@ -49,8 +51,6 @@ class ResponsiveToggle {
       this.animationIn = input[0];
       this.animationOut = input[1] || null;
     }
-=======
->>>>>>> origin/master
 
     this._update();
   }
@@ -64,11 +64,7 @@ class ResponsiveToggle {
     var _this = this;
 
     this._updateMqHandler = this._update.bind(this);
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> origin/master
     $(window).on('changed.zf.mediaquery', this._updateMqHandler);
 
     this.$toggler.on('click.zf.responsiveToggle', this.toggleMenu.bind(this));
@@ -98,26 +94,21 @@ class ResponsiveToggle {
    * @function
    * @fires ResponsiveToggle#toggled
    */
-<<<<<<< HEAD
   toggleMenu() {
     if (!Foundation.MediaQuery.atLeast(this.options.hideFor)) {
+      /**
+       * Fires when the element attached to the tab bar toggles.
+       * @event ResponsiveToggle#toggled
+       */
       if(this.options.animate) {
         if (this.$targetMenu.is(':hidden')) {
           Foundation.Motion.animateIn(this.$targetMenu, this.animationIn, () => {
-            /**
-             * Fires when the element attached to the tab bar toggles.
-             * @event ResponsiveToggle#toggled
-             */
             this.$element.trigger('toggled.zf.responsiveToggle');
             this.$targetMenu.find('[data-mutate]').triggerHandler('mutateme.zf.trigger');
           });
         }
         else {
           Foundation.Motion.animateOut(this.$targetMenu, this.animationOut, () => {
-            /**
-             * Fires when the element attached to the tab bar toggles.
-             * @event ResponsiveToggle#toggled
-             */
             this.$element.trigger('toggled.zf.responsiveToggle');
           });
         }
@@ -125,39 +116,17 @@ class ResponsiveToggle {
       else {
         this.$targetMenu.toggle(0);
         this.$targetMenu.find('[data-mutate]').trigger('mutateme.zf.trigger');
-
-        /**
-         * Fires when the element attached to the tab bar toggles.
-         * @event ResponsiveToggle#toggled
-         */
         this.$element.trigger('toggled.zf.responsiveToggle');
       }
-=======
-  toggleMenu() {   
-    if (!Foundation.MediaQuery.atLeast(this.options.hideFor)) {
-      this.$targetMenu.toggle(0);
-
-      /**
-       * Fires when the element attached to the tab bar toggles.
-       * @event ResponsiveToggle#toggled
-       */
-      this.$element.trigger('toggled.zf.responsiveToggle');
->>>>>>> origin/master
     }
   };
 
   destroy() {
     this.$element.off('.zf.responsiveToggle');
     this.$toggler.off('.zf.responsiveToggle');
-<<<<<<< HEAD
 
     $(window).off('changed.zf.mediaquery', this._updateMqHandler);
 
-=======
-    
-    $(window).off('changed.zf.mediaquery', this._updateMqHandler);
-    
->>>>>>> origin/master
     Foundation.unregisterPlugin(this);
   }
 }
@@ -166,20 +135,18 @@ ResponsiveToggle.defaults = {
   /**
    * The breakpoint after which the menu is always shown, and the tab bar is hidden.
    * @option
-   * @example 'medium'
+   * @type {string}
+   * @default 'medium'
    */
-<<<<<<< HEAD
   hideFor: 'medium',
 
   /**
    * To decide if the toggle should be animated or not.
    * @option
-   * @example false
+   * @type {boolean}
+   * @default false
    */
   animate: false
-=======
-  hideFor: 'medium'
->>>>>>> origin/master
 };
 
 // Window exports

@@ -24,17 +24,12 @@ $menu-item-color-active: $white !default;
 
 /// Background color of an active menu item.
 /// @type Color
-<<<<<<< HEAD
 $menu-item-background-active: get-color(primary) !default;
-=======
-$menu-item-background-active: map-get($foundation-palette, primary) !default;
->>>>>>> origin/master
 
 /// Spacing between an icon and text in a menu item.
 /// @type Number
 $menu-icon-spacing: 0.25rem !default;
 
-<<<<<<< HEAD
 /// Background color for an hovered menu item.
 /// @type Color
 $menu-item-background-hover: $light-gray !default;
@@ -43,25 +38,16 @@ $menu-item-background-hover: $light-gray !default;
 /// @type Color
 $menu-border: $light-gray !default;
 
-=======
->>>>>>> origin/master
 /// Creates the base styles for a Menu.
 @mixin menu-base {
   margin: $menu-margin;
   list-style-type: none;
 
   @if $global-flexbox {
-<<<<<<< HEAD
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     width: 100%;
-=======
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
->>>>>>> origin/master
   }
 
   // List items are table cell to allow for vertical alignment
@@ -86,10 +72,7 @@ $menu-border: $light-gray !default;
 
   // Reset styles of inner elements
   input,
-<<<<<<< HEAD
   select,
-=======
->>>>>>> origin/master
   a,
   button {
     margin-bottom: 0;
@@ -99,7 +82,6 @@ $menu-border: $light-gray !default;
 /// Expands the items of a Menu, so each item is the same width.
 @mixin menu-expand {
   @if $global-flexbox {
-<<<<<<< HEAD
     > li {
       flex: 1 1 0px; // sass-lint:disable-line zero-unit
     }
@@ -113,18 +95,6 @@ $menu-border: $light-gray !default;
   > li:first-child:last-child {
     width: 100%;
   }
-=======
-    // scss-lint:disable ZeroUnit
-    > li {
-      flex: 1 1 0px;
-    }
-  }
-  @else {
-    width: 100%;
-    display: table;
-    table-layout: fixed;
-  }
->>>>>>> origin/master
 }
 
 /// Sets the direction of a Menu.
@@ -154,13 +124,8 @@ $menu-border: $light-gray !default;
       }
 
       > li  > a {
-<<<<<<< HEAD
         justify-content: flex-start;
         align-items: flex-start;
-=======
-        align-items: flex-start;
-        justify-content: flex-start;
->>>>>>> origin/master
       }
     }
     @else {
@@ -175,21 +140,32 @@ $menu-border: $light-gray !default;
 }
 
 /// Creates a simple Menu, which has no padding or hover state.
-@mixin menu-simple {
+/// @param {Keyword} $dir [$global-left] - Direction of the menu. Set to `null` to do not generate styles for direction.
+@mixin menu-simple($dir: $global-left) {
   li {
-<<<<<<< HEAD
     display: inline-block;
-    margin-#{$global-right}: get-side($menu-item-padding, $global-right);
+    vertical-align: top;
     line-height: 1;
-=======
-    line-height: 1;
-    display: inline-block;
-    margin-#{$global-right}: get-side($menu-item-padding, $global-right);
->>>>>>> origin/master
   }
 
   a {
     padding: 0;
+  }
+
+  @if $dir != null {
+    @include menu-simple-direction($dir);
+  }
+}
+
+/// Direction modifier for a simple Menu
+/// @param {Keyword} $dir [$global-left] - Direction of the menu
+@mixin menu-simple-direction($dir: $global-left) {
+  $no-margin-dir: $dir;
+  $margin-dir: direction-opposite($dir);
+
+  li {
+    margin-#{$no-margin-dir}: 0;
+    margin-#{$margin-dir}: get-side($menu-item-padding, $margin-dir);
   }
 }
 
@@ -259,13 +235,8 @@ $menu-border: $light-gray !default;
         }
         @else {
           align-self: stretch;
-<<<<<<< HEAD
           margin-bottom: $menu-icon-spacing;
           text-align: center;
-=======
-          text-align: center;
-          margin-bottom: $menu-icon-spacing;
->>>>>>> origin/master
         }
       }
     }
@@ -273,7 +244,6 @@ $menu-border: $light-gray !default;
 }
 
 @mixin menu-text {
-<<<<<<< HEAD
   padding-top: 0;
   padding-bottom: 0;
   padding: $menu-item-padding;
@@ -281,14 +251,6 @@ $menu-border: $light-gray !default;
   font-weight: bold;
   line-height: 1;
   color: inherit;
-=======
-  font-weight: bold;
-  color: inherit;
-  line-height: 1;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding: $menu-item-padding;
->>>>>>> origin/master
 }
 
 @mixin foundation-menu {
@@ -296,7 +258,6 @@ $menu-border: $light-gray !default;
     @include menu-base;
     @include menu-icons;
 
-<<<<<<< HEAD
     // Default orientation: horizontal
     &, &.horizontal {
       @include menu-direction(horizontal);
@@ -308,16 +269,10 @@ $menu-border: $light-gray !default;
     }
 
     // Vertical orientation modifier
-=======
-    // Orientation
-    @include menu-direction(horizontal);
-
->>>>>>> origin/master
     &.vertical {
       @include menu-direction(vertical);
     }
 
-<<<<<<< HEAD
     @include -zf-each-breakpoint($small: false) {
       &.#{$-zf-size}-horizontal {
         @include menu-direction(horizontal);
@@ -329,25 +284,16 @@ $menu-border: $light-gray !default;
 
       &.#{$-zf-size}-vertical {
         @include menu-direction(vertical);
-=======
-    @each $size in $breakpoint-classes {
-      @if $size != $-zf-zero-breakpoint {
-        @include breakpoint($size) {
-          &.#{$size}-horizontal {
-            @include menu-direction(horizontal);
-          }
-
-          &.#{$size}-vertical {
-            @include menu-direction(vertical);
-          }
-        }
->>>>>>> origin/master
       }
     }
 
     // Simple
     &.simple {
       @include menu-simple;
+
+      &.align-#{$global-right} {
+        @include menu-simple-direction($global-right);
+      }
     }
 
     // Align right
@@ -364,7 +310,6 @@ $menu-border: $light-gray !default;
       }
     }
 
-<<<<<<< HEAD
     // Vertical icons
     &.icon-top {
       @include menu-icons(top, $base: false);
@@ -374,20 +319,6 @@ $menu-border: $light-gray !default;
           margin: auto;
         }
       }
-=======
-    // Even-width
-    &.expanded {
-      @include menu-expand;
-
-      > li:first-child:last-child {
-        width: 100%;
-      }
-    }
-
-    // Vertical icons
-    &.icon-top {
-      @include menu-icons(top, $base: false);
->>>>>>> origin/master
     }
 
     // Nesting
@@ -397,7 +328,6 @@ $menu-border: $light-gray !default;
 
     // Active state
     .active > a {
-<<<<<<< HEAD
       background: $menu-item-background-active;
       color: $menu-item-color-active;
     }
@@ -417,10 +347,6 @@ $menu-border: $light-gray !default;
       li:hover {
         background-color: $menu-item-background-hover;
       }
-=======
-      color: $menu-item-color-active;
-      background: $menu-item-background-active;
->>>>>>> origin/master
     }
   }
 
@@ -433,7 +359,13 @@ $menu-border: $light-gray !default;
     text-align: center;
 
     > .menu {
-      display: inline-block;
+      @if $global-flexbox {
+        @include flex-align($x: center, $y: top);
+      }
+      @else {
+        display: inline-block;
+        vertical-align: top;
+      }
     }
   }
 

@@ -44,21 +44,12 @@ $callout-link-tint: 30% !default;
 
 /// Adds basic styles for a callout, including padding and margin.
 @mixin callout-base() {
-<<<<<<< HEAD
   position: relative;
   margin: $callout-margin;
   padding: $callout-padding;
 
   border: $callout-border;
   border-radius: $callout-radius;
-=======
-  margin: $callout-margin;
-  padding: $callout-padding;
-  border: $callout-border;
-  border-radius: $callout-radius;
-  position: relative;
-  color: $callout-font-color;
->>>>>>> origin/master
 
   // Respect the padding, fool.
   > :first-child {
@@ -76,10 +67,7 @@ $callout-link-tint: 30% !default;
   $background: scale-color($color, $lightness: $callout-background-fade);
 
   background-color: $background;
-<<<<<<< HEAD
   color: color-pick-contrast($background, ($callout-font-color, $callout-font-color-alt));
-=======
->>>>>>> origin/master
 }
 
 @mixin callout-size($padding) {

@@ -24,7 +24,6 @@ function Move(duration, elem, fn){
   var anim, prog, start = null;
   // console.log('called');
 
-<<<<<<< HEAD
   if (duration === 0) {
     fn.apply(elem);
     elem.trigger('finished.zf.animate', [elem]).triggerHandler('finished.zf.animate', [elem]);
@@ -33,10 +32,6 @@ function Move(duration, elem, fn){
 
   function move(ts){
     if(!start) start = ts;
-=======
-  function move(ts){
-    if(!start) start = window.performance.now();
->>>>>>> origin/master
     // console.log(start, ts);
     prog = ts - start;
     fn.apply(elem);

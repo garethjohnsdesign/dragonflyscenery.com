@@ -105,7 +105,6 @@
   }
   @return $map;
 }
-<<<<<<< HEAD
 
 /// Casts a map into a list.
 /// @link http://hugogiraudel.com/2014/04/28/casting-map-into-list/
@@ -139,5 +138,23 @@
   @return if(type-of($map) != 'list', ($value,), $map);
 
 }
-=======
->>>>>>> origin/master
+
+/// Safely return a value from a map.
+///
+/// @param {Map} $map - Map to retrieve a value from.
+/// @param {String} $key - Name of the map key.
+///
+/// @returns {List} Found value.
+@function map-safe-get($map, $key) {
+  @if (type-of($map) == 'map' or (type-of($map) == 'list' and length($map) == 0)) {
+    @if (map-has-key($map, $key)) {
+      @return map-get($map, $key);
+    }
+    @else {
+      @error 'Key: `#{$key}` is not available in `#{$map}`';
+    }
+  }
+  @else {
+    @error '`#{$map}` is not a valid map';
+  }
+}

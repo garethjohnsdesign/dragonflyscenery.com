@@ -12,8 +12,12 @@
 // 1. Global
 // ---------
 
-html {
-  height: 100%;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+     display: flex;
+  flex-direction: column;
 }
 
 body {
@@ -39,8 +43,15 @@ a {
   transition: $primary-transition;
 }
 
-.content {
-  flex: 1;
+.main-content {
+  /* flex: 1; would be enough but it looks bad in IE */
+  flex: 1 0 auto;
+}
+
+.site-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 // 2. Typography

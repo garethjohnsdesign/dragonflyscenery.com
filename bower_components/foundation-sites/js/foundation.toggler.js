@@ -96,10 +96,7 @@ class Toggler {
     }
 
     this._updateARIA(isOn);
-<<<<<<< HEAD
     this.$element.find('[data-mutate]').trigger('mutateme.zf.trigger');
-=======
->>>>>>> origin/master
   }
 
   _toggleAnimate() {
@@ -109,20 +106,14 @@ class Toggler {
       Foundation.Motion.animateIn(this.$element, this.animationIn, function() {
         _this._updateARIA(true);
         this.trigger('on.zf.toggler');
-<<<<<<< HEAD
         this.find('[data-mutate]').trigger('mutateme.zf.trigger');
-=======
->>>>>>> origin/master
       });
     }
     else {
       Foundation.Motion.animateOut(this.$element, this.animationOut, function() {
         _this._updateARIA(false);
         this.trigger('off.zf.toggler');
-<<<<<<< HEAD
         this.find('[data-mutate]').trigger('mutateme.zf.trigger');
-=======
->>>>>>> origin/master
       });
     }
   }
@@ -145,7 +136,8 @@ Toggler.defaults = {
   /**
    * Tells the plugin if the element should animated when toggled.
    * @option
-   * @example false
+   * @type {boolean}
+   * @default false
    */
   animate: false
 };

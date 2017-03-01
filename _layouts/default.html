@@ -1,3 +1,7 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr">
 
@@ -5,8 +9,9 @@
 {% include head.html %}
 <!-- End Head -->
 
-<body>
-<div class="content">
+<body class="site-wrapper animated fadeIn">
+
+<div class="main-content">
 
 <!-- Navigation --> 
 {% include navigation.html %}
@@ -24,11 +29,16 @@
 <!-- Footer -->  
 {% include footer.html %}
 <!-- End Footer -->  
-  
-</body>
 
 <!-- Scripts -->
 {% include scripts.html %}
 <!-- End Scripts -->
 
+<!-- Google Analytics -->
+{% if site.analytics %}
+{% include analytics.html %}
+{% endif %}
+<!-- End Google Analytics -->
+
+</body>
 </html>

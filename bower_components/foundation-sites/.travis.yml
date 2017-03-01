@@ -1,18 +1,9 @@
 language: node_js
 node_js:
-<<<<<<< HEAD
   - "4.0"
 install:
-  - npm install -g bower
+  - npm install -g bower browserstack-runner
   - npm install
+script: npm run test:ci
 notifications:
   email: false
-=======
-  - "0.12"
-before_install:
-  - rvm install 2.2.2
-install:
-  - npm install -g bower
-  - npm install
-  - gem install scss_lint
->>>>>>> origin/master

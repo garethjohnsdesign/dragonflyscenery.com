@@ -8,11 +8,6 @@
 
 $global-font-size: 100% !default;
 
-<<<<<<< HEAD
-=======
-// scss-lint:disable ZeroUnit
-
->>>>>>> origin/master
 /// Removes the unit (e.g. px, em, rem) from a value, returning the number only.
 ///
 /// @param {Number} $num - Number to strip unit from.
@@ -42,11 +37,7 @@ $global-font-size: 100% !default;
   @if unit($base) == '%' {
     $base: ($base / 100%) * 16px;
   }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> origin/master
   // Using rem as base allows correct scaling
   @if unit($base) == 'rem' {
     $base: strip-unit($base) * 16px;
@@ -88,16 +79,12 @@ $global-font-size: 100% !default;
     @return $value;
   }
 
-<<<<<<< HEAD
   // Transform em into rem if someone hands over 'em's
   @if unit($value) == 'em' {
     $value: strip-unit($value) * 1rem;
   }
 
   // Calculate rem if units for $value is not rem or em
-=======
-  // Calculate rem if units for $value is not rem
->>>>>>> origin/master
   @if unit($value) != 'rem' {
     $value: strip-unit($value) / strip-unit($base) * 1rem;
   }
@@ -109,7 +96,6 @@ $global-font-size: 100% !default;
 
   @return $value;
 }
-<<<<<<< HEAD
 
 /// Converts a pixel, percentage, rem or em value to a unitless value based on a given font size. Ideal for working out unitless line heights.
 ///
@@ -164,5 +150,3 @@ $global-font-size: 100% !default;
 
   @return $value;
 }
-=======
->>>>>>> origin/master

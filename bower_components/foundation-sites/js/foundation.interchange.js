@@ -46,13 +46,9 @@ class Interchange {
    * @private
    */
   _events() {
-<<<<<<< HEAD
     $(window).on('resize.zf.interchange', Foundation.util.throttle(() => {
       this._reflow();
     }, 50));
-=======
-    $(window).on('resize.zf.interchange', Foundation.util.throttle(this._reflow.bind(this), 50));
->>>>>>> origin/master
   }
 
   /**
@@ -67,10 +63,6 @@ class Interchange {
     for (var i in this.rules) {
       if(this.rules.hasOwnProperty(i)) {
         var rule = this.rules[i];
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
         if (window.matchMedia(rule.query).matches) {
           match = rule;
         }
@@ -111,8 +103,10 @@ class Interchange {
       rules = this.options.rules;
     }
     else {
-      rules = this.$element.data('interchange').match(/\[.*?\]/g);
+      rules = this.$element.data('interchange');
     }
+    
+    rules =  typeof rules === 'string' ? rules.match(/\[.*?\]/g) : rules;
 
     for (var i in rules) {
       if(rules.hasOwnProperty(i)) {
@@ -191,6 +185,8 @@ Interchange.defaults = {
   /**
    * Rules to be applied to Interchange elements. Set with the `data-interchange` array notation.
    * @option
+   * @type {?array}
+   * @default null
    */
   rules: null
 };
