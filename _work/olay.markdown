@@ -8,7 +8,7 @@ images:
 - "/uploads/olay-01.jpg"
 director: 
 photographer: Rankin
-publication:
+publication: 
 client: Olay
 field: advertising
 is-featured: true

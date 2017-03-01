@@ -13,7 +13,7 @@ images:
 - "/uploads/cos-willy-vandeperre-06.jpg"
 director: 
 photographer: Willy Vandeperre
-publication:
+publication: 
 client: COS
 field: advertising
 is-featured: true

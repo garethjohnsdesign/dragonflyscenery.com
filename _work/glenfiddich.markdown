@@ -7,8 +7,8 @@ video:
 images:
 - "/uploads/glenfiddich-01.jpg"
 director: 
-photographer:
-publication:
+photographer: 
+publication: 
 client: Gieves and Hawkes
 field: advertising
 is-featured: true

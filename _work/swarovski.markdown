@@ -8,8 +8,8 @@ images:
 - "/uploads/swarovski-01.jpg"
 - "/uploads/swarovski-02.jpg"
 director: 
-photographer:
-publication:
+photographer: 
+publication: 
 client: Swarovski
 field: advertising
 is-featured: true

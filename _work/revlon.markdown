@@ -7,8 +7,8 @@ video:
 images:
 - "/uploads/revlon-01.jpg"
 director: 
-photographer:
-publication:
+photographer: 
+publication: 
 client: Revlon
 field: advertising
 is-featured: true

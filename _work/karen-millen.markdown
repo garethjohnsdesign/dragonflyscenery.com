@@ -9,8 +9,8 @@ images:
 - "/uploads/karen-millen-02.jpg"
 - "/uploads/karen-millen-03.jpg"
 director: 
-photographer:
-publication:
+photographer: 
+publication: 
 client: Karen Millen
 field: advertising
 is-featured: true

@@ -7,8 +7,8 @@ video:
 images:
 - "/uploads/roger-and-gallett-01.jpg"
 director: 
-photographer:
-publication:
+photographer: 
+publication: 
 client: Roger & Gallett
 field: advertising
 is-featured: true

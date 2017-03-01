@@ -8,7 +8,7 @@ images:
 - "/uploads/absolut-nights.jpg"
 director: 
 photographer: Simon Emmett
-publication:
+publication: 
 client: Absolut
 field: advertising
 is-featured: true

@@ -7,8 +7,8 @@ video:
 images:
 - "/uploads/joop-splash-01.jpg"
 director: 
-photographer:
-publication:
+photographer: 
+publication: 
 client: Joop
 field: advertising
 is-featured: true

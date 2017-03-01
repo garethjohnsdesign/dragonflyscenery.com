@@ -10,8 +10,8 @@ images:
 - "/uploads/tom-ford-ss14-03.jpg"
 - "/uploads/tom-ford-ss14-04.jpg"
 director: 
-photographer:
-publication:
+photographer: 
+publication: 
 client: Tom Ford
 field: advertising
 is-featured: true

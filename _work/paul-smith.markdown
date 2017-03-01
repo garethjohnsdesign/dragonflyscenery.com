@@ -39,8 +39,8 @@ images:
 - "/uploads/paul-smith-32.jpg"
 - "/uploads/paul-smith-33.jpg"
 director: 
-photographer:
-publication:
+photographer: 
+publication: 
 client: Paul Smith
 field: advertising
 is-featured: true

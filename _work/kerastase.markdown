@@ -11,7 +11,7 @@ images:
 - "/uploads/kerastase-04.jpg"
 director: 
 photographer: Solve Sundsbo
-publication:
+publication: 
 client: Kerastase
 field: advertising
 is-featured: true

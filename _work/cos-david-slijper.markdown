@@ -13,7 +13,7 @@ images:
 - "/uploads/cos-david-slijper-06.jpg"
 director: 
 photographer: David Slijper
-publication:
+publication: 
 client: COS
 field: advertising
 is-featured: true

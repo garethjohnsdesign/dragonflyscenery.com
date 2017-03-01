@@ -10,7 +10,7 @@ images:
 - "/uploads/agent-provocateur-03.jpg"
 director: 
 photographer: Ross Kirton
-publication:
+publication: 
 client: 
 field: advertising
 is-featured: true

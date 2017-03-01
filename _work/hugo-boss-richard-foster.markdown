@@ -10,7 +10,7 @@ images:
 - "/uploads/hugo-boss-richard-foster-03.jpg"
 director: 
 photographer: Richard Foster
-publication:
+publication: 
 client: Hugo Boss
 field: advertising
 is-featured: true

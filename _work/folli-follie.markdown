@@ -9,8 +9,8 @@ images:
 - "/uploads/folli-follie-02.jpg"
 - "/uploads/folli-follie-03.jpg"
 director: 
-photographer:
-publication:
+photographer: 
+publication: 
 client: Folli Follie
 field: advertising
 is-featured: true

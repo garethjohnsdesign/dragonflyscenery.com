@@ -8,8 +8,8 @@ images:
 - "/uploads/gieves-and-hawkes-01.jpg"
 - "/uploads/gieves-and-hawkes-02.jpg"
 director: 
-photographer:
-publication:
+photographer: 
+publication: 
 client: Gieves and Hawkes
 field: advertising
 is-featured: true

@@ -9,7 +9,7 @@ images:
 - "/uploads/hugo-boss-02.jpg"
 director: 
 photographer: Jonas Akerlund
-publication:
+publication: 
 client: Hugo Boss
 field: advertising
 is-featured: true

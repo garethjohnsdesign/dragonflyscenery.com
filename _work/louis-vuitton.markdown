@@ -11,7 +11,7 @@ images:
 - "/uploads/louis-vuitton-04.jpg"
 director: 
 photographer: Angelo Pennetta
-publication:
+publication: 
 client: Louis Vuitton
 field: advertising
 is-featured: true

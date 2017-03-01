@@ -9,8 +9,8 @@ images:
 - "/uploads/dolce-and-gabbana-02.jpg"
 - "/uploads/dolce-and-gabbana-03.jpg"
 director: 
-photographer:
-publication:
+photographer: 
+publication: 
 client: 
 field: advertising
 is-featured: true

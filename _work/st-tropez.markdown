@@ -11,8 +11,8 @@ images:
 - "/uploads/st-tropez-04.jpg"
 - "/uploads/st-tropez-05.jpg"
 director: 
-photographer:
-publication:
+photographer: 
+publication: 
 client: St Tropez
 field: advertising
 is-featured: true

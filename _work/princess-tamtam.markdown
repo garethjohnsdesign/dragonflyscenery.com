@@ -20,8 +20,8 @@ images:
 - "/uploads/princess-tamtam-13.jpg"
 - "/uploads/princess-tamtam-14.jpg"
 director: 
-photographer:
-publication:
+photographer: 
+publication: 
 client: Princess Tamtam
 field: advertising
 is-featured: true

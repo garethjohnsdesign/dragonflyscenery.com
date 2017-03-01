@@ -8,8 +8,8 @@ images:
 - "/uploads/toyota-01.jpg"
 - "/uploads/toyota-02.jpg"
 director: 
-photographer:
-publication:
+photographer: 
+publication: 
 client: Toyota
 field: advertising
 is-featured: true
