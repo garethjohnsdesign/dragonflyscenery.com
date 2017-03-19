@@ -16,7 +16,7 @@ photographer: Jem Mitchell
 publication: GQ Style
 client: 
 field: editorial
-is-featured: true
+is-featured: false
 layout: project
 ---
 

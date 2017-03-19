@@ -11,7 +11,7 @@ photographer: Simon Emmett
 publication: 
 client: Absolut
 field: advertising
-is-featured: true
+is-featured: false
 layout: project
 ---
 

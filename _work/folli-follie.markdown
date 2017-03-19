@@ -13,7 +13,7 @@ photographer:
 publication: 
 client: Folli Follie
 field: advertising
-is-featured: true
+is-featured: false
 layout: project
 ---
 

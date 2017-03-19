@@ -12,7 +12,7 @@ photographer:
 publication: 
 client: Swarovski
 field: advertising
-is-featured: true
+is-featured: false
 layout: project
 ---
 

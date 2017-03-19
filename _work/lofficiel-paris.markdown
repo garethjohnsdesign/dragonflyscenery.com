@@ -12,7 +12,7 @@ photographer: Robert Wyatt
 publication: L'Officiel
 client: 
 field: editorial
-is-featured: true
+is-featured: false
 layout: project
 ---
 

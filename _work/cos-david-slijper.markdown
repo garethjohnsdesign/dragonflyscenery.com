@@ -16,7 +16,7 @@ photographer: David Slijper
 publication: 
 client: COS
 field: advertising
-is-featured: true
+is-featured: false
 layout: project
 ---
 

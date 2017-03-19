@@ -12,7 +12,7 @@ photographer:
 publication: 
 client: Wella
 field: advertising
-is-featured: true
+is-featured: false
 layout: project
 ---
 

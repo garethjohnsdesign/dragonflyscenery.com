@@ -11,7 +11,7 @@ photographer: Sølve Sundsbø
 publication: Love
 client: Andrew Bolton
 field: editorial
-is-featured: true
+is-featured: false
 layout: project
 ---
 

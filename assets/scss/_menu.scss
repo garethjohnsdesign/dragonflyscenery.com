@@ -45,9 +45,8 @@ $color-link: #FFF;
     
     li {
       display: block;
-      height: 20%;
-      height: calc(100% / 4);
-      min-height: 2rem;
+      height: calc(100% / 3);
+      min-height: 1rem;
       position: relative;
       opacity: 0;
       

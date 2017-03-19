@@ -15,7 +15,7 @@ photographer:
 publication: 
 client: St Tropez
 field: advertising
-is-featured: true
+is-featured: false
 layout: project
 ---
 

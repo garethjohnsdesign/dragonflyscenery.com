@@ -19,7 +19,7 @@ photographer: Sølve Sundsbø
 publication: Vogue Italy
 client: 
 field: editorial
-is-featured: true
+is-featured: false
 layout: project
 ---
 

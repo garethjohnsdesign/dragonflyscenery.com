@@ -12,7 +12,7 @@ photographer: Jonas Akerlund
 publication: 
 client: Hugo Boss
 field: advertising
-is-featured: true
+is-featured: false
 layout: project
 ---
 

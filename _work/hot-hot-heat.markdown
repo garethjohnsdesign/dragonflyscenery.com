@@ -18,7 +18,7 @@ photographer: Jon Compson
 publication: Twenty6
 client: 
 field: editorial
-is-featured: true
+is-featured: false
 layout: project
 ---
 

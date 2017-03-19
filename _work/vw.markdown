@@ -14,7 +14,7 @@ photographer:
 publication: 
 client: Volkswagen
 field: advertising
-is-featured: true
+is-featured: false
 layout: project
 ---
 

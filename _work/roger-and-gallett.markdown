@@ -11,7 +11,7 @@ photographer:
 publication: 
 client: Roger & Gallett
 field: advertising
-is-featured: true
+is-featured: false
 layout: project
 ---
 

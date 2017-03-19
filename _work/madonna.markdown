@@ -11,7 +11,7 @@ photographer: Steven Meisel
 publication: Vanity Fair
 client: 
 field: editorial
-is-featured: true
+is-featured: false
 layout: project
 ---
 

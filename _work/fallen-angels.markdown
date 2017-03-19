@@ -18,7 +18,7 @@ photographer: Sølve Sundsbø
 publication: Vogue China
 client: 
 field: editorial
-is-featured: true
+is-featured: false
 layout: project
 ---
 

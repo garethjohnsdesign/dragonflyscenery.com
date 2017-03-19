@@ -16,7 +16,7 @@ photographer: Tom Ford
 publication: CR Fashion Book
 client: 
 field: editorial
-is-featured: true
+is-featured: false
 layout: project
 ---
 

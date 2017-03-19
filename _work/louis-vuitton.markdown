@@ -14,7 +14,7 @@ photographer: Angelo Pennetta
 publication: 
 client: Louis Vuitton
 field: advertising
-is-featured: true
+is-featured: false
 layout: project
 ---
 

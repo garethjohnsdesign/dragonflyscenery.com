@@ -11,7 +11,7 @@ photographer: Rankin
 publication: 
 client: Olay
 field: advertising
-is-featured: true
+is-featured: false
 layout: project
 ---
 

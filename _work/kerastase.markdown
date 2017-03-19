@@ -14,7 +14,7 @@ photographer: Solve Sundsbo
 publication: 
 client: Kerastase
 field: advertising
-is-featured: true
+is-featured: false
 layout: project
 ---
 

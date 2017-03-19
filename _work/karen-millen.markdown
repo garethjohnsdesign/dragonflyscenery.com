@@ -13,7 +13,7 @@ photographer:
 publication: 
 client: Karen Millen
 field: advertising
-is-featured: true
+is-featured: false
 layout: project
 ---
 

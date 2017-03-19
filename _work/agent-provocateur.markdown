@@ -13,7 +13,7 @@ photographer: Ross Kirton
 publication: 
 client: 
 field: advertising
-is-featured: true
+is-featured: false
 layout: project
 ---
 
