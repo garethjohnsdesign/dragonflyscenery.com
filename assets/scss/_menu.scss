@@ -1,18 +1,13 @@
-$color-background: #F5F5F5;
-$color-main: #FF5252;
-$color-active: #FFF;
-$color-link: #FFF;
-
-// Desktop
-
 .overlay {
   z-index: 1001;
   position: fixed;
-  background: $color--darkest-gray;
+  display:flex;
+  align-items: stretch;
+  background: $color--lightest-gray;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  height: 100vh;
+  width: 100vw; 
   opacity: 0;
   visibility: hidden;
   transition: opacity .35s, visibility .35s;
@@ -28,102 +23,35 @@ $color-link: #FFF;
     }
   }
   nav {
-    position: relative;
-    height: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    text-align: center;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    display: inline-block;
-    position: relative;
-    height: 100%; 
-    
-    li {
-      display: block;
-      height: calc(100% / 3);
-      min-height: 1rem;
-      position: relative;
-      opacity: 0;
-      
-      a {
-        display: block;
-        position: relative;
-        color: $color-link;
-        text-decoration: none;
-        overflow: hidden;
-      }
-      
-      a:hover {
-      color: $color--black;
-      }
-    }
-  }
-}
-
-// Mobile
-
-.overlay-mobile {
-  z-index: 1001;
-  position: fixed;
-  background: $color--darkest-gray;
+    display:flex;
+justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100vh;
+  width: 100vw; 
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .35s, visibility .35s;
-  overflow: hidden;
-  
-  &.open {
-    opacity: 0.98;
-    visibility: visible;
-    
-    li {
-      animation: fadeIn .5s ease forwards;
-      animation-delay: .25s;
-    }
-  }
-  nav {
-    position: relative;
-    height: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    text-align: center;
+  right: 0;
+  bottom: 0;
   }
   ul {
     list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    display: inline-block;
-    position: relative;
-    height: 100%; 
-    
     li {
-      display: block;
-      height: 20%;
-      height: calc(100% / 6);
+      font-size: 2rem;
+      padding: 16px;
       min-height: 2rem;
-      position: relative;
-      opacity: 0;
+      text-align: center;
       
       a {
-        display: block;
-        position: relative;
-        color: $color-link;
-        text-decoration: none;
-        overflow: hidden;
+        padding: 16px;
+//         color: $color--black;
       }
       
+/*
       a:hover {
-      color: $color--black;
+      color: $color--white;
       }
+*/
     }
   }
 }
