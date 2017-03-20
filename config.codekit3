@@ -99,12 +99,6 @@
 		"oAP": "\/_includes\/scripts.html",
 		"oF": 0
 		},
-	"\/_includes\/sharing.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_includes\/sharing.html",
-		"oF": 0
-		},
 	"\/_layouts\/about.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -4048,16 +4042,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/assets\/img\/logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/assets\/img\/logo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/assets\/img\/og-image.png": {
 		"ft": 32768,
 		"iS": 16824,
@@ -4065,7 +4049,7 @@
 		"oA": 0,
 		"oAP": "\/assets\/img\/og-image.png",
 		"oF": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/assets\/js\/app.js": {
@@ -4240,7 +4224,7 @@
 		"oAP": "\/assets\/css\/app.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 0
+		"uL": 1
 		},
 	"\/bower.json": {
 		"ft": 524288,
@@ -5797,7 +5781,7 @@
 	"\/bower_components\/foundation-sites\/dist\/js\/foundation.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/bower_components\/foundation-sites\/dist\/js\/foundation.js",
 		"oF": 0,
 		"sC": 1,
@@ -13633,14 +13617,20 @@
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/motion-ui\/dist\/motion-ui.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/dist\/js\/foundation.js",
 			"position": 1,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/flickity\/dist\/flickity.pkgd.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/motion-ui\/dist\/motion-ui.js",
 			"position": 2,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/flickity\/dist\/flickity.pkgd.js",
+			"position": 3,
 			"type": 0
 			}
 		]

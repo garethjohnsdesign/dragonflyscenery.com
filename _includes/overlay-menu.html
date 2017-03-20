@@ -1,40 +1,29 @@
-
-
-
 <!-- Overlay Menu -->
 <div class="overlay show-for-medium" id="overlay" data-toggler=".open">
-
-
   <nav class="overlay-menu">
-<!--
-    <button class="close-button" data-toggle="overlay" data-toggler=".open" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
--->
-
-        <button class="close-button hamburger hamburger--collapse is-active" id="toggle" type="button" data-toggle="overlay toggle">
-          <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-          </span>
-        </button>
-
+      <button class="close-button hamburger hamburger--collapse is-active" id="toggle" type="button" data-toggle="overlay toggle">
+        <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+        </span>
+      </button>
+  
       <ul>
         {% for link in site.data.navigation %}
-          <li>
-            <a href="{{link.href}}">{{link.title}}</a>
-          </li>
+          <li><a href="{{link.href}}">{{link.title}}</a></li>
         {% endfor %}
       </ul>
   </nav>
-
 </div>
 <!-- End Overlay Menu -->
 
-
 <!-- Overlay Menu Mobile -->
 <div class="overlay show-for-small-only" id="overlay-mobile" data-toggler=".open">
-
   <nav class="overlay-menu align-middle">
+      <button class="close-button hamburger hamburger--collapse is-active" id="toggle" type="button" data-toggle="overlay-mobile toggle">
+        <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+        </span>
+      </button>
       <ul class="align-middle">
         {% for link in site.data.navigation-mobile %}
           <li class="element">
@@ -43,6 +32,5 @@
         {% endfor %}
       </ul>
   </nav>
-
 </div>
 <!-- End Overlay Menu Mobile -->

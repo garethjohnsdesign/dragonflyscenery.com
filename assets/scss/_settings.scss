@@ -313,13 +313,25 @@ $card-margin: $global-margin;
 // ----------------
 
 $closebutton-position: right top;
+/*
 $closebutton-offset-horizontal: (
   small: 0.66rem,
   medium: 1rem,
 );
+*/
+$closebutton-offset-horizontal: (
+  small: 0.5rem,
+  medium: 1rem,
+);
+/*
 $closebutton-offset-vertical: (
   small: 0.33em,
   medium: 0.5rem,
+);
+*/
+$closebutton-offset-vertical: (
+  small: 0.5em,
+  medium: 1rem,
 );
 $closebutton-size: (
   small: 1.5em,

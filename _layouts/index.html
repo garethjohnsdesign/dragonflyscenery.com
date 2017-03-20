@@ -9,7 +9,7 @@ layout: default
       {% assign projects = site.work | sort: 'position' | where: "is-featured", "true" %}
       {% for project in projects %}
         <div class="column align-self-middle">
-        {% include excerpt.html %}
+          {% include excerpt.html %}
         </div>
       {% endfor %}
     </div>
