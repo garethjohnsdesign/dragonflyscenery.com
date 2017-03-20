@@ -11,7 +11,7 @@ images:
 - "/uploads/lawrence-passera-04.jpg"
 director: 
 photographer: Lawrence Passera
-publication:
+publication: 
 client: 
 field: editorial
 is-featured: true

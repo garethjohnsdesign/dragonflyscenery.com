@@ -12,7 +12,7 @@ images:
 director: 
 photographer: Tom Ford
 publication: CR Fashion Book
-client:
+client: 
 field: editorial
 is-featured: false
 layout: project
