@@ -6505,7 +6505,7 @@
 	"\/bower_components\/foundation-sites\/dist\/js\/foundation.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/bower_components\/foundation-sites\/dist\/js\/foundation.js",
 		"oF": 0,
 		"sC": 1,
@@ -14349,12 +14349,6 @@
 			"followForSyntaxChecking": 0,
 			"linkedFileAbbreviatedPath": "\/bower_components\/flickity\/dist\/flickity.pkgd.js",
 			"position": 2,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/dist\/js\/foundation.js",
-			"position": 3,
 			"type": 0
 			}
 		]

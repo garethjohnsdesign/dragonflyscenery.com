@@ -4,10 +4,12 @@
 //   2. Typography
 //   3. 404
 //   4. Navigation
-//   5. Index
-//   6. Excerpt
-//   7. Page
-//   8. Contact
+//   5. Excerpt
+//   6. Page
+//   7. Contact
+//   8. Project
+//   9. About
+//   10. Footer
 
 // 1. Global
 // ---------
@@ -114,10 +116,7 @@ i, cite, em, var, address, dfn {
     }
 }
 
-// 5. Index
-// --------
-
-// 6. Excerpt
+// 5. Excerpt
 // ----------
 
 .excerpt {
@@ -175,7 +174,7 @@ div.row.excerpt__title {
   transition: $primary-transition;
 }
 
-// 7. Page
+// 6. Page
 // -------
 
 .page__content {
@@ -188,7 +187,7 @@ div.row.excerpt__title {
     }
 }
 
-// 8. Contact
+// 7. Contact
 // -------
 
 .contact {
@@ -236,19 +235,12 @@ div.row.excerpt__title {
   padding-bottom: 2rem;
 }
 
-// 7. Project
+// 8. Project
 // ----------
 
 .project__video {
   margin-bottom: 0rem;
 }
-
-/*
-.project__carousel img {
-  display: block;
-  height: 400px;
-}
-*/
 
 .project__carousel {
   margin-bottom: 2rem;
@@ -273,7 +265,7 @@ div.row.excerpt__title {
     }
 }
 
-// 10. About
+// 9. About
 // ---------
 
 .about__clients {
@@ -286,7 +278,7 @@ div.row.excerpt__title {
     }
 }
 
-// 11. Footer
+// 10. Footer
 // ----------
 
 footer {
@@ -300,5 +292,3 @@ footer {
     padding: 2rem;
   }
 }
-
-// 00. Testing
