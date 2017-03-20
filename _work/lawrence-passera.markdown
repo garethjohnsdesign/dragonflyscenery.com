@@ -1,7 +1,7 @@
 ---
 title: Lawrence Passera
 date: 2014-04-01 00:00:00 Z
-position: 7
+position: 3
 image: "/uploads/lawrence-passera-thumb.jpg"
 video: 
 images:

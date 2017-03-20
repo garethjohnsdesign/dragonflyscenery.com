@@ -1,7 +1,7 @@
 ---
 title: Fallen Angels
 date: 2014-04-01 00:00:00 Z
-position: 2
+position: 6
 image: "/uploads/fallen-angels-thumb.jpg"
 video: 
 images:
