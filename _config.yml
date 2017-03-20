@@ -56,8 +56,13 @@ social:
   twitter: 
   vimeo: 
 compress_html:
+  clippings: []
   comments:
   - "<!-- "
   - " -->"
+  endings: []
+  ignore:
+    envs: []
   blanklines: true
   profile: false
+  startings: []
