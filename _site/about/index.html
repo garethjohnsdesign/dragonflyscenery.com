@@ -60,28 +60,32 @@
     </div>
   </nav>
 <div class="overlay show-for-medium" id="overlay" data-toggler=".open">
-  <button class="close-button" data-toggle="overlay" type="button">
-      <span aria-hidden="true">&times;</span>
-  </button>
   <nav class="overlay-menu">
+<!--
+    <button class="close-button" data-toggle="overlay" data-toggler=".open" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+-->
+        <button class="close-button hamburger hamburger--collapse is-active" id="toggle" type="button" data-toggle="overlay toggle">
+          <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+          </span>
+        </button>
       <ul>
-          <li class="element">
+          <li>
             <a href="/editorial/">Editorial</a>
           </li>
-          <li class="element">
+          <li>
             <a href="/advertising/">Advertising</a>
           </li>
-          <li class="element">
+          <li>
             <a href="/moving-image/">Moving Image</a>
           </li>
       </ul>
   </nav>
 </div>
-<div class="overlay-mobile show-for-small-only" id="overlay-mobile" data-toggler=".open">
-  <button class="close-button" data-toggle="overlay-mobile" type="button">
-      <span aria-hidden="true">&times;</span>
-  </button>
-  <nav class="overlay-menu-mobile align-middle">
+<div class="overlay show-for-small-only" id="overlay-mobile" data-toggler=".open">
+  <nav class="overlay-menu align-middle">
       <ul class="align-middle">
           <li class="element">
             <a href="/editorial/">Editorial</a>
