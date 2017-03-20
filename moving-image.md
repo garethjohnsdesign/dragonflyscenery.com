@@ -1,6 +1,6 @@
 ---
 title: Moving Image
-position: 6
+position: 3
 layout: moving-image
 ---
 

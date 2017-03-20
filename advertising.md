@@ -1,6 +1,6 @@
 ---
 title: Advertising
-position: 4
+position: 2
 layout: advertising
 ---
 

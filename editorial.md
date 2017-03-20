@@ -1,6 +1,6 @@
 ---
 title: Editorial
-position: 5
+position: 1
 layout: editorial
 ---
 
