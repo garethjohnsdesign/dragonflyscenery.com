@@ -1,6 +1,6 @@
 ---
 title: About
-position: 5
+position: 4
 clients-text: |-
   Advertising: Tom Ford, Revlon, Wella, Roger & Gallet, D&G, Burberry, Gucci, Pantene, Nike, Aquascutum, Hugo Boss, Swarovski, H&M, St Tropez, Puma, La Prairie, Joop, Agent Provocateur, Paul Smith, YSL, Boots, Volkswagen, Kit Kat, Yellow Pages
 
