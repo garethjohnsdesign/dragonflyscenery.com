@@ -1,7 +1,7 @@
 ---
 title: Accessorize AW14
 date: 2014-04-01 00:00:00 Z
-position: 15
+position: 59
 image: "/uploads/accessorize-aw14-thumb.jpg"
 video: 195474853
 images: 

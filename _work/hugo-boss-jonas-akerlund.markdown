@@ -1,7 +1,7 @@
 ---
 title: Hugo Boss
 date: 2014-04-01 00:00:00 Z
-position: 11
+position: 35
 image: "/uploads/hugo-boss-thumb.jpg"
 video: 
 images:

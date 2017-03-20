@@ -1,7 +1,7 @@
 ---
 title: Bright Diamante
 date: 2014-04-01 00:00:00 Z
-position: 14
+position: 58
 image: "/uploads/bright-diamante-thumb.jpg"
 video: 195475097
 images: 

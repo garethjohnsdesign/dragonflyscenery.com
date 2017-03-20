@@ -1,7 +1,7 @@
 ---
 title: Tom Ford
 date: 2014-04-01 00:00:00 Z
-position: 11
+position: 49
 image: "/uploads/tom-ford-thumb.jpg"
 video: 
 images:

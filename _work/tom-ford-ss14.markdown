@@ -1,7 +1,7 @@
 ---
 title: Tom Ford SS14
 date: 2014-04-01 00:00:00 Z
-position: 11
+position: 48
 image: "/uploads/tom-ford-ss14-thumb.jpg"
 video: 
 images:

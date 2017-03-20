@@ -1,7 +1,7 @@
 ---
 title: Bridal Collection
 date: 2014-04-01 00:00:00 Z
-position: 13
+position: 57
 image: "/uploads/bridal-collection-thumb.jpg"
 video: 195475313
 images: 

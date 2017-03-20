@@ -1,7 +1,7 @@
 ---
 title: Twins
 date: 2014-04-01 00:00:00 Z
-position: 0
+position: 15
 image: "/uploads/twins-thumb.jpg"
 video: 
 images:

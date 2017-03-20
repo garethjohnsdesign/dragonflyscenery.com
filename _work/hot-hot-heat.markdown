@@ -1,7 +1,7 @@
 ---
 title: Hot Hot Heat
 date: 2014-04-01 00:00:00 Z
-position: 0
+position: 3
 image: "/uploads/hot-hot-heat-thumb.jpg"
 video: 
 images:

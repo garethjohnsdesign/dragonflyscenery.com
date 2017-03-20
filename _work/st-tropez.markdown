@@ -1,7 +1,7 @@
 ---
 title: St Tropez
 date: 2014-04-01 00:00:00 Z
-position: 11
+position: 46
 image: "/uploads/st-tropez-thumb.jpg"
 video: 
 images:

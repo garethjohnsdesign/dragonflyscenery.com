@@ -1,7 +1,7 @@
 ---
 title: Temptation
 date: 2014-04-01 00:00:00 Z
-position: 1
+position: 16
 image: "/uploads/temptation-thumb.jpg"
 video: 195475546
 images: 

@@ -1,7 +1,7 @@
 ---
 title: Take a Trip Lose Yourself Fall in Love
 date: 2014-04-01 00:00:00 Z
-position: 0
+position: 14
 image: "/uploads/take-a-trip-lose-yourself-fall-in-love-thumb.jpg"
 video: 
 images:
