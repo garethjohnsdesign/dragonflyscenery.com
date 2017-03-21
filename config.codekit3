@@ -135,6 +135,12 @@
 		"oAP": "\/_layouts\/editorial.html",
 		"oF": 0
 		},
+	"\/_layouts\/film.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_layouts\/film.html",
+		"oF": 0
+		},
 	"\/_layouts\/index.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -145,12 +151,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/_layouts\/missing.html",
-		"oF": 0
-		},
-	"\/_layouts\/moving-image.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_layouts\/moving-image.html",
 		"oF": 0
 		},
 	"\/_layouts\/page.html": {
@@ -13510,6 +13510,30 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/film.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/film.html",
+		"oF": 0
+		},
+	"\/film.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/film.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"\/Gemfile": {
 		"ft": 8192,
 		"oA": 2,
@@ -13557,24 +13581,6 @@
 		"oA": 1,
 		"oAP": "\/LICENSE.html",
 		"oF": 1,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/moving-image.md": {
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"eLB": 0,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/moving-image.html",
-		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
