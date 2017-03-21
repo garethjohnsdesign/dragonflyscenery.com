@@ -1,21 +1,18 @@
 <!-- Excerpt -->
 <div class="excerpt">
-  <a href="{{ project.url }}">
 
-    <!-- Excerpt Title -->
-    <div class="row excerpt__title">
-      <div class="small-12 columns align-self-middle text-center">
-        <p>{{ project.title }}<p>
-      </div>
-    </div>
-    <!-- End Excerpt Title -->
-  
     <!-- Excerpt Image -->
     <div class="excerpt__image">
-      <img src="{{project.image}}" alt="{{project.title}}">
+    <a href="{{ project.url }}"><img src="{{ project.image }}" alt="{{project.title}}"></a>
     </div>
-    <!-- End Image -->
+    <!-- End Excerpt Image -->
+
+    <!-- Excerpt Text -->
+    <div class="excerpt__text text-center">
+      <div class="excerpt__text__title"><a href="{{ project.url }}">{{ project.title }}</a></div>
+      <div class="excerpt__text__collaborator"><a href="{{project.url}}">{% if project.photographer %}{{ project.photographer }}{% else %}{{ project.director }}{% endif %}</a></div>
+    </div>
+    <!-- End Excerpt Text -->
     
-  </a>
 </div>
 <!-- End Excerpt -->

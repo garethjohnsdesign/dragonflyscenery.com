@@ -51,6 +51,12 @@
 		"oAP": "\/_includes\/analytics.html",
 		"oF": 0
 		},
+	"\/_includes\/excerpt-archive.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_includes\/excerpt-archive.html",
+		"oF": 0
+		},
 	"\/_includes\/excerpt.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -4002,6 +4008,34 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/fonts\/BasisGrotesque.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/GaramondPremrPro-It.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/GaramondPremrPro-It.eot",
+		"oF": 0
+		},
+	"\/assets\/fonts\/GaramondPremrPro-It.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/GaramondPremrPro-It.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/fonts\/GaramondPremrPro-It.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/GaramondPremrPro-It.ttf",
+		"oF": 0
+		},
+	"\/assets\/fonts\/GaramondPremrPro-It.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/GaramondPremrPro-It.woff",
 		"oF": 0
 		},
 	"\/assets\/fonts\/WalbaumTextPro.eot": {
