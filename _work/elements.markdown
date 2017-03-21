@@ -9,7 +9,7 @@ director: Jamie Morgan
 photographer: 
 publication: 
 client: Reiss
-field: moving-image
+field: film
 is-featured: 
 layout: project
 ---
