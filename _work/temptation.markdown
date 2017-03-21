@@ -9,7 +9,7 @@ director: Sean and Seng
 photographer: 
 publication: Dazed and Confused
 client: 
-field: moving-image
+field: film
 is-featured: true
 layout: project
 ---

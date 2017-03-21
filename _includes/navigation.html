@@ -4,7 +4,11 @@
     <!-- Left -->
     <div class="medium-3 columns text-left align-self-middle navigation__left show-for-medium">
       <ul class="menu simple align-left">
-        <li><a data-toggle="overlay">Work</a></li>
+        
+        {% for link in site.data.navigation %}
+          <li><a href="{{link.href}}">{{link.title}}</a></li>
+        {% endfor %}
+        
       </ul>
     </div>
     <!-- End Left -->

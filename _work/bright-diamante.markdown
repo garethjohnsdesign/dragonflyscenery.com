@@ -9,7 +9,7 @@ director:
 photographer: 
 publication: 
 client: Gucci
-field: moving-image
+field: film
 is-featured: 
 layout: project
 ---

@@ -9,7 +9,7 @@ director: Sølve Sundsbø
 photographer: 
 publication: 
 client: Thierry Mugler
-field: moving-image
+field: film
 is-featured: 
 layout: project
 ---
