@@ -165,12 +165,6 @@
 		"oAP": "\/_layouts\/page.html",
 		"oF": 0
 		},
-	"\/_layouts\/post.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/_layouts\/post.html",
-		"oF": 0
-		},
 	"\/_layouts\/project.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -269,6 +263,15 @@
 		"iS": 49987,
 		"oA": 0,
 		"oAP": "\/_uploads\/a-bigger-splash-thumb.jpg",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_uploads\/about.jpg": {
+		"ft": 16384,
+		"iS": 158431,
+		"oA": 0,
+		"oAP": "\/_uploads\/about.jpg",
 		"oF": 0,
 		"opt": 0,
 		"q": 100
@@ -3838,6 +3841,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_work\/yellow-pages.markdown",
+		"oF": 0
+		},
+	"\/about.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/about.html",
 		"oF": 0
 		},
 	"\/about.md": {
@@ -13374,7 +13383,7 @@
 	"\/bower_components\/wow\/dist\/wow.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/bower_components\/wow\/dist\/wow.js",
 		"oF": 0,
 		"sC": 1,
@@ -13544,12 +13553,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/film.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/film.html",
-		"oF": 0
-		},
 	"\/film.md": {
 		"cS": 0,
 		"eF": 1,
@@ -13558,10 +13561,10 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/film.html",
-		"oF": 0,
-		"oFM": 0,
+		"oA": 2,
+		"oAP": "\/film.md",
+		"oF": 1,
+		"oFM": 9,
 		"oS": 0,
 		"pHT": 0,
 		"pME": 1,
@@ -13681,6 +13684,12 @@
 			"followForSyntaxChecking": 0,
 			"linkedFileAbbreviatedPath": "\/bower_components\/flickity\/dist\/flickity.pkgd.js",
 			"position": 3,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/wow\/dist\/wow.js",
+			"position": 4,
 			"type": 0
 			}
 		]

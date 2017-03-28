@@ -14,7 +14,7 @@ director:
 photographer: Sean and Seng
 publication: Dazed and Confused
 client: 
-field: film
+field: editorial
 is-featured: 
 layout: project
 ---
