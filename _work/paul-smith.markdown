@@ -1,7 +1,7 @@
 ---
 title: Paul Smith
 date: 2014-04-01 00:00:00 Z
-position: 43
+position: 44
 image: "/uploads/paul-smith-thumb.jpg"
 video: 
 images:

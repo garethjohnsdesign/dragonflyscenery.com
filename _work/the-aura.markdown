@@ -1,7 +1,7 @@
 ---
 title: The Aura
 date: 2014-04-01 00:00:00 Z
-position: 25
+position: 26
 image: "/uploads/the-aura-thumb.jpg"
 video: 
 images:

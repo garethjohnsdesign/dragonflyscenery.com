@@ -1,7 +1,7 @@
 ---
 title: VW
 date: 2014-04-01 00:00:00 Z
-position: 53
+position: 54
 image: "/uploads/vw-thumb.jpg"
 video: 
 images:

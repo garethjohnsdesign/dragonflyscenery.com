@@ -1,7 +1,7 @@
 ---
 title: Beauty and the Beats
 date: 2014-04-01 00:00:00 Z
-position: 26
+position: 27
 image: "/uploads/beauty-and-the-beats-thumb.jpg"
 video: 
 images:

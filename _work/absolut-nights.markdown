@@ -1,7 +1,7 @@
 ---
 title: Absolut Nights
 date: 2014-04-01 00:00:00 Z
-position: 28
+position: 29
 image: "/uploads/absolut-nights-thumb.jpg"
 video: 
 images:

@@ -1,7 +1,7 @@
 ---
 title: Yellow Pages
 date: 2014-04-01 00:00:00 Z
-position: 55
+position: 56
 image: "/uploads/yellow-pages-thumb.jpg"
 video: 
 images:

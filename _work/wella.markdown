@@ -1,7 +1,7 @@
 ---
 title: Wella
 date: 2014-04-01 00:00:00 Z
-position: 54
+position: 55
 image: "/uploads/wella-thumb.jpg"
 video: 
 images:

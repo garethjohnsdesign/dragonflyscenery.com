@@ -1,7 +1,7 @@
 ---
 title: Joop Splash
 date: 2014-04-01 00:00:00 Z
-position: 38
+position: 39
 image: "/uploads/joop-splash-thumb.jpg"
 video: 
 images:
