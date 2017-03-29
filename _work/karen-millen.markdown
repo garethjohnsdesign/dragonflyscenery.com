@@ -1,7 +1,7 @@
 ---
 title: Karen Millen
 date: 2014-04-01 00:00:00 Z
-position: 38
+position: 39
 image: "/uploads/karen-millen-thumb.jpg"
 video: 
 images:

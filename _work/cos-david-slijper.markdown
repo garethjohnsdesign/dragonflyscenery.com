@@ -1,7 +1,7 @@
 ---
 title: COS
 date: 2014-04-01 00:00:00 Z
-position: 29
+position: 30
 image: "/uploads/cos-david-slijper-thumb.jpg"
 video: 
 images:

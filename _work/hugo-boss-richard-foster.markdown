@@ -1,7 +1,7 @@
 ---
 title: Hugo Boss
 date: 2014-04-01 00:00:00 Z
-position: 36
+position: 37
 image: "/uploads/hugo-boss-richard-foster-thumb.jpg"
 video: 
 images:

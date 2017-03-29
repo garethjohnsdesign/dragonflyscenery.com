@@ -1,7 +1,7 @@
 ---
 title: Gieves and Hawkes
 date: 2014-04-01 00:00:00 Z
-position: 33
+position: 34
 image: "/uploads/gieves-and-hawkes-thumb.jpg"
 video: 
 images:

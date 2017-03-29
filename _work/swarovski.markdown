@@ -1,7 +1,7 @@
 ---
 title: Swarovski
 date: 2014-04-01 00:00:00 Z
-position: 47
+position: 48
 image: "/uploads/swarovski-thumb.jpg"
 video: 
 images:

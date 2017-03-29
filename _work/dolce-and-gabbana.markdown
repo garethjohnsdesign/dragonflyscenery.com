@@ -1,7 +1,7 @@
 ---
 title: Dolce and Gabbana
 date: 2014-04-01 00:00:00 Z
-position: 31
+position: 32
 image: "/uploads/dolce-and-gabbana-thumb.jpg"
 video: 
 images:

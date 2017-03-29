@@ -1,7 +1,7 @@
 ---
 title: Louis Vuitton
 date: 2014-04-01 00:00:00 Z
-position: 40
+position: 41
 image: "/uploads/louis-vuitton-thumb.jpg"
 video: 
 images:
