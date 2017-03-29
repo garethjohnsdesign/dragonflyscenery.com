@@ -1,7 +1,7 @@
 ---
 title: Nike Russia
 date: 2014-04-01 00:00:00 Z
-position: 19
+position: 18
 image: "/uploads/nike-russia-thumb.jpg"
 video: 195475388
 images: 

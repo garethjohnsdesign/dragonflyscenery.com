@@ -1,7 +1,7 @@
 ---
 title: Elements
 date: 2014-04-01 00:00:00 Z
-position: 20
+position: 19
 image: "/uploads/elements-thumb.jpg"
 video: 195475451
 images: 
