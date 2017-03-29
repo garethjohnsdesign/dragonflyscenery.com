@@ -16,3 +16,8 @@ Example showing how to change the color/size of the icons:
 	color: red; // works for single-colored icons, because "fill" was set to "currentColor"
 }
 ======================================================================================== */
+
+.icon-icon {
+	font-size: 3rem;
+	color: $color--dark-gray;
+}

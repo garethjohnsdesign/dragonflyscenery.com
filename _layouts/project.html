@@ -26,24 +26,12 @@ layout: default
 </div>
 {% endif %}
 
-<!-- Carousel -->
-<!--
-{% if page.images %}
-<div class="row columns expanded">
-  <div class="project__carousel">
-    {% for image in page.images %}
-    <img src="{{image}}">2
-    {% endfor %}
-  </div>
-</div>
-{% endif %}
--->
-<!-- End Carousel -->
 
 <!-- Meta -->
 {% if page.photographer or page.publication or page.director or page.client %}
 <div class="row align-center project__meta">
   <div class="small-8 medium-7 large-7 columns text-center">
+    <div class="project__meta__title">{{ page.title }}</div>
     {% if page.director %}
     <p>Director &mdash; {{ page.director }}</p>
     {% endif %}

@@ -21,7 +21,6 @@ images:
 - "/uploads/take-a-trip-lose-yourself-fall-in-love-14.jpg"
 - "/uploads/take-a-trip-lose-yourself-fall-in-love-15.jpg"
 - "/uploads/take-a-trip-lose-yourself-fall-in-love-16.jpg"
-- "/uploads/take-a-trip-lose-yourself-fall-in-love-17.jpg"
 director: 
 photographer: Sølve Sundsbø
 publication: i-D

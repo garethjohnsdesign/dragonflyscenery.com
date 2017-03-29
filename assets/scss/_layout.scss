@@ -238,7 +238,7 @@ i, cite, em, var, address, dfn {
         height: 400px;
       }
       @include breakpoint(large) {
-        height: 500px;
+        height: 450px;
       }
     }
 }
@@ -249,6 +249,13 @@ i, cite, em, var, address, dfn {
     p {
       margin-bottom: 0rem;
     }
+}
+
+.project__meta__title {
+  font-family: 'GaramondPremrPro-It', serif;
+  font-size: 1.75rem;
+  line-height: 1.2;
+  padding-bottom: 1rem;
 }
 
 // 9. About
