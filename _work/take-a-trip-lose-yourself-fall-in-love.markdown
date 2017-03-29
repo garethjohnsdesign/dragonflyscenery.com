@@ -27,7 +27,7 @@ photographer: Sølve Sundsbø
 publication: i-D
 client: 
 field: editorial
-is-featured: false
+is-featured: true
 layout: project
 ---
 

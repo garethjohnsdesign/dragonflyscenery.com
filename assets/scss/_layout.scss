@@ -123,9 +123,9 @@ i, cite, em, var, address, dfn {
   position:relative;
   opacity:1;
   padding-bottom: 2rem;
-  margin: 0.5rem 2rem;
+  margin: 1rem 2rem;
  @include breakpoint(medium only) {
-    margin: 1.75rem 1.75rem;
+    margin: 1rem 1.75rem;
   }
   @include breakpoint(small only) {
     margin: 0.5rem 1.5rem;

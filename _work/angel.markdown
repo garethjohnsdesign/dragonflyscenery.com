@@ -10,7 +10,7 @@ photographer:
 publication: 
 client: Thierry Mugler
 field: film
-is-featured: 
+is-featured: true
 layout: project
 ---
 

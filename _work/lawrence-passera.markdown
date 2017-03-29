@@ -14,7 +14,7 @@ photographer: Lawrence Passera
 publication: 
 client: 
 field: editorial
-is-featured: true
+is-featured:
 layout: project
 ---
 

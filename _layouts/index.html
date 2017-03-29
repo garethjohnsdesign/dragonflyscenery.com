@@ -8,7 +8,7 @@ layout: default
     <div class="row align-center collapse small-up-1 medium-up-2 large-up-3">
       {% assign projects = site.work | sort: 'position' | where: "is-featured", "true" %}
       {% for project in projects %}
-        <div class="column align-self-middle wow fadeIn">
+        <div class="column align-self-middle">
           {% include excerpt.html %}
         </div>
       {% endfor %}

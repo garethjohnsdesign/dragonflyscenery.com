@@ -1,5 +1,5 @@
 ---
-title: Lana Del Rey - Interview
+title: Lana Del Rey
 date: 2014-04-01 00:00:00 Z
 position: 2
 image: "/uploads/lana-del-rey-interview-thumb.jpg"

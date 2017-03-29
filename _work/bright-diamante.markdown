@@ -5,12 +5,12 @@ position: 58
 image: "/uploads/bright-diamante-thumb.jpg"
 video: 195475097
 images: 
-director: 
+director: Lacey
 photographer: 
 publication: 
 client: Gucci
 field: film
-is-featured: 
+is-featured: true
 layout: project
 ---
 
