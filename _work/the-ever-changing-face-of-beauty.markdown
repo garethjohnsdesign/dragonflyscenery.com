@@ -10,7 +10,7 @@ photographer:
 publication: 
 client: 
 field: film
-is-featured: true 
+is-featured: true
 layout: project
 ---
 

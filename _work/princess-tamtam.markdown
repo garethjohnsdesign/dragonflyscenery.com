@@ -24,7 +24,7 @@ photographer:
 publication: 
 client: Princess Tamtam
 field: advertising
-is-featured:
+is-featured: 
 layout: project
 ---
 

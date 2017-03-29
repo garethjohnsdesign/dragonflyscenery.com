@@ -23,7 +23,7 @@ photographer: Sølve Sundsbø
 publication: Numero
 client: 
 field: editorial
-is-featured:
+is-featured: 
 layout: project
 ---
 
