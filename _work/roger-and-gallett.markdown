@@ -1,6 +1,7 @@
 ---
 title: Roger & Gallett
 date: 2014-04-01 00:00:00 Z
+published: false
 position: 47
 image: "/uploads/roger-and-gallett-thumb.jpg"
 video: 
@@ -12,7 +13,6 @@ publication:
 client: Roger & Gallett
 field: advertising
 is-featured: false
-published: false
 layout: project
 ---
 

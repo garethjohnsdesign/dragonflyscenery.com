@@ -1,6 +1,7 @@
 ---
 title: Revlon
 date: 2014-04-01 00:00:00 Z
+published: false
 position: 46
 image: "/uploads/revlon-thumb.jpg"
 video: 
@@ -12,7 +13,6 @@ publication:
 client: Revlon
 field: advertising
 is-featured: false
-published: false
 layout: project
 ---
 

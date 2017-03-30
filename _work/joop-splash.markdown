@@ -1,6 +1,7 @@
 ---
 title: Joop Splash
 date: 2014-04-01 00:00:00 Z
+published: false
 position: 39
 image: "/uploads/joop-splash-thumb.jpg"
 video: 
@@ -12,7 +13,6 @@ publication:
 client: Joop
 field: advertising
 is-featured: false
-published: false
 layout: project
 ---
 
