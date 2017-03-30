@@ -43,7 +43,7 @@ photographer:
 publication: 
 client: Paul Smith
 field: advertising
-is-featured: false
+is-featured: true
 layout: project
 ---
 

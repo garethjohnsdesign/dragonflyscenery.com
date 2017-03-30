@@ -12,6 +12,7 @@ publication:
 client: Roger & Gallett
 field: advertising
 is-featured: false
+published: false
 layout: project
 ---
 

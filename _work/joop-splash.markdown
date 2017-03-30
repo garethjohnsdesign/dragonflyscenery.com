@@ -12,6 +12,7 @@ publication:
 client: Joop
 field: advertising
 is-featured: false
+published: false
 layout: project
 ---
 

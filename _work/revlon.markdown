@@ -12,6 +12,7 @@ publication:
 client: Revlon
 field: advertising
 is-featured: false
+published: false
 layout: project
 ---
 

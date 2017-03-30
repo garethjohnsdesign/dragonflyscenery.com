@@ -1,5 +1,5 @@
 ---
-title: Accessorize AW14
+title: Accessorize
 date: 2014-04-01 00:00:00 Z
 position: 59
 image: "/uploads/accessorize-aw14-thumb.jpg"
