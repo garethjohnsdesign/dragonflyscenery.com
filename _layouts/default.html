@@ -1,3 +1,7 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr">
 
@@ -5,38 +9,39 @@
 {% include head.html %}
 <!-- End Head -->
 
-{% if page.url == "/" %}
-<body id="top">
-{% else %}
-<body id="top">
-{% endif %}
-  
-{% if page.url == "/" %}
-<script>document.body.className += ' fade-out';</script>
-{% endif %}
+<body class="site-wrapper">
 
+<div class="main-content">
 
-<!-- Navigation -->  
+<!-- Navigation --> 
 {% include navigation.html %}
 <!-- End Navigation --> 
 
-<!-- Menu -->  
+<!-- Overlay Menu -->  
 {% include overlay-menu.html %}
-<!-- End Menu --> 
+<!-- End Overlay Menu --> 
 
+<div class="animated fadeIn">
 <!-- Content -->  
 {{ content }}
-<!-- End Content -->  
+<!-- End Content -->
+</div>
+
+</div>
 
 <!-- Footer -->  
 {% include footer.html %}
 <!-- End Footer -->  
-  
-  
-</body>
 
 <!-- Scripts -->
 {% include scripts.html %}
 <!-- End Scripts -->
 
+<!-- Google Analytics -->
+{% if site.analytics %}
+{% include analytics.html %}
+{% endif %}
+<!-- End Google Analytics -->
+
+</body>
 </html>

@@ -8,22 +8,32 @@ collections:
   uploads:
     title: Uploads
     output: false
+  work:
+    title: Work
+    output: true
 defaults:
 - scope:
     path: ''
     type: pages
   values:
     layout: page
-- scope:
-    path: ''
-    type: posts
-  values:
-    permalink: "/blog/:title/"
-    layout: post
-    image: 
-    author: 
 url: http://dragonflyscenery.com
+description: London-based set-design, prop and art direction studio working alongside
+  the industry's leading photographers, directors and creatives
 permalink: pretty
+exclude:
+- Gruntfile.js
+- Gemfile
+- Gemfile.lock
+- package.json
+- README*
+- node_modules
+- ".gitignore"
+- bower_components
+- config.codekit3
+- CHANGELOG.md
+- LICENSE.md
+- bower.json
 gems:
 - jekyll-seo-tag
 - jekyll-sitemap
@@ -33,10 +43,6 @@ kramdown:
   input: GFM
   hard_wrap: false
 highlighter: rouge
-exclude:
-- bower_components
-description: London-based set-design, prop and art direction studio working alongside
-  the industry's leading photographers, directors and creatives
 company: Dragonfly Scenery and Design Ltd
 email: info@dragonflyscenery.com
 google_site_verification: 0u9XTYzI8wOtLEO26wdbqmiWdUn5s5f0UYUisdLW7BY
@@ -50,3 +56,9 @@ social:
   instagram: 
   twitter: 
   vimeo: 
+compress_html:
+  comments:
+  - "<!-- "
+  - " -->"
+  blanklines: true
+  profile: false

@@ -1,10 +1,18 @@
 ---
-layout: holding
+layout: default
 ---
 
-<div class="row expanded content">
-	<div class="small-12 medium-10 large-8 columns">
-		{{ content }}
-	</div>
-</div>
+<div class="row align-center">
+  <div class="small-11 medium-10 columns">
 
+    <div class="row align-center collapse small-up-1 medium-up-2 large-up-3">
+      {% assign projects = site.work | sort: 'position' | where: "is-featured", "true" %}
+      {% for project in projects %}
+        <div class="column align-self-middle">
+          {% include excerpt.html %}
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>

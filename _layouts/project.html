@@ -2,39 +2,61 @@
 layout: default
 ---
 
-{% if page.video %}
+<section class="project">
+
 <!-- Video -->
-<div class="row project__video project__step align-center">
-<div class="small-12 medium-10 large-8 columns">
-	<div class="flex-video widescreen vimeo">
-	  <iframe src="https://player.vimeo.com/video/{{ page.video }}?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-	</div>
+{% if page.video %}
+<div class="row align-center project__video">
+  <div class="small-12 medium-10 large-8 columns">
+    <div class="flex-video widescreen vimeo">
+      <iframe src="https://player.vimeo.com/video/{{ page.video }}?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  </div>
 </div>
-</div>
+{% endif %}
 <!-- End Video -->
+
+
+<!-- Flickity HTML init -->
+{% if page.images %}
+<div class="project__carousel">
+{% for image in page.images %}
+    <img src="{{image}}">
+{% endfor %}
+</div>
 {% endif %}
 
-<!-- Share -->
-<div class="row">
-	<div class="shrink columns">
-		{{ content }}
-	</div>
+
+<!-- Meta -->
+{% if page.photographer or page.publication or page.director or page.client %}
+<div class="row align-center project__meta">
+  <div class="small-8 medium-7 large-7 columns text-center">
+    <div class="project__meta__title">{{ page.title }}</div>
+    {% if page.director %}
+    <p>Director &mdash; {{ page.director }}</p>
+    {% endif %}
+    {% if page.photographer %}
+    <p>Photographer &mdash; {{ page.photographer }}</p>
+    {% endif %}
+    {% if page.publication %}
+    <p>Publication &mdash; {{ page.publication }}</p>
+    {% endif %}
+    {% if page.client %}
+    <p>Client &mdash; {{ page.client }}</p>
+    {% endif %}
+  </div>
 </div>
-<!-- End Share -->
+{% endif %}
+<!-- End Meta -->
 
-
-<!-- Share -->
-<div class="row project__share align-center">
-	<div class="shrink columns">
-		<ul class="menu simple">
-			{% include sharing.html %}
-	  	</ul>
-	</div>
+<!-- Content -->
+<!--
+<div class="row align-center">
+  <div class="small-8 medium-7 large-7 columns text-center">
+    {{ content }}
+  </div>
 </div>
-<!-- End Share -->
+-->
+<!-- End Content -->
 
-<!-- Pagination -->
-
-{% include pagination.html %}
-
-<!-- End Pagination -->
+</section>

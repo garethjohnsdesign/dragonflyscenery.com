@@ -1,17 +1,18 @@
-<a href="{{ project.url }}">
-  <div class="excerpt">
+<!-- Excerpt -->
+<div class="excerpt">
 
-    <!-- Title -->
-    <div class="excerpt__title wow fadeInUp">
-    <h4>{{ project.title }}</h4>
-    </div>
-    <!-- End Title -->
-    
-    <!-- Image -->
+    <!-- Excerpt Image -->
     <div class="excerpt__image">
-    <img src="{{project.image}}" alt="{{project.title}}" />
+    <a href="{{ project.url }}"><img src="{{ project.image }}" alt="{{project.title}}"></a>
     </div>
-    <!-- End Image -->
+    <!-- End Excerpt Image -->
 
-  </div>
-</a>
+    <!-- Excerpt Text -->
+    <div class="excerpt__text text-center">
+      <div class="excerpt__text__title"><a href="{{ project.url }}">{{ project.title }}</a></div>
+      <div class="excerpt__text__collaborator"><a href="{{project.url}}">{% if project.photographer %}{{ project.photographer }}{% else %}{{ project.director }}{% endif %}</a></div>
+    </div>
+    <!-- End Excerpt Text -->
+    
+</div>
+<!-- End Excerpt -->

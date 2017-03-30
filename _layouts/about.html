@@ -1,85 +1,25 @@
 ---
-layout: light
+layout: default
 ---
 
-<!-- Hero -->
-<div class="hero" style="background-image: url({{page.feature-image}})">	
-  <div class="row hero__text align-middle">
-    <div class="small-12 medium-8 large-6 columns hero__text__inner">
-      <h1>{{page.carousel-text}}</h1>
-    </div>
+<section class="about">
+
+<div class="row about__image align-center text-center">
+  <div class="small-11 medium-10 large-6 columns">
+    <img src="{{page.image}}">
   </div>
 </div>
-<!-- End Hero -->
 
-
-<div class="project__content">
-
-<!-- Intro -->
-<div class="row project__results project__step">
-	<div class="small-12 medium-10 large-10 columns">
-	<h5>{{ content }}</h5>
-	</div>
-</div>
-<!-- End Intro -->
-
-<!-- What We Do -->
-<div class="row project__results project__step align-justify">
-	<div class="small-12 medium-6 large-5 columns">
-	<h3>What We Do</h3>
-	</div>
-	<div class="small-12 medium-6 large-6 columns">
-	{{page.what-we-do-text}}
-	</div>
-</div>
-<!-- End What We Do -->
-
-<!-- Who We Are -->
-<div class="row project__results project__step align-justify">
-	<div class="small-12 medium-6 large-5 columns">
-	<h3>Who We Are</h3>
-	</div>
-	<div class="small-12 medium-6 large-6 columns">
-	{{page.who-we-are-text}}
-	</div>
-</div>
-<!-- End Who We Are -->
-
-<!-- How We Do It -->
-<div class="row project__results project__step align-justify">
-	<div class="small-12 medium-6 large-5 columns">
-	<h3>How We Do It</h3>
-	</div>
-	<div class="small-12 medium-6 large-6 columns">
-	{{page.how-we-do-it-text}}
-	</div>
-</div>
-<!-- End How We Do It -->
-
-<!-- Logos -->
-<div class="row project__results project__step align-justify">
-	<div class="small-12 medium-6 large-5 columns">
-	<h3>Clients</h3>
-	</div>
-	<div class="small-12 medium-6 large-6 columns">
-	<img src="{{page.client-logos-image}}" alt="clients" />
-	</div>
-</div>
-<!-- End Logos -->
-
-<hr>
-
-<!-- Logos -->
-<div class="row project__results about_book align-justify">
-	<div class="small-12 medium-6 large-5 columns">
-	<h3>Brand Love</h3>
-	</div>
-	<div class="small-12 medium-6 large-6 columns">
-  <p>Find out more about our Brand Love book <a href="/book">here</a></p>
-	</div>
-</div>
-<!-- End Logos -->
-
-
+<div class="row about__description align-center text-center">
+  <div class="small-11 medium-10 large-9 columns">
+    <h5>{{ content }}</h5>
+  </div>
 </div>
 
+<div class="row about__clients align-center text-center">
+  <div class="small-12 medium-8 large-8 columns">
+    {{ page.clients-text | markdownify }}
+  </div>
+</div>
+
+</section>

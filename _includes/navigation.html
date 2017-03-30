@@ -1,19 +1,44 @@
-<div class="navigation">
-<div class="row expanded">
+  <nav>
+    <div class="row expanded">
 
-<!-- Left -->
-<div class="small-6 columns text-left title">
-<a href="/"><h1>Dragonfly Scenery</h1></a>
-</div>
-<!-- End Left -->
+    <!-- Left -->
+    <div class="medium-3 columns text-left align-self-middle navigation__left show-for-medium">
+      <ul class="menu simple align-left">
+        
+        {% for link in site.data.navigation %}
+          <li><a href="{{link.href}}">{{link.title}}</a></li>
+        {% endfor %}
+        
+      </ul>
+    </div>
+    <!-- End Left -->
 
-<!-- Right -->
-<div class="small-6 columns text-right">
-<button class="hamburger hamburger--collapse" id="toggle" data-toggler=".is-active" type="button" data-toggle="overlay toggle">
-<span class="hamburger-box"><span class="hamburger-inner"></span></span>
-</button>
-</div>
-<!-- End Right -->
+    <!-- Center -->
+    <div class="small-12 medium-6 columns text-center logo align-middle navigation__center navigation__title">
 
-</div>
-</div>
+      <!-- Desktop Menu -->
+      <div class="navigation__title__desktop">
+        <a href="/"><h1>Dragonfly Scenery<br><span>Set Design + Construction</span></h1></a>
+      </div>
+      <!-- End Desktop Menu -->
+
+      <!-- Mobile Menu -->
+      <button class="hamburger hamburger--collapse show-for-small-only" data-toggler=".is-active" type="button" data-toggle="overlay-mobile">
+        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+      </button>
+      <!-- End Mobile Menu -->
+
+    </div>
+    <!-- End Center -->
+
+    <!-- Right -->
+    <div class="medium-3 columns text-right align-self-middle navigation__right show-for-medium">
+      <ul class="menu simple align-right">
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+    <!-- End Right -->
+
+    </div>
+  </nav>
