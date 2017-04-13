@@ -46,7 +46,6 @@ a {
 }
 
 .main-content {
-  /* flex: 1; would be enough but it looks bad in IE */
   flex: 1 0 auto;
 }
 
@@ -234,6 +233,9 @@ i, cite, em, var, address, dfn {
     display: block;
     height: 300px;
     margin-right: 2rem;
+      @include breakpoint(small only) {
+        max-width: none;
+      }
       @include breakpoint(medium) {
         height: 400px;
       }
